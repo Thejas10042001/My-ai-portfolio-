@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PROJECTS, RESUME_DATA } from '../constants';
-import { Github, X, CheckCircle2, ChevronRight, Code } from 'lucide-react';
+import { Github, X, CheckCircle2, ChevronRight, Code, Sparkles, Layout } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
                     {project.title}
                   </h3>
                   
-                  <p className="text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3">
+                  <p className="text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
                     {project.description}
                   </p>
 
@@ -138,7 +138,8 @@ const Projects: React.FC = () => {
                 <div className="grid md:grid-cols-3 gap-10">
                   <div className="md:col-span-2 space-y-8">
                     <div>
-                      <h3 className="text-lg font-bold text-white mb-3">
+                      <h3 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
+                        <Layout className="text-primary-500" size={20} />
                         Project Overview
                       </h3>
                       <p className="text-slate-300 leading-relaxed text-lg">
@@ -148,7 +149,8 @@ const Projects: React.FC = () => {
 
                     {selectedProject.features && (
                       <div>
-                        <h3 className="text-lg font-bold text-white mb-4">
+                        <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                          <Sparkles className="text-primary-500" size={20} />
                           Key Features
                         </h3>
                         <ul className="grid sm:grid-cols-2 gap-3">
