@@ -26,6 +26,7 @@ export const RESUME_DATA = {
     email: "thejas.sreenivasu@example.com", // Placeholder
     github: "https://github.com/Thejas10042001", 
     linkedin: "https://linkedin.com/in/thejas", // Placeholder
+    avatarUrl: "https://www.bing.com/images/search?view=detailV2&ccid=fSz%2fu%2frZ&id=E5F3DC502922E9B07A8AEE7C47307894A08D05CF&thid=OIP.fSz_u_rZ6u4559ALYO_p3AHaJQ&mediaurl=https%3a%2f%2flookaside.instagram.com%2fseo%2fgoogle_widget%2fcrawler%2f%3fmedia_id%3d3529285837613033141&exph=1800&expw=1440&q=thejas+sreenivasu&FORM=IRPRST&ck=0DBE38134CED9DEE54FB7C39E177EAB6&selectedIndex=0&itb=0"
   }
 };
 
@@ -86,7 +87,7 @@ export const PROJECTS: Project[] = [
     tags: ["Web", "API Integration", "React", "Infinite Scroll"],
     icon: Globe,
     githubUrl: "https://github.com/Thejas10042001/Infinite-Wik",
-    longDescription: "A web application designed to provide an endless stream of knowledge. Users can search and browse through wiki articles with an infinite scroll interface, making information discovery seamless and engaging.",
+    longDescription: "Addressed the fragmentation of online knowledge discovery by building a unified platform that eliminates pagination friction. Infinite Wik fetches data from Wikipedia APIs dynamically, allowing users to scroll endlessly through related topics. This seamless interface significantly increases user engagement and encourages deeper exploration of complex subjects without interruption.",
     features: ["Infinite scrolling", "Wiki API integration", "Responsive design", "Search functionality"]
   },
   {
@@ -96,7 +97,7 @@ export const PROJECTS: Project[] = [
     tags: ["Computer Vision", "AI", "Python", "Video"],
     icon: Video,
     githubUrl: "https://github.com/Thejas10042001/Video-Analysis-",
-    longDescription: "An advanced video analysis system capable of processing video streams for various applications such as object tracking, motion detection, and automated event recognition using deep learning models.",
+    longDescription: "Solved the challenge of manual video review in surveillance and content monitoring by creating an automated analysis system. Using advanced computer vision techniques, this tool detects objects, tracks motion, and identifies events in real-time, drastically reducing the time and human effort required to process large volumes of video footage.",
     features: ["Real-time video processing", "Object detection", "Motion tracking", "Automated reporting"]
   },
   {
@@ -106,7 +107,7 @@ export const PROJECTS: Project[] = [
     tags: ["AI", "Education", "Video Processing"],
     icon: Video,
     githubUrl: "https://github.com/Thejas10042001/Video-to-Learning-App",
-    longDescription: "An intelligent educational tool that processes video content to extract key information, generating comprehensive study notes, summaries, and potentially quizzes to enhance the learning experience from video lectures.",
+    longDescription: "Tackled the issue of passive learning from video lectures by developing an AI-driven tool that converts video content into active study aids. The application automatically transcribes audio, extracts key concepts, and generates summaries and quizzes, empowering students to retain information more effectively and review material efficiently.",
     features: ["Automated video transcription", "Key point extraction", "Study note generation", "Interactive learning interface"]
   },
   {
@@ -116,7 +117,7 @@ export const PROJECTS: Project[] = [
     tags: ["AI", "Computer Vision", "Safety", "Python"],
     icon: ShieldCheck,
     githubUrl: "https://github.com/Thejas10042001/Human-Safety-Precautions-",
-    longDescription: "A computer vision system that enhances workplace safety by automatically detecting if workers are wearing required safety gear (helmets, vests) and identifying potential hazards in real-time.",
+    longDescription: "Addressed critical workplace safety concerns by deploying a computer vision system that monitors environments 24/7. The system instantly detects if workers are missing Personal Protective Equipment (PPE) like helmets or vests and identifies hazardous zones, providing immediate alerts to prevent accidents before they occur.",
     features: ["Real-time object detection", "PPE violation alerts", "Hazard identification", "Automated reporting"]
   },
   {
@@ -126,7 +127,7 @@ export const PROJECTS: Project[] = [
     tags: ["Deep Learning", "CNN", "Visualization", "Python"],
     icon: Brain,
     githubUrl: "https://github.com/Thejas10042001/CNN-VISUALTION",
-    longDescription: "An educational tool designed to demystify Convolutional Neural Networks by visualizing how different layers process images, showing feature maps and activation patterns.",
+    longDescription: "Demystified the 'black box' nature of Deep Learning models for students and researchers. This tool visually renders the activation maps and filters of Convolutional Neural Networks layer by layer, helping users intuitively understand how the model extracts features from images, making complex AI concepts accessible and transparent.",
     features: ["Layer-wise visualization", "Feature map extraction", "Interactive model exploration", "Educational insights"]
   },
   {
@@ -136,7 +137,7 @@ export const PROJECTS: Project[] = [
     tags: ["AI", "Computer Vision", "Code Generation"],
     icon: Image,
     githubUrl: "https://github.com/Thejas10042001/Image-to-code",
-    longDescription: "Uses generative AI to analyze design images (UI mockups) and automatically generate the corresponding HTML/CSS or React code, accelerating the frontend development process.",
+    longDescription: "Streamlined the frontend development workflow by automating the conversion of UI mockups into code. By leveraging generative AI models to analyze design images, this tool produces clean, ready-to-use HTML/CSS or React code, significantly reducing the repetitive manual effort required during the design-to-development handoff.",
     features: ["Image analysis", "Automated code generation", "Syntax highlighting", "Downloadable source code"]
   },
   {
@@ -146,7 +147,7 @@ export const PROJECTS: Project[] = [
     tags: ["AI", "Security", "Monitoring"],
     icon: ShieldCheck,
     githubUrl: "https://github.com/Thejas10042001/NeuroLens-Meeting-Guardian",
-    longDescription: "A security solution for virtual meetings that uses AI to detect unauthorized participants, monitor for compliance breaches, and ensure a secure communication channel.",
+    longDescription: "Addressed security vulnerabilities in remote collaboration by creating a real-time meeting guardian. This system uses AI to authenticate participants, detect unauthorized access, and monitor compliance with organizational policies during virtual meetings, ensuring sensitive discussions remain secure in a distributed work environment.",
     features: ["Participant authentication", "Real-time anomaly detection", "Compliance monitoring", "Secure session management"]
   },
   {
@@ -156,7 +157,7 @@ export const PROJECTS: Project[] = [
     tags: ["MCA", "Academic", "Full Stack"],
     icon: GraduationCap,
     githubUrl: "https://github.com/Thejas10042001/MCA-PROEJCT",
-    longDescription: "A capstone project for the MCA degree, showcasing comprehensive full-stack development skills, system architecture design, and problem-solving abilities applied to a significant real-world problem.",
+    longDescription: "A comprehensive capstone project that synthesizes the full spectrum of MCA curriculum knowledge. It involves the end-to-end development of a complex software solution, demonstrating mastery in system architecture, database design, full-stack implementation, and rigorous testing methodologies to solve a significant real-world problem.",
     features: ["Full-stack architecture", "Database design", "Authentication & Security", "Comprehensive documentation"]
   },
   {
@@ -166,7 +167,7 @@ export const PROJECTS: Project[] = [
     tags: ["Scheduling", "Management", "Web"],
     icon: CalendarClock,
     githubUrl: "https://github.com/Thejas10042001/UPDATE-MEETING",
-    longDescription: "A web application designed to optimize the process of scheduling and managing team update meetings, featuring calendar integration and automated notifications.",
+    longDescription: "Solved the inefficiency of manual scheduling and fragmented team communication. This application centralizes meeting management, allowing teams to seamlessly schedule updates, share agendas, and track follow-ups. By integrating calendar features and automated notifications, it reduces administrative overhead and ensures teams stay aligned.",
     features: ["Calendar integration", "Automated scheduling", "Meeting agenda management", "Team notifications"]
   },
   {
@@ -176,7 +177,7 @@ export const PROJECTS: Project[] = [
     tags: ["AI", "Meeting", "Analytics"],
     icon: Video,
     githubUrl: "https://github.com/Thejas10042001/Neuro-lens-meeting",
-    longDescription: "Analyzes virtual meeting dynamics using AI to provide insights on participant engagement, sentiment analysis, and discussion topics to improve meeting productivity.",
+    longDescription: "Improved virtual meeting productivity by providing actionable insights into participant engagement. This platform analyzes audio and visual cues to gauge sentiment and attention levels, helping organizers understand meeting dynamics and making remote collaboration more effective and engaging for all participants.",
     features: ["Sentiment analysis", "Engagement tracking", "Topic modeling", "Post-meeting analytics"]
   },
   {
@@ -186,7 +187,7 @@ export const PROJECTS: Project[] = [
     tags: ["Data Analytics", "Visualization", "Dashboard"],
     icon: Film,
     githubUrl: "https://github.com/Thejas10042001/Movie-Analytics-Dashboard",
-    longDescription: "A comprehensive dashboard allowing users to explore movie datasets, visualize trends over time, and analyze the success factors of films based on genre, budget, and ratings.",
+    longDescription: "Empowered data-driven decision making in the entertainment domain by consolidating vast movie datasets into an interactive dashboard. Users can identify emerging trends, correlate budget with box office success, and analyze genre popularity over time, turning raw data into visual narratives that reveal the mechanics of the film industry.",
     features: ["Interactive charts", "Data filtering", "Trend analysis", "Responsive design"]
   },
   {
@@ -196,7 +197,7 @@ export const PROJECTS: Project[] = [
     tags: ["Data Analytics", "Python", "Visualization", "Scraping"],
     icon: Briefcase,
     githubUrl: "https://github.com/Thejas10042001/JOB-MARKET-ANALYZERS-",
-    longDescription: "Automates the collection of job posting data to analyze market trends, helping job seekers understand high-demand skills and salary benchmarks in the tech industry.",
+    longDescription: "Addressed the information gap for job seekers by automating the analysis of current market demands. By scraping and processing job postings, this tool highlights trending skills, salary ranges, and role requirements, enabling candidates to align their learning paths with industry needs and make informed career decisions.",
     features: ["Web scraping", "Keyword extraction", "Salary distribution analysis", "Skill demand visualization"]
   },
   {
@@ -205,7 +206,7 @@ export const PROJECTS: Project[] = [
     description: "A dynamic, animated personal portfolio website featuring an interactive AI chatbot powered by Google Gemini (Google AI Studio) that answers questions about my resume and experience.",
     tags: ["Google AI Studio", "Gemini API", "React", "Framer Motion"],
     icon: Sparkles,
-    longDescription: "This very website! It showcases my skills and projects while integrating a generative AI chatbot trained on my resume data to answer visitor queries in real-time.",
+    longDescription: "Reimagined the traditional static resume by creating an interactive, AI-driven experience. This portfolio integrates the Gemini API to allow recruiters and visitors to 'chat' with my professional profile. It solves the problem of static information delivery by providing instant, context-aware answers about my skills and experience in a modern, engaging format.",
     features: ["Gemini API Integration", "Framer Motion Animations", "Responsive Tailwind Design", "Interactive Chatbot"]
   },
   {
@@ -214,7 +215,7 @@ export const PROJECTS: Project[] = [
     description: "AI-powered mood sensing & food recommendation web/app with emotion detection, recipe API integration, restaurant finder, and dummy food ordering system.",
     tags: ["AI", "React", "Emotion Detection", "Food API"],
     icon: Brain,
-    longDescription: "An innovative app that detects user emotion through facial analysis or text input and recommends food recipes or restaurants that match their current mood.",
+    longDescription: "Connected emotional well-being with nutrition by developing an app that recommends food based on user mood. Using AI for emotion detection, it provides personalized comfort food recipes or restaurant suggestions, solving the 'what to eat' dilemma while catering to the user's emotional state for a holistic lifestyle experience.",
     features: ["Emotion detection", "Recipe API integration", "Restaurant finder", "Food ordering simulation"]
   },
   {
@@ -223,7 +224,7 @@ export const PROJECTS: Project[] = [
     description: "Real-time Indian stock market analytics platform with 17+ AI-driven modules for trading strategies, predictions, and portfolio insights.",
     tags: ["FinTech", "AI/ML", "Analytics", "Real-time"],
     icon: TrendingUp,
-    longDescription: "A robust financial analytics platform tailored for the Indian stock market, utilizing machine learning algorithms to predict trends and offer actionable trading strategies.",
+    longDescription: "Democratized access to sophisticated financial analysis for retail investors. This platform integrates over 17 AI models to process real-time market data, predicting trends and offering actionable trading strategies. It empowers users to make data-backed investment decisions in the volatile Indian stock market, reducing reliance on intuition.",
     features: ["17+ AI modules", "Real-time data streaming", "Portfolio management", "Predictive analytics"]
   },
   {
@@ -232,7 +233,7 @@ export const PROJECTS: Project[] = [
     description: "AI-based phishing website & email detector for real-time cybersecurity protection.",
     tags: ["Cybersecurity", "AI", "Web Safety"],
     icon: ShieldCheck,
-    longDescription: "A cybersecurity tool that uses machine learning models to analyze URLs and email content in real-time to detect and block potential phishing attempts.",
+    longDescription: "Combated the rising threat of digital fraud with an AI-powered detection system. PhishGuard analyzes URL patterns and email content in real-time to identify malicious phishing attempts that traditional filters might miss. It acts as a proactive shield, protecting users from identity theft and securing sensitive personal data during browsing.",
     features: ["Real-time URL scanning", "Email content analysis", "Threat reporting", "Browser extension integration"]
   },
   {
@@ -241,7 +242,7 @@ export const PROJECTS: Project[] = [
     description: "Carbon footprint tracker with AI-powered lifestyle recommendations.",
     tags: ["Sustainability", "AI", "Tracker"],
     icon: Leaf,
-    longDescription: "Helps users calculate their carbon footprint based on daily activities and provides AI-driven recommendations to reduce their environmental impact.",
+    longDescription: "Tackled the challenge of individual climate action by making carbon footprint tracking personal and actionable. EcoTrack calculates emissions from daily activities and uses AI to suggest tailored lifestyle changes. It motivates users to adopt sustainable habits by visualizing the direct impact of their choices on the environment.",
     features: ["Carbon footprint calculator", "Personalized recommendations", "Progress tracking", "Sustainability goals"]
   },
   {
@@ -250,7 +251,7 @@ export const PROJECTS: Project[] = [
     description: "ESP8266-based IoT solution for real-time climate data collection.",
     tags: ["IoT", "Hardware", "Real-time Data"],
     icon: CloudRain,
-    longDescription: "A hardware-software integrated system using ESP8266 microcontrollers to collect temperature and humidity data, displaying it on a real-time web dashboard.",
+    longDescription: "Solved the need for hyper-local weather data by building a cost-effective IoT monitoring station. Using ESP8266 microcontrollers, this system collects precise temperature and humidity readings and broadcasts them to a web dashboard, proving the viability of scalable, low-cost hardware for environmental monitoring networks.",
     features: ["Sensor data collection", "Real-time dashboard", "Historical data logging", "Alert system"]
   },
   {
@@ -259,7 +260,7 @@ export const PROJECTS: Project[] = [
     description: "Aadhar OTP simulation with secure login and voting mechanism.",
     tags: ["Security", "Web", "Simulation"],
     icon: Vote,
-    longDescription: "A secure electronic voting system prototype that simulates Aadhar-based authentication using OTPs to ensure voter identity and vote integrity.",
+    longDescription: "Addressed the integrity and accessibility issues of traditional voting methods. This prototype simulates a secure, remote voting process using Aadhar-based OTP authentication. It demonstrates how digital identity verification can ensure one-person-one-vote security while making the democratic process accessible from anywhere.",
     features: ["OTP authentication simulation", "Secure vote recording", "Admin panel", "Voter verification"]
   },
   {
@@ -268,7 +269,7 @@ export const PROJECTS: Project[] = [
     description: "Automated scheduling system with breaks and subject allocations.",
     tags: ["Automation", "Algorithms", "Productivity"],
     icon: CalendarClock,
-    longDescription: "An algorithmic solution for educational institutions to automatically generate conflict-free class timetables considering teacher availability and room constraints.",
+    longDescription: "Eliminated the complex manual labor of academic scheduling. This algorithmic tool generates conflict-free timetables for schools and colleges, accounting for teacher availability, room constraints, and subject requirements. It optimizes resource allocation and saves countless hours of administrative planning time.",
     features: ["Conflict detection", "Automated scheduling", "Teacher allocation", "Export options"]
   }
 ];
