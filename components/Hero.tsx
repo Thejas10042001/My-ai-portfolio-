@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
 
           <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 tracking-tight leading-tight">
             Hello, I'm <br className="md:hidden" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-blue-400 to-purple-400">Thejas Sreenivasu</span>
+            <span className="text-transparent bg-clip-text bg-[linear-gradient(to_right,#ef4444,#f97316,#eab308,#22c55e,#3b82f6,#a855f7,#d946ef)]">Thejas Sreenivasu</span>
           </h1>
           
           <p className="text-lg md:text-2xl text-slate-400 max-w-4xl mx-auto mb-10 leading-relaxed">
