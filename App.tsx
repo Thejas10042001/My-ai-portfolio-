@@ -59,9 +59,18 @@ const App: React.FC = () => {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-40 bg-slate-900/80 backdrop-blur-md border-b border-white/5">
         <div className="container mx-auto px-6 h-16 flex items-center justify-between">
-          <a href="#" className="text-xl font-display font-bold text-white tracking-tight">
-            TS<span className="text-primary-500">.</span>
-          </a>
+          <div className="flex items-center gap-4">
+            <a href="#" className="text-xl font-display font-bold text-white tracking-tight">
+              TS<span className="text-primary-500">.</span>
+            </a>
+            
+            {/* Profile Image - Top Left next to Logo */}
+            <img 
+              src="https://tse1.mm.bing.net/th/id/OIP.fSz_u_rZ6u4559ALYO_p3AHaJQ?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" 
+              alt="Thejas Sreenivasu"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border-2 border-slate-700 hover:border-primary-500 transition-colors shadow-sm"
+            />
+          </div>
           
           <div className="flex items-center gap-6">
             <ul className="hidden md:flex gap-8">
@@ -78,13 +87,6 @@ const App: React.FC = () => {
                 </li>
               ))}
             </ul>
-
-            {/* Profile Image - Top Right */}
-            <img 
-              src="https://tse1.mm.bing.net/th/id/OIP.fSz_u_rZ6u4559ALYO_p3AHaJQ?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" 
-              alt="Thejas Sreenivasu"
-              className="w-9 h-9 rounded-full object-cover border-2 border-slate-700 hover:border-primary-500 transition-colors shadow-sm"
-            />
 
             {/* Mobile Menu Trigger */}
             <div className="md:hidden">
