@@ -63,30 +63,39 @@ const App: React.FC = () => {
             TS<span className="text-primary-500">.</span>
           </a>
           
-          <ul className="hidden md:flex gap-8">
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <a 
-                  href={link.href}
-                  className={`text-sm font-medium transition-colors hover:text-primary-400 ${
-                    activeSection === link.href.substring(1) ? 'text-primary-500' : 'text-slate-400'
-                  }`}
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <div className="flex items-center gap-6">
+            <ul className="hidden md:flex gap-8">
+              {navLinks.map((link) => (
+                <li key={link.name}>
+                  <a 
+                    href={link.href}
+                    className={`text-sm font-medium transition-colors hover:text-primary-400 ${
+                      activeSection === link.href.substring(1) ? 'text-primary-500' : 'text-slate-400'
+                    }`}
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
-          {/* Mobile Menu Trigger */}
-          <div className="md:hidden">
-             <button
-               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-               className="text-slate-300 hover:text-white transition-colors p-2"
-               aria-label="Toggle menu"
-             >
-               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-             </button>
+            {/* Profile Image - Top Right */}
+            <img 
+              src="https://tse1.mm.bing.net/th/id/OIP.fSz_u_rZ6u4559ALYO_p3AHaJQ?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" 
+              alt="Thejas Sreenivasu"
+              className="w-9 h-9 rounded-full object-cover border-2 border-slate-700 hover:border-primary-500 transition-colors shadow-sm"
+            />
+
+            {/* Mobile Menu Trigger */}
+            <div className="md:hidden">
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="text-slate-300 hover:text-white transition-colors p-1"
+                aria-label="Toggle menu"
+              >
+                {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
           </div>
         </div>
 
