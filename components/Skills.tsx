@@ -51,14 +51,15 @@ const Skills: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: catIndex * 0.1 }}
-              className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700 hover:border-primary-500/50 transition-colors"
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+              className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700 hover:border-primary-500/50 transition-colors shadow-lg hover:shadow-primary-500/10"
             >
               <h3 className="text-xl font-bold text-white mb-6 border-b border-slate-700 pb-2 flex items-center gap-2">
                 <Icon className="text-primary-400" size={20} />
                 {category}
               </h3>
               <div className="space-y-4">
-                {SKILLS.filter(s => s.category === category).map((skill) => (
+                {SKILLS.filter(s => s.category === category).map((skill, index) => (
                   <div key={skill.name}>
                     <div className="flex justify-between mb-1">
                       <span className="text-slate-300 font-medium text-sm flex items-center gap-2">
@@ -73,7 +74,7 @@ const Skills: React.FC = () => {
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
                         viewport={{ once: true }}
-                        transition={{ duration: 1, delay: 0.2 }}
+                        transition={{ duration: 1, delay: 0.2 + (index * 0.1), ease: "easeOut" }}
                         className="bg-gradient-to-r from-primary-600 to-purple-500 h-full rounded-full"
                       />
                     </div>
