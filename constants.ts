@@ -14,7 +14,8 @@ import {
   Film,
   Video,
   GraduationCap,
-  Image
+  Image,
+  Globe
 } from 'lucide-react';
 
 export const RESUME_DATA = {
@@ -79,12 +80,54 @@ export const SKILLS: Skill[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: "infinite-wik",
+    title: "Infinite Wik",
+    description: "An infinite scrolling knowledge explorer that allows seamless navigation through wiki-style content.",
+    tags: ["Web", "API Integration", "React", "Infinite Scroll"],
+    icon: Globe,
+    githubUrl: "https://github.com/Thejas10042001/Infinite-Wik",
+    longDescription: "A web application designed to provide an endless stream of knowledge. Users can search and browse through wiki articles with an infinite scroll interface, making information discovery seamless and engaging.",
+    features: ["Infinite scrolling", "Wiki API integration", "Responsive design", "Search functionality"]
+  },
+  {
+    id: "video-analysis",
+    title: "Video Analysis",
+    description: "A comprehensive video processing tool using computer vision to analyze and extract insights from video content.",
+    tags: ["Computer Vision", "AI", "Python", "Video"],
+    icon: Video,
+    githubUrl: "https://github.com/Thejas10042001/Video-Analysis-",
+    longDescription: "An advanced video analysis system capable of processing video streams for various applications such as object tracking, motion detection, and automated event recognition using deep learning models.",
+    features: ["Real-time video processing", "Object detection", "Motion tracking", "Automated reporting"]
+  },
+  {
+    id: "video-learning",
+    title: "Video to Learning App",
+    description: "Transforms educational videos into structured learning materials using AI to generate notes and summaries.",
+    tags: ["AI", "Education", "Video Processing"],
+    icon: Video,
+    githubUrl: "https://github.com/Thejas10042001/Video-to-Learning-App",
+    longDescription: "An intelligent educational tool that processes video content to extract key information, generating comprehensive study notes, summaries, and potentially quizzes to enhance the learning experience from video lectures.",
+    features: ["Automated video transcription", "Key point extraction", "Study note generation", "Interactive learning interface"]
+  },
+  {
+    id: "human-safety",
+    title: "Human Safety Precautions",
+    description: "An AI-based system designed to monitor and enforce safety protocols by detecting safety gear violations and potential hazards in real-time using computer vision.",
+    tags: ["AI", "Computer Vision", "Safety", "Python"],
+    icon: ShieldCheck,
+    githubUrl: "https://github.com/Thejas10042001/Human-Safety-Precautions-",
+    longDescription: "A computer vision system that enhances workplace safety by automatically detecting if workers are wearing required safety gear (helmets, vests) and identifying potential hazards in real-time.",
+    features: ["Real-time object detection", "PPE violation alerts", "Hazard identification", "Automated reporting"]
+  },
+  {
     id: "cnn-visualization",
     title: "CNN Visualization",
     description: "A deep learning visualization tool that illustrates the internal layers and feature maps of Convolutional Neural Networks.",
     tags: ["Deep Learning", "CNN", "Visualization", "Python"],
     icon: Brain,
-    githubUrl: "https://github.com/Thejas10042001/CNN-VISUALTION"
+    githubUrl: "https://github.com/Thejas10042001/CNN-VISUALTION",
+    longDescription: "An educational tool designed to demystify Convolutional Neural Networks by visualizing how different layers process images, showing feature maps and activation patterns.",
+    features: ["Layer-wise visualization", "Feature map extraction", "Interactive model exploration", "Educational insights"]
   },
   {
     id: "image-to-code",
@@ -92,7 +135,9 @@ export const PROJECTS: Project[] = [
     description: "An innovative tool that converts images into executable code, bridging the gap between design and implementation using AI.",
     tags: ["AI", "Computer Vision", "Code Generation"],
     icon: Image,
-    githubUrl: "https://github.com/Thejas10042001/Image-to-code"
+    githubUrl: "https://github.com/Thejas10042001/Image-to-code",
+    longDescription: "Uses generative AI to analyze design images (UI mockups) and automatically generate the corresponding HTML/CSS or React code, accelerating the frontend development process.",
+    features: ["Image analysis", "Automated code generation", "Syntax highlighting", "Downloadable source code"]
   },
   {
     id: "neurolens-guardian",
@@ -100,7 +145,9 @@ export const PROJECTS: Project[] = [
     description: "An advanced AI monitoring and security system for virtual meetings, ensuring a safe and compliant collaboration environment.",
     tags: ["AI", "Security", "Monitoring"],
     icon: ShieldCheck,
-    githubUrl: "https://github.com/Thejas10042001/NeuroLens-Meeting-Guardian"
+    githubUrl: "https://github.com/Thejas10042001/NeuroLens-Meeting-Guardian",
+    longDescription: "A security solution for virtual meetings that uses AI to detect unauthorized participants, monitor for compliance breaches, and ensure a secure communication channel.",
+    features: ["Participant authentication", "Real-time anomaly detection", "Compliance monitoring", "Secure session management"]
   },
   {
     id: "mca-project",
@@ -108,7 +155,9 @@ export const PROJECTS: Project[] = [
     description: "A major academic project demonstrating advanced proficiency in software engineering and application development within the MCA curriculum.",
     tags: ["MCA", "Academic", "Full Stack"],
     icon: GraduationCap,
-    githubUrl: "https://github.com/Thejas10042001/MCA-PROEJCT"
+    githubUrl: "https://github.com/Thejas10042001/MCA-PROEJCT",
+    longDescription: "A capstone project for the MCA degree, showcasing comprehensive full-stack development skills, system architecture design, and problem-solving abilities applied to a significant real-world problem.",
+    features: ["Full-stack architecture", "Database design", "Authentication & Security", "Comprehensive documentation"]
   },
   {
     id: "update-meeting",
@@ -116,7 +165,9 @@ export const PROJECTS: Project[] = [
     description: "A meeting management and scheduling application designed to streamline updates and collaboration.",
     tags: ["Scheduling", "Management", "Web"],
     icon: CalendarClock,
-    githubUrl: "https://github.com/Thejas10042001/UPDATE-MEETING"
+    githubUrl: "https://github.com/Thejas10042001/UPDATE-MEETING",
+    longDescription: "A web application designed to optimize the process of scheduling and managing team update meetings, featuring calendar integration and automated notifications.",
+    features: ["Calendar integration", "Automated scheduling", "Meeting agenda management", "Team notifications"]
   },
   {
     id: "neuro-lens",
@@ -124,7 +175,9 @@ export const PROJECTS: Project[] = [
     description: "AI-powered meeting analysis and insights platform designed to enhance virtual collaboration through real-time processing.",
     tags: ["AI", "Meeting", "Analytics"],
     icon: Video,
-    githubUrl: "https://github.com/Thejas10042001/Neuro-lens-meeting"
+    githubUrl: "https://github.com/Thejas10042001/Neuro-lens-meeting",
+    longDescription: "Analyzes virtual meeting dynamics using AI to provide insights on participant engagement, sentiment analysis, and discussion topics to improve meeting productivity.",
+    features: ["Sentiment analysis", "Engagement tracking", "Topic modeling", "Post-meeting analytics"]
   },
   {
     id: "movie-analytics",
@@ -132,7 +185,9 @@ export const PROJECTS: Project[] = [
     description: "Interactive data analytics dashboard for visualizing movie trends, box office collections, and genre popularity using advanced data visualization techniques.",
     tags: ["Data Analytics", "Visualization", "Dashboard"],
     icon: Film,
-    githubUrl: "https://github.com/Thejas10042001/Movie-Analytics-Dashboard"
+    githubUrl: "https://github.com/Thejas10042001/Movie-Analytics-Dashboard",
+    longDescription: "A comprehensive dashboard allowing users to explore movie datasets, visualize trends over time, and analyze the success factors of films based on genre, budget, and ratings.",
+    features: ["Interactive charts", "Data filtering", "Trend analysis", "Responsive design"]
   },
   {
     id: "job-market",
@@ -140,63 +195,81 @@ export const PROJECTS: Project[] = [
     description: "A comprehensive data analysis tool designed to scrape and analyze job market trends, identifying key skill demands and salary distributions using Python.",
     tags: ["Data Analytics", "Python", "Visualization", "Scraping"],
     icon: Briefcase,
-    githubUrl: "https://github.com/Thejas10042001/JOB-MARKET-ANALYZERS-"
+    githubUrl: "https://github.com/Thejas10042001/JOB-MARKET-ANALYZERS-",
+    longDescription: "Automates the collection of job posting data to analyze market trends, helping job seekers understand high-demand skills and salary benchmarks in the tech industry.",
+    features: ["Web scraping", "Keyword extraction", "Salary distribution analysis", "Skill demand visualization"]
   },
   {
     id: "ai-portfolio",
     title: "AI Portfolio Website",
     description: "A dynamic, animated personal portfolio website featuring an interactive AI chatbot powered by Google Gemini (Google AI Studio) that answers questions about my resume and experience.",
     tags: ["Google AI Studio", "Gemini API", "React", "Framer Motion"],
-    icon: Sparkles
+    icon: Sparkles,
+    longDescription: "This very website! It showcases my skills and projects while integrating a generative AI chatbot trained on my resume data to answer visitor queries in real-time.",
+    features: ["Gemini API Integration", "Framer Motion Animations", "Responsive Tailwind Design", "Interactive Chatbot"]
   },
   {
     id: "mood2food",
     title: "Mood2Food",
     description: "AI-powered mood sensing & food recommendation web/app with emotion detection, recipe API integration, restaurant finder, and dummy food ordering system.",
     tags: ["AI", "React", "Emotion Detection", "Food API"],
-    icon: Brain
+    icon: Brain,
+    longDescription: "An innovative app that detects user emotion through facial analysis or text input and recommends food recipes or restaurants that match their current mood.",
+    features: ["Emotion detection", "Recipe API integration", "Restaurant finder", "Food ordering simulation"]
   },
   {
     id: "stockgenius",
     title: "StockGenius AI",
     description: "Real-time Indian stock market analytics platform with 17+ AI-driven modules for trading strategies, predictions, and portfolio insights.",
     tags: ["FinTech", "AI/ML", "Analytics", "Real-time"],
-    icon: TrendingUp
+    icon: TrendingUp,
+    longDescription: "A robust financial analytics platform tailored for the Indian stock market, utilizing machine learning algorithms to predict trends and offer actionable trading strategies.",
+    features: ["17+ AI modules", "Real-time data streaming", "Portfolio management", "Predictive analytics"]
   },
   {
     id: "phishguard",
     title: "PhishGuard AI",
     description: "AI-based phishing website & email detector for real-time cybersecurity protection.",
     tags: ["Cybersecurity", "AI", "Web Safety"],
-    icon: ShieldCheck
+    icon: ShieldCheck,
+    longDescription: "A cybersecurity tool that uses machine learning models to analyze URLs and email content in real-time to detect and block potential phishing attempts.",
+    features: ["Real-time URL scanning", "Email content analysis", "Threat reporting", "Browser extension integration"]
   },
   {
     id: "ecotrack",
     title: "EcoTrack",
     description: "Carbon footprint tracker with AI-powered lifestyle recommendations.",
     tags: ["Sustainability", "AI", "Tracker"],
-    icon: Leaf
+    icon: Leaf,
+    longDescription: "Helps users calculate their carbon footprint based on daily activities and provides AI-driven recommendations to reduce their environmental impact.",
+    features: ["Carbon footprint calculator", "Personalized recommendations", "Progress tracking", "Sustainability goals"]
   },
   {
     id: "iot-weather",
     title: "IoT Weather Monitor",
     description: "ESP8266-based IoT solution for real-time climate data collection.",
     tags: ["IoT", "Hardware", "Real-time Data"],
-    icon: CloudRain
+    icon: CloudRain,
+    longDescription: "A hardware-software integrated system using ESP8266 microcontrollers to collect temperature and humidity data, displaying it on a real-time web dashboard.",
+    features: ["Sensor data collection", "Real-time dashboard", "Historical data logging", "Alert system"]
   },
   {
     id: "voting-system",
     title: "Online Voting System",
     description: "Aadhar OTP simulation with secure login and voting mechanism.",
     tags: ["Security", "Web", "Simulation"],
-    icon: Vote
+    icon: Vote,
+    longDescription: "A secure electronic voting system prototype that simulates Aadhar-based authentication using OTPs to ensure voter identity and vote integrity.",
+    features: ["OTP authentication simulation", "Secure vote recording", "Admin panel", "Voter verification"]
   },
   {
     id: "timetable",
     title: "Timetable Generator",
     description: "Automated scheduling system with breaks and subject allocations.",
     tags: ["Automation", "Algorithms", "Productivity"],
-    icon: CalendarClock
+    icon: CalendarClock,
+    longDescription: "An algorithmic solution for educational institutions to automatically generate conflict-free class timetables considering teacher availability and room constraints.",
+    features: ["Conflict detection", "Automated scheduling", "Teacher allocation", "Export options"]
   }
 ];
 
@@ -221,22 +294,26 @@ Skills:
 - Tools: GitHub, Netlify, Render, Spoonacular API, OpenStreetMap, IoT (ESP8266), Data Security, API Integration.
 
 Projects:
-1. CNN Visualization: Deep learning visualization tool (https://github.com/Thejas10042001/CNN-VISUALTION).
-2. Image to Code: AI tool converting images to code (https://github.com/Thejas10042001/Image-to-code).
-3. NeuroLens Meeting Guardian: AI meeting security/monitoring (https://github.com/Thejas10042001/NeuroLens-Meeting-Guardian).
-4. MCA Academic Project: Comprehensive academic project (https://github.com/Thejas10042001/MCA-PROEJCT).
-5. Update Meeting: Meeting management and scheduling application (https://github.com/Thejas10042001/UPDATE-MEETING).
-6. Neuro Lens Meeting: AI-powered meeting analysis (https://github.com/Thejas10042001/Neuro-lens-meeting).
-7. Movie Analytics Dashboard: Interactive dashboard for movie trends (https://github.com/Thejas10042001/Movie-Analytics-Dashboard).
-8. Job Market Analyzers: Data analysis tool for job market trends (https://github.com/Thejas10042001/JOB-MARKET-ANALYZERS-).
-9. AI Portfolio Website: Dynamic site with Gemini-powered chatbot (Google AI Studio).
-10. Mood2Food: AI mood sensing & food recommendation.
-11. StockGenius AI: Real-time stock analytics with 17+ AI modules.
-12. PhishGuard AI: AI phishing detector.
-13. EcoTrack: Carbon footprint tracker.
-14. IoT Weather Monitoring: ESP8266 based.
-15. Online Voting System: Secure voting with OTP simulation.
-16. Teacher Timetable Generator: Automated scheduling.
+1. Video Analysis: AI video processing tool (https://github.com/Thejas10042001/Video-Analysis-).
+2. Video to Learning App: AI tool transforming videos to learning materials (https://github.com/Thejas10042001/Video-to-Learning-App).
+3. Human Safety Precautions: AI safety monitoring (https://github.com/Thejas10042001/Human-Safety-Precautions-).
+4. CNN Visualization: Deep learning visualization tool (https://github.com/Thejas10042001/CNN-VISUALTION).
+5. Image to Code: AI tool converting images to code (https://github.com/Thejas10042001/Image-to-code).
+6. NeuroLens Meeting Guardian: AI meeting security/monitoring (https://github.com/Thejas10042001/NeuroLens-Meeting-Guardian).
+7. MCA Academic Project: Comprehensive academic project (https://github.com/Thejas10042001/MCA-PROEJCT).
+8. Update Meeting: Meeting management and scheduling application (https://github.com/Thejas10042001/UPDATE-MEETING).
+9. Neuro Lens Meeting: AI-powered meeting analysis (https://github.com/Thejas10042001/Neuro-lens-meeting).
+10. Movie Analytics Dashboard: Interactive dashboard for movie trends (https://github.com/Thejas10042001/Movie-Analytics-Dashboard).
+11. Job Market Analyzers: Data analysis tool for job market trends (https://github.com/Thejas10042001/JOB-MARKET-ANALYZERS-).
+12. AI Portfolio Website: Dynamic site with Gemini-powered chatbot (Google AI Studio).
+13. Mood2Food: AI mood sensing & food recommendation.
+14. StockGenius AI: Real-time stock analytics with 17+ AI modules.
+15. PhishGuard AI: AI phishing detector.
+16. EcoTrack: Carbon footprint tracker.
+17. IoT Weather Monitoring: ESP8266 based.
+18. Online Voting System: Secure voting with OTP simulation.
+19. Teacher Timetable Generator: Automated scheduling.
+20. Infinite Wik: Infinite scrolling knowledge explorer (https://github.com/Thejas10042001/Infinite-Wik).
 
 Soft Skills: Problem-Solving, Creativity, Adaptability, Collaboration, Leadership, Time Management.
 Interests: AI/ML, Cybersecurity, Cloud Security, Full-Stack, FinTech, IoT, Data Analytics.

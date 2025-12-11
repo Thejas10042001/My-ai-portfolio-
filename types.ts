@@ -8,6 +8,7 @@ export interface Project {
   features?: string[];
   icon?: LucideIcon;
   githubUrl?: string;
+  longDescription?: string;
 }
 
 export interface Skill {
