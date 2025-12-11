@@ -28,6 +28,7 @@ export const RESUME_DATA = {
     github: "https://github.com/Thejas10042001", 
     linkedin: "https://www.linkedin.com/in/thejas-sreenivasu-2677ba1b8", 
     instagram: "https://www.instagram.com/_vinay_so_sreenivas_/",
+    x: "https://x.com/_so_sreenivasu_",
     avatarUrl: "https://www.bing.com/images/search?view=detailV2&ccid=fSz%2fu%2frZ&id=E5F3DC502922E9B07A8AEE7C47307894A08D05CF&thid=OIP.fSz_u_rZ6u4559ALYO_p3AHaJQ&mediaurl=https%3a%2f%2flookaside.instagram.com%2fseo%2fgoogle_widget%2fcrawler%2f%3fmedia_id%3d3529285837613033141&exph=1800&expw=1440&q=thejas+sreenivasu&FORM=IRPRST&ck=0DBE38134CED9DEE54FB7C39E177EAB6&selectedIndex=0&itb=0"
   }
 };

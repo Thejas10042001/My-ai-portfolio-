@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Github, Linkedin, MapPin, MessageCircle, Instagram } from 'lucide-react';
+import { Mail, Github, Linkedin, MapPin, MessageCircle, Instagram, Twitter } from 'lucide-react';
 import { RESUME_DATA } from '../constants';
 
 const Contact: React.FC = () => {
@@ -28,6 +28,11 @@ const Contact: React.FC = () => {
             {RESUME_DATA.contact.instagram && (
               <a href={RESUME_DATA.contact.instagram} target="_blank" rel="noreferrer" className="p-3 bg-slate-800 rounded-full text-slate-300 hover:text-white hover:bg-primary-600 transition-all hover:-translate-y-1">
                 <Instagram size={20} />
+              </a>
+            )}
+            {RESUME_DATA.contact.x && (
+              <a href={RESUME_DATA.contact.x} target="_blank" rel="noreferrer" className="p-3 bg-slate-800 rounded-full text-slate-300 hover:text-white hover:bg-primary-600 transition-all hover:-translate-y-1">
+                <Twitter size={20} />
               </a>
             )}
           </div>
