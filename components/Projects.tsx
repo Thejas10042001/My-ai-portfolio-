@@ -10,18 +10,23 @@ const Projects: React.FC = () => {
   const selectedProject = PROJECTS.find(p => p.id === selectedId);
 
   // Function to generate a stable but unique image URL based on project title and tags
-  const getProjectImage = (title: string, tags: string[] = []) => {
+  // Optimized for speed: creates smaller thumbnails for the grid and larger banners for the modal
+  const getProjectImage = (title: string, tags: string[] = [], type: 'thumbnail' | 'banner' = 'thumbnail') => {
     // Generate a consistent seed from the characters of the title
     const seed = title.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
     
     const tagContext = tags.slice(0, 2).join(' ');
     
-    // Refined prompt for neat, decent, and attractive professional backgrounds
-    // Using specific keywords to ensure a clean, abstract, and dark-themed aesthetic
-    const prompt = `abstract technology background for ${title} ${tagContext}, sleek, minimalist, deep dark blue and purple gradient, geometric shapes, soft lighting, professional, 8k, unreal engine render, no text, clean composition`;
+    // Simplified prompt for faster processing while maintaining style
+    const prompt = `abstract tech background ${title}, ${tagContext}, dark blue purple gradient, geometric, minimal, 8k`;
     const encodedPrompt = encodeURIComponent(prompt);
     
-    return `https://image.pollinations.ai/prompt/${encodedPrompt}?width=800&height=450&nologo=true&seed=${seed}`;
+    // Use smaller dimensions for thumbnails to load much faster
+    const width = type === 'thumbnail' ? 400 : 800;
+    const height = type === 'thumbnail' ? 225 : 450;
+    
+    // model=flux is often faster and consistent
+    return `https://image.pollinations.ai/prompt/${encodedPrompt}?width=${width}&height=${height}&nologo=true&seed=${seed}&model=flux`;
   };
 
   return (
@@ -56,10 +61,11 @@ const Projects: React.FC = () => {
                 <div className="h-48 overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
                   <img 
-                    src={getProjectImage(project.title, project.tags)} 
+                    src={getProjectImage(project.title, project.tags, 'thumbnail')} 
                     alt={project.title}
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                     loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute bottom-4 left-6 z-20 flex items-center gap-2">
                     <div className="p-2 bg-slate-900/90 backdrop-blur-md rounded-lg text-primary-400 border border-slate-700 shadow-lg">
@@ -128,9 +134,10 @@ const Projects: React.FC = () => {
               <div className="h-48 sm:h-64 relative flex-shrink-0">
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent z-10" />
                 <img 
-                  src={getProjectImage(selectedProject.title, selectedProject.tags)} 
+                  src={getProjectImage(selectedProject.title, selectedProject.tags, 'banner')} 
                   alt={selectedProject.title}
                   className="w-full h-full object-cover"
+                  loading="eager"
                 />
                 <div className="absolute bottom-6 left-6 sm:left-10 z-20">
                   <motion.h2 
