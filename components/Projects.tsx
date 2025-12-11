@@ -14,8 +14,9 @@ const Projects: React.FC = () => {
     // Generate a consistent seed from the characters of the title
     const seed = title.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
     
-    // refined prompt for neat, decent, and attractive technical abstracts
-    const prompt = `futuristic abstract concept art of ${title}, minimal, elegant, technology, dark blue and cyan neon glow, high quality, 8k, cinematic lighting, sleek geometric shapes`;
+    // Refined prompt for neat, decent, and attractive professional backgrounds
+    // Using "wallpaper" and "minimalist" keywords to ensure clean results
+    const prompt = `minimalist abstract technology wallpaper for ${title}, professional, clean, dark blue and violet gradient, modern ui, soft lighting, high quality, 8k, digital art, no text, geometric`;
     const encodedPrompt = encodeURIComponent(prompt);
     
     return `https://image.pollinations.ai/prompt/${encodedPrompt}?width=800&height=450&nologo=true&seed=${seed}`;
@@ -51,15 +52,15 @@ const Projects: React.FC = () => {
               >
                 {/* Card Header Image */}
                 <div className="h-48 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-90 group-hover:opacity-60 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
                   <img 
                     src={getProjectImage(project.title)} 
                     alt={project.title}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                     loading="lazy"
                   />
                   <div className="absolute bottom-4 left-6 z-20 flex items-center gap-2">
-                    <div className="p-2 bg-slate-900/80 backdrop-blur-md rounded-lg text-primary-400 border border-slate-700">
+                    <div className="p-2 bg-slate-900/90 backdrop-blur-md rounded-lg text-primary-400 border border-slate-700 shadow-lg">
                       {Icon && <Icon size={20} />}
                     </div>
                   </div>
