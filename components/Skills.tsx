@@ -8,8 +8,7 @@ import {
   Brain, 
   Smartphone, 
   Wrench, 
-  Code,
-  Cpu
+  Code
 } from 'lucide-react';
 
 const Skills: React.FC = () => {
@@ -64,7 +63,7 @@ const Skills: React.FC = () => {
                     <div className="flex justify-between mb-1">
                       <span className="text-slate-300 font-medium text-sm flex items-center gap-2">
                         {/* Icon representing the skill category next to the skill name */}
-                        <Icon size={14} className="text-slate-500" />
+                        <Icon size={14} className="text-primary-400" />
                         {skill.name}
                       </span>
                       <span className="text-primary-400 text-xs">{skill.level}%</span>
