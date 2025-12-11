@@ -1,16 +1,13 @@
 import { GoogleGenAI } from "@google/genai";
 import { SYSTEM_PROMPT } from '../constants';
 
-// Safely access process.env to avoid crashing in browser environments where process is undefined
 const getApiKey = () => {
   try {
-    if (typeof process !== 'undefined' && process.env) {
-      return process.env.API_KEY || '';
-    }
+    // process.env.API_KEY will be replaced by the string value during Vite build
+    return process.env.API_KEY || '';
   } catch (e) {
-    // Ignore error if process is not defined
+    return '';
   }
-  return '';
 };
 
 const apiKey = getApiKey();
