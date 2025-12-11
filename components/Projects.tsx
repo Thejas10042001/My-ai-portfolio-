@@ -11,8 +11,14 @@ const Projects: React.FC = () => {
 
   // Function to generate a stable but unique image URL based on project title
   const getProjectImage = (title: string) => {
-    const encodedTitle = encodeURIComponent(title + " technology abstract dark UI futuristic");
-    return `https://image.pollinations.ai/prompt/${encodedTitle}?width=800&height=400&nologo=true&seed=${title.length}`;
+    // Generate a consistent seed from the characters of the title
+    const seed = title.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    
+    // refined prompt for neat, decent, and attractive technical abstracts
+    const prompt = `futuristic abstract concept art of ${title}, minimal, elegant, technology, dark blue and cyan neon glow, high quality, 8k, cinematic lighting, sleek geometric shapes`;
+    const encodedPrompt = encodeURIComponent(prompt);
+    
+    return `https://image.pollinations.ai/prompt/${encodedPrompt}?width=800&height=450&nologo=true&seed=${seed}`;
   };
 
   return (
@@ -45,7 +51,7 @@ const Projects: React.FC = () => {
               >
                 {/* Card Header Image */}
                 <div className="h-48 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-90 group-hover:opacity-60 transition-opacity duration-500" />
                   <img 
                     src={getProjectImage(project.title)} 
                     alt={project.title}
@@ -117,7 +123,7 @@ const Projects: React.FC = () => {
 
               {/* Modal Banner */}
               <div className="h-48 sm:h-64 relative flex-shrink-0">
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent z-10" />
                 <img 
                   src={getProjectImage(selectedProject.title)} 
                   alt={selectedProject.title}
@@ -128,7 +134,7 @@ const Projects: React.FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 }}
-                    className="text-3xl sm:text-4xl font-display font-bold text-white mb-2"
+                    className="text-3xl sm:text-4xl font-display font-bold text-white mb-2 shadow-black/50 drop-shadow-md"
                   >
                     {selectedProject.title}
                   </motion.h2>
