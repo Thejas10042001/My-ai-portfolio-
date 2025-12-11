@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Github, Linkedin, MapPin } from 'lucide-react';
+import { Mail, Github, Linkedin, MapPin, MessageCircle } from 'lucide-react';
 import { RESUME_DATA } from '../constants';
 
 const Contact: React.FC = () => {
@@ -13,6 +13,9 @@ const Contact: React.FC = () => {
           </div>
           
           <div className="flex gap-4">
+            <a href={`https://wa.me/${RESUME_DATA.contact.phone}`} target="_blank" rel="noreferrer" className="p-3 bg-slate-800 rounded-full text-slate-300 hover:text-white hover:bg-primary-600 transition-all hover:-translate-y-1">
+              <MessageCircle size={20} />
+            </a>
             <a href={`mailto:${RESUME_DATA.contact.email}`} className="p-3 bg-slate-800 rounded-full text-slate-300 hover:text-white hover:bg-primary-600 transition-all hover:-translate-y-1">
               <Mail size={20} />
             </a>
