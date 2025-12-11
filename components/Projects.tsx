@@ -9,14 +9,16 @@ const Projects: React.FC = () => {
 
   const selectedProject = PROJECTS.find(p => p.id === selectedId);
 
-  // Function to generate a stable but unique image URL based on project title
-  const getProjectImage = (title: string) => {
+  // Function to generate a stable but unique image URL based on project title and tags
+  const getProjectImage = (title: string, tags: string[] = []) => {
     // Generate a consistent seed from the characters of the title
     const seed = title.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
     
+    const tagContext = tags.slice(0, 2).join(' ');
+    
     // Refined prompt for neat, decent, and attractive professional backgrounds
-    // Using "wallpaper" and "minimalist" keywords to ensure clean results
-    const prompt = `minimalist abstract technology wallpaper for ${title}, professional, clean, dark blue and violet gradient, modern ui, soft lighting, high quality, 8k, digital art, no text, geometric`;
+    // Using specific keywords to ensure a clean, abstract, and dark-themed aesthetic
+    const prompt = `abstract technology background for ${title} ${tagContext}, sleek, minimalist, deep dark blue and purple gradient, geometric shapes, soft lighting, professional, 8k, unreal engine render, no text, clean composition`;
     const encodedPrompt = encodeURIComponent(prompt);
     
     return `https://image.pollinations.ai/prompt/${encodedPrompt}?width=800&height=450&nologo=true&seed=${seed}`;
@@ -54,7 +56,7 @@ const Projects: React.FC = () => {
                 <div className="h-48 overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
                   <img 
-                    src={getProjectImage(project.title)} 
+                    src={getProjectImage(project.title, project.tags)} 
                     alt={project.title}
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                     loading="lazy"
@@ -126,7 +128,7 @@ const Projects: React.FC = () => {
               <div className="h-48 sm:h-64 relative flex-shrink-0">
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent z-10" />
                 <img 
-                  src={getProjectImage(selectedProject.title)} 
+                  src={getProjectImage(selectedProject.title, selectedProject.tags)} 
                   alt={selectedProject.title}
                   className="w-full h-full object-cover"
                 />
