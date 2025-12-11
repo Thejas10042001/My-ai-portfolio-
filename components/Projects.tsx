@@ -32,6 +32,13 @@ const Projects: React.FC = () => {
     return PROJECTS.filter(project => project.tags.includes(activeTag));
   }, [activeTag]);
 
+  // Helper to generate a stable but unique image URL based on project details
+  const getProjectImage = (project: Project) => {
+    const seed = project.id;
+    const prompt = `futuristic technology abstract background minimalist ${project.title} ${project.tags[0]} dark neon lighting high quality 4k`;
+    return `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=800&height=600&nologo=true&seed=${seed}`;
+  };
+
   return (
     <section id="projects" className="py-24 bg-slate-900/50 relative">
       <div className="container mx-auto px-6">
@@ -88,25 +95,41 @@ const Projects: React.FC = () => {
                   onClick={() => setSelectedProject(project)}
                   className="group relative bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-primary-500/50 transition-all hover:shadow-2xl hover:shadow-primary-500/10 flex flex-col cursor-pointer"
                 >
-                  <div className="p-8 h-full flex flex-col">
-                    <div className="flex items-center justify-between mb-6">
-                      <div className="p-3 bg-primary-500/10 rounded-xl text-primary-400 group-hover:bg-primary-500 group-hover:text-white transition-colors">
-                        {Icon && <Icon size={24} />}
+                  {/* Project Image Header */}
+                  <div className="h-48 overflow-hidden relative">
+                    <img 
+                      src={getProjectImage(project)}
+                      alt={project.title}
+                      loading="lazy"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-transparent transition-colors duration-300" />
+                    
+                    {/* Floating Category Badge */}
+                    <div className="absolute top-4 right-4 bg-slate-900/80 backdrop-blur-md px-3 py-1 rounded-full border border-slate-700">
+                      <span className="text-xs font-bold text-white tracking-wide uppercase">{project.tags[0]}</span>
+                    </div>
+                  </div>
+
+                  <div className="p-6 h-full flex flex-col">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="p-2.5 bg-slate-700/50 rounded-xl text-primary-400 group-hover:bg-primary-500 group-hover:text-white transition-colors">
+                        {Icon && <Icon size={20} />}
                       </div>
                       <div className="opacity-0 group-hover:opacity-100 transition-opacity text-xs text-primary-400 font-medium flex items-center gap-1">
-                        Learn more <ArrowRight size={14} />
+                        Details <ArrowRight size={14} />
                       </div>
                     </div>
                     
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary-400 transition-colors">
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary-400 transition-colors line-clamp-1">
                       {project.title}
                     </h3>
                     
-                    <p className="text-slate-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                    <p className="text-slate-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-2">
                       {project.description}
                     </p>
 
-                    <div className="flex flex-wrap gap-2 mt-auto">
+                    <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-700/50">
                       {project.tags.slice(0, 3).map(tag => (
                         <span 
                           key={tag} 
@@ -165,31 +188,46 @@ const Projects: React.FC = () => {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-slate-900 border border-slate-700 w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl relative"
+              className="bg-slate-900 border border-slate-700 w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl relative flex flex-col"
             >
               <button 
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-4 right-4 p-2 bg-slate-800 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-colors z-10"
+                className="absolute top-4 right-4 p-2 bg-slate-900/50 hover:bg-slate-800 rounded-full text-white backdrop-blur-sm transition-colors z-20 border border-white/10"
               >
                 <X size={20} />
               </button>
 
-              <div className="p-8">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="p-4 bg-primary-600/20 rounded-2xl text-primary-400">
-                    {selectedProject.icon && <selectedProject.icon size={32} />}
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-display font-bold text-white">{selectedProject.title}</h3>
-                    <p className="text-slate-400 text-sm mt-1">{selectedProject.description}</p>
-                  </div>
-                </div>
+              {/* Modal Banner Image */}
+              <div className="h-48 w-full relative shrink-0">
+                 <img 
+                    src={getProjectImage(selectedProject)}
+                    alt={selectedProject.title}
+                    className="w-full h-full object-cover"
+                 />
+                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent" />
+                 
+                 <div className="absolute bottom-0 left-0 p-8 w-full">
+                    <div className="flex items-center gap-4">
+                      <div className="p-3 bg-slate-900/90 backdrop-blur rounded-xl text-primary-400 border border-slate-700 shadow-xl">
+                        {selectedProject.icon && <selectedProject.icon size={28} />}
+                      </div>
+                      <div>
+                        <h3 className="text-3xl font-display font-bold text-white shadow-black drop-shadow-md">{selectedProject.title}</h3>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+
+              <div className="p-8 pt-6">
+                <p className="text-slate-400 text-lg mb-8 leading-relaxed font-light">
+                  {selectedProject.description}
+                </p>
 
                 <div className="space-y-8">
                   {/* Detailed Description */}
                   <div>
-                    <h4 className="text-lg font-semibold text-white mb-2">About the Project</h4>
-                    <p className="text-slate-300 leading-relaxed">
+                    <h4 className="text-lg font-semibold text-white mb-2 border-l-4 border-primary-500 pl-3">About the Project</h4>
+                    <p className="text-slate-300 leading-relaxed text-sm md:text-base">
                       {selectedProject.longDescription || selectedProject.description}
                     </p>
                   </div>
@@ -197,10 +235,10 @@ const Projects: React.FC = () => {
                   {/* Key Features */}
                   {selectedProject.features && selectedProject.features.length > 0 && (
                     <div>
-                      <h4 className="text-lg font-semibold text-white mb-3">Key Features</h4>
+                      <h4 className="text-lg font-semibold text-white mb-3 border-l-4 border-primary-500 pl-3">Key Features</h4>
                       <ul className="grid sm:grid-cols-2 gap-3">
                         {selectedProject.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-slate-400 text-sm">
+                          <li key={idx} className="flex items-start gap-2 text-slate-400 text-sm bg-slate-800/50 p-3 rounded-lg border border-slate-700/50">
                             <CheckCircle size={16} className="text-primary-500 mt-0.5 shrink-0" />
                             <span>{feature}</span>
                           </li>
@@ -211,14 +249,13 @@ const Projects: React.FC = () => {
 
                   {/* Technologies Used */}
                   <div>
-                    <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
-                       <Code size={18} className="text-primary-400" />
+                    <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2 border-l-4 border-primary-500 pl-3">
                        Technologies Used
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {selectedProject.tags.map(tag => (
-                        <span key={tag} className="text-xs px-3 py-1.5 bg-slate-800 text-primary-300 rounded-md border border-slate-700 font-medium">
-                          {tag}
+                        <span key={tag} className="text-xs px-3 py-1.5 bg-slate-800 text-primary-300 rounded-md border border-slate-700 font-medium flex items-center gap-1">
+                          <Code size={12} /> {tag}
                         </span>
                       ))}
                     </div>
@@ -235,7 +272,6 @@ const Projects: React.FC = () => {
                       <Github size={18} />
                       <span>View Code</span>
                     </a>
-                    {/* Placeholder for live demo if added in future */}
                     <button 
                       className="flex-1 min-w-[140px] py-3 bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-400 text-white rounded-xl font-medium transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary-500/25"
                     >
