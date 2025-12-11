@@ -84,14 +84,17 @@ const Hero: React.FC = () => {
             >
               Explore Projects
             </motion.a>
-            <motion.button 
+            <motion.a 
+              href="https://drive.google.com/file/d/1F1Rw-MUSSky1zAOf1Cxdm8X5lDttd6A_/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-slate-800/80 hover:bg-slate-700 text-white border border-slate-700 hover:border-slate-600 rounded-full font-medium transition-all flex items-center gap-2 backdrop-blur-sm group"
+              className="px-8 py-3 bg-slate-800/80 hover:bg-slate-700 text-white border border-slate-700 hover:border-slate-600 rounded-full font-medium transition-all flex items-center gap-2 backdrop-blur-sm group cursor-pointer"
             >
               <Download size={18} className="group-hover:translate-y-1 transition-transform" />
               Download Resume
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
       </div>
