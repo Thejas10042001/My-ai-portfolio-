@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { motion, useScroll, useSpring, AnimatePresence } from 'framer-motion';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ChatWidget from './components/ChatWidget';
+import { Menu, X } from 'lucide-react';
 
 const App: React.FC = () => {
   const { scrollYProgress } = useScroll();
@@ -16,6 +17,7 @@ const App: React.FC = () => {
   });
 
   const [activeSection, setActiveSection] = useState('home');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -76,11 +78,50 @@ const App: React.FC = () => {
             ))}
           </ul>
 
+          {/* Mobile Menu Trigger */}
           <div className="md:hidden">
-             {/* Mobile menu trigger would go here */}
-             <span className="text-xs text-primary-500 font-bold border border-primary-500 px-2 py-1 rounded">MENU</span>
+             <button
+               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+               className="text-slate-300 hover:text-white transition-colors p-2"
+               aria-label="Toggle menu"
+             >
+               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+             </button>
           </div>
         </div>
+
+        {/* Mobile Menu Overlay */}
+        <AnimatePresence>
+          {mobileMenuOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              className="md:hidden bg-slate-900 border-b border-slate-800 overflow-hidden shadow-xl"
+            >
+              <ul className="flex flex-col p-6 space-y-6">
+                {navLinks.map((link) => (
+                  <motion.li 
+                    key={link.name}
+                    initial={{ x: -20, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.1 }}
+                  >
+                    <a 
+                      href={link.href}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={`text-lg font-medium block transition-colors ${
+                        activeSection === link.href.substring(1) ? 'text-primary-500' : 'text-slate-400 hover:text-primary-400'
+                      }`}
+                    >
+                      {link.name}
+                    </a>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
 
       <main>
