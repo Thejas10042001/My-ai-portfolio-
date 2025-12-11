@@ -5,8 +5,20 @@ import { ChevronDown, Download, Sparkles } from 'lucide-react';
 const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 bg-slate-900">
+      
+      {/* Background Image Layer */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://tse4.mm.bing.net/th/id/OIP.GXY8d-QM0inmFHZzm8HkAAHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" 
+          alt="Hero Background" 
+          className="w-full h-full object-cover opacity-25" 
+        />
+        {/* Gradient Overlay to blend with the dark theme and ensure text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/90 via-slate-900/70 to-slate-900" />
+      </div>
+
       {/* Dynamic Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         {/* Main gradients */}
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-primary-600/20 rounded-full blur-[120px] animate-pulse" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-purple-600/20 rounded-full blur-[120px] animate-pulse delay-1000" />
@@ -38,7 +50,7 @@ const Hero: React.FC = () => {
         ))}
       </div>
 
-      <div className="container mx-auto px-6 text-center z-10">
+      <div className="container mx-auto px-6 text-center z-10 relative">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -86,7 +98,7 @@ const Hero: React.FC = () => {
 
       <motion.a 
         href="#about"
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-slate-500 hover:text-primary-400 transition-colors cursor-pointer"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-slate-500 hover:text-primary-400 transition-colors cursor-pointer z-10"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
       >
