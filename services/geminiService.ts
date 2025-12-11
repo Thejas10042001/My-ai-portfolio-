@@ -1,21 +1,32 @@
 import { GoogleGenAI } from "@google/genai";
 import { SYSTEM_PROMPT } from '../constants';
 
-const apiKey = process.env.API_KEY || '';
-const ai = new GoogleGenAI({ apiKey });
+// Safely access process.env to avoid crashing in browser environments where process is undefined
+const getApiKey = () => {
+  try {
+    if (typeof process !== 'undefined' && process.env) {
+      return process.env.API_KEY || '';
+    }
+  } catch (e) {
+    // Ignore error if process is not defined
+  }
+  return '';
+};
+
+const apiKey = getApiKey();
+let ai: GoogleGenAI | null = null;
+
+if (apiKey) {
+  ai = new GoogleGenAI({ apiKey });
+}
 
 export const sendMessageToGemini = async (message: string, history: {role: 'user'|'model', text: string}[] = []) => {
-  if (!apiKey) {
-    return "API Key is missing. Please configure the environment variable.";
+  if (!apiKey || !ai) {
+    return "I'm unable to connect to the AI service right now. The API key might be missing.";
   }
 
   try {
     // Construct the conversation history for context
-    // We map our simplified history to the Gemini format if needed, 
-    // but here we will just use a fresh generateContent call with system instruction for simplicity in this stateless example,
-    // or use a chat session if we want multi-turn persistence within the component.
-    // Let's use a chat session for better flow.
-
     const chat = ai.chats.create({
       model: 'gemini-2.5-flash',
       config: {
