@@ -11,10 +11,10 @@ const Hero: React.FC = () => {
         <img 
           src="https://tse4.mm.bing.net/th/id/OIP.GXY8d-QM0inmFHZzm8HkAAHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" 
           alt="Hero Background" 
-          className="w-full h-full object-cover opacity-25" 
+          className="w-full h-full object-cover object-center opacity-50 brightness-110" 
         />
         {/* Gradient Overlay to blend with the dark theme and ensure text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/90 via-slate-900/70 to-slate-900" />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/60 to-slate-900" />
       </div>
 
       {/* Dynamic Background Elements */}

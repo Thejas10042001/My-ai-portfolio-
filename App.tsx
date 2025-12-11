@@ -68,7 +68,7 @@ const App: React.FC = () => {
             <img 
               src="https://tse1.mm.bing.net/th/id/OIP.fSz_u_rZ6u4559ALYO_p3AHaJQ?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" 
               alt="Thejas Sreenivasu"
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border-2 border-slate-700 hover:border-primary-500 transition-colors shadow-sm"
+              className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-slate-700 hover:border-primary-500 transition-all shadow-md brightness-110"
             />
           </div>
           
