@@ -5,19 +5,8 @@ import { Github, X, CheckCircle2, ChevronRight, Code } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [filter, setFilter] = useState<string>('All');
 
   const selectedProject = PROJECTS.find(p => p.id === selectedId);
-
-  // Extract all unique tags for filtering
-  const allTags = Array.from(new Set(PROJECTS.flatMap(p => p.tags)));
-  // Sort tags by frequency (optional, simple alpha sort here)
-  allTags.sort();
-  const filters = ['All', ...allTags.slice(0, 8)]; // Limit to top tags to keep UI clean
-
-  const filteredProjects = filter === 'All' 
-    ? PROJECTS 
-    : PROJECTS.filter(p => p.tags.includes(filter));
 
   return (
     <section id="projects" className="py-24 bg-slate-900/50 relative">
@@ -33,32 +22,12 @@ const Projects: React.FC = () => {
           <p className="mt-4 text-slate-400">A showcase of my recent work in AI, IoT, and Web Development</p>
         </motion.div>
 
-        {/* Filters */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
-          {filters.map((f, index) => (
-            <motion.button
-              key={f}
-              onClick={() => setFilter(f)}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.05 }}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all border ${
-                filter === f
-                  ? 'bg-primary-600 text-white border-primary-500 shadow-lg shadow-primary-500/25'
-                  : 'bg-slate-800 text-slate-400 border-slate-700 hover:border-slate-600 hover:text-slate-200'
-              }`}
-            >
-              {f}
-            </motion.button>
-          ))}
-        </div>
-
         <motion.div 
           layout
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           <AnimatePresence mode='popLayout'>
-            {filteredProjects.map((project) => {
+            {PROJECTS.map((project) => {
               const Icon = project.icon || Code;
               return (
                 <motion.div
