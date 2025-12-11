@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PROJECTS, RESUME_DATA } from '../constants';
-import { Github, X, CheckCircle2, ChevronRight, Code, Sparkles, Layout } from 'lucide-react';
+import { Github, X, CheckCircle2, ChevronRight, Code, Sparkles, Layout, MessageCircle, Mail } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -171,12 +171,24 @@ const Projects: React.FC = () => {
                       <p className="text-slate-400 text-sm mb-4">
                         I'd love to walk you through the details of this project.
                       </p>
-                      <a 
-                        href={`mailto:${RESUME_DATA.contact.email}?subject=Question about ${selectedProject.title}`}
-                        className="block w-full text-center py-2.5 bg-primary-600 hover:bg-primary-500 text-white rounded-xl transition-colors text-sm font-medium"
-                      >
-                        Contact Me
-                      </a>
+                      <div className="flex flex-col gap-3">
+                         <a 
+                          href={`https://wa.me/${RESUME_DATA.contact.phone}?text=Hi Thejas, I'm interested in your project: ${selectedProject.title}`}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex items-center justify-center gap-2 w-full py-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-xl transition-colors text-sm font-medium"
+                        >
+                          <MessageCircle size={18} />
+                          WhatsApp
+                        </a>
+                        <a 
+                          href={`mailto:${RESUME_DATA.contact.email}?subject=Question about ${selectedProject.title}`}
+                          className="flex items-center justify-center gap-2 w-full py-2.5 bg-primary-600 hover:bg-primary-500 text-white rounded-xl transition-colors text-sm font-medium"
+                        >
+                          <Mail size={18} />
+                          Email
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
