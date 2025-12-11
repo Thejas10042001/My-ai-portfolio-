@@ -56,16 +56,16 @@ const Projects: React.FC = () => {
                     {project.description}
                   </p>
 
-                  <div className="mt-auto">
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.tags.slice(0, 3).map(tag => (
-                        <span key={tag} className="text-xs px-2 py-1 bg-slate-900 text-slate-300 rounded border border-slate-700">
-                          #{tag}
+                  <div className="mt-auto pt-4 border-t border-slate-700/50">
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.slice(0, 6).map(tag => (
+                        <span key={tag} className="text-xs font-medium px-2.5 py-1 bg-slate-900 text-slate-400 rounded-md border border-slate-800">
+                          {tag}
                         </span>
                       ))}
-                      {project.tags.length > 3 && (
-                        <span className="text-xs px-2 py-1 bg-slate-900 text-slate-500 rounded border border-slate-700">
-                          +{project.tags.length - 3}
+                      {project.tags.length > 6 && (
+                        <span className="text-xs font-medium px-2.5 py-1 bg-slate-900 text-slate-500 rounded-md border border-slate-800">
+                          +{project.tags.length - 6}
                         </span>
                       )}
                     </div>
@@ -115,7 +115,7 @@ const Projects: React.FC = () => {
                       </motion.h2>
                       <div className="flex flex-wrap gap-2">
                          {selectedProject.tags.map(tag => (
-                          <span key={tag} className="text-xs font-medium px-2 py-1 bg-slate-800 text-slate-300 rounded border border-slate-700">
+                          <span key={tag} className="text-xs font-medium px-2.5 py-1 bg-slate-800 text-slate-300 rounded border border-slate-700">
                             {tag}
                           </span>
                         ))}
