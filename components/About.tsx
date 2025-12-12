@@ -22,24 +22,44 @@ const About: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                <Briefcase className="text-primary-400" />
+                <motion.span
+                  whileInView={{ rotate: [0, 15, -15, 0], scale: [1, 1.2, 1] }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  <Briefcase className="text-primary-400" />
+                </motion.span>
                 Professional Profile
               </h3>
               <p className="text-slate-400 leading-relaxed mb-6">
                 {RESUME_DATA.summary}
               </p>
               <div className="flex flex-wrap gap-2">
-                {['Problem Solving', 'Leadership', 'Creativity', 'Adaptability'].map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-md border border-slate-700">
+                {['Problem Solving', 'Leadership', 'Creativity', 'Adaptability'].map((skill, i) => (
+                  <motion.span 
+                    key={skill} 
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1, type: "spring", stiffness: 300 }}
+                    whileHover={{ scale: 1.05, y: -2 }}
+                    className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-md border border-slate-700 cursor-default"
+                  >
                     {skill}
-                  </span>
+                  </motion.span>
                 ))}
               </div>
             </div>
 
             <div>
               <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                <GraduationCap className="text-primary-400" />
+                <motion.span
+                  whileInView={{ y: [0, -5, 0], scale: [1, 1.2, 1] }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  viewport={{ once: true }}
+                >
+                  <GraduationCap className="text-primary-400" />
+                </motion.span>
                 Education
               </h3>
               <div className="space-y-8">
