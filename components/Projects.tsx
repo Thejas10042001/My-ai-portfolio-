@@ -1,7 +1,34 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PROJECTS, RESUME_DATA } from '../constants';
-import { Github, X, CheckCircle2, ChevronRight, Code, Sparkles, Layout, MessageCircle, Mail } from 'lucide-react';
+import { 
+  Github, X, CheckCircle2, ChevronRight, Code, Sparkles, Layout, MessageCircle, Mail,
+  Atom, FileCode, Coffee, Server, Globe, Database, Wifi, Shield, Smartphone,
+  Brain, Cloud, Video, BarChart, Cpu, Terminal, Leaf
+} from 'lucide-react';
+
+// Helper to map tags to Lucide icons
+const getTechIcon = (tag: string) => {
+  const t = tag.toLowerCase();
+  if (t.includes('react')) return Atom;
+  if (t.includes('python')) return FileCode;
+  if (t.includes('java') && !t.includes('script')) return Coffee;
+  if (t.includes('node') || t.includes('express') || t.includes('php')) return Server;
+  if (t.includes('web') || t.includes('html') || t.includes('css') || t.includes('full stack')) return Globe;
+  if (t.includes('database') || t.includes('sql') || t.includes('mongo') || t.includes('firebase')) return Database;
+  if (t.includes('ai') || t.includes('learning') || t.includes('gpt') || t.includes('gemini') || t.includes('vision') || t.includes('intelligence')) return Brain;
+  if (t.includes('iot') || t.includes('hardware') || t.includes('esp')) return Wifi;
+  if (t.includes('security') || t.includes('cyber') || t.includes('auth') || t.includes('safety') || t.includes('guard') || t.includes('phish')) return Shield;
+  if (t.includes('mobile') || t.includes('android') || t.includes('ios')) return Smartphone;
+  if (t.includes('cloud')) return Cloud;
+  if (t.includes('video')) return Video;
+  if (t.includes('analytics') || t.includes('data') || t.includes('visualization') || t.includes('dashboard')) return BarChart;
+  if (t.includes('automation') || t.includes('algo') || t.includes('simulation')) return Cpu;
+  if (t.includes('api')) return Terminal;
+  if (t.includes('sustainability') || t.includes('eco')) return Leaf;
+  if (t.includes('code') || t.includes('generation')) return Code;
+  return null;
+};
 
 const Projects: React.FC = () => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -29,6 +56,16 @@ const Projects: React.FC = () => {
           <AnimatePresence mode='popLayout'>
             {PROJECTS.map((project) => {
               const Icon = project.icon || Code;
+              
+              // Generate unique icons based on tags
+              const uniqueIcons = project.tags.reduce((acc, tag) => {
+                const TechIcon = getTechIcon(tag);
+                if (TechIcon && !acc.some(i => i.Icon === TechIcon)) {
+                  acc.push({ Icon: TechIcon, label: tag });
+                }
+                return acc;
+              }, [] as { Icon: any, label: string }[]);
+
               return (
                 <motion.div
                   key={project.id}
@@ -58,18 +95,34 @@ const Projects: React.FC = () => {
                     {project.description}
                   </p>
 
-                  <div className="mt-auto pt-4 border-t border-slate-700/50">
-                    <div className="flex flex-wrap gap-2">
-                      {project.tags.slice(0, 6).map(tag => (
-                        <span key={tag} className="text-xs font-medium px-2.5 py-1 bg-slate-900 text-slate-400 rounded-md border border-slate-800">
-                          {tag}
-                        </span>
-                      ))}
-                      {project.tags.length > 6 && (
-                        <span className="text-xs font-medium px-2.5 py-1 bg-slate-900 text-slate-500 rounded-md border border-slate-800">
-                          +{project.tags.length - 6}
-                        </span>
-                      )}
+                  <div className="mt-auto">
+                    {uniqueIcons.length > 0 && (
+                      <div className="flex items-center gap-3 mb-4">
+                        {uniqueIcons.map(({ Icon: TechIcon, label }, i) => (
+                          <div 
+                            key={i} 
+                            title={label} 
+                            className="p-2 bg-slate-900/60 rounded-lg border border-slate-800 text-slate-400 group-hover:text-primary-400 group-hover:border-primary-500/30 transition-colors"
+                          >
+                            <TechIcon size={18} />
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    <div className="pt-4 border-t border-slate-700/50">
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.slice(0, 6).map(tag => (
+                          <span key={tag} className="text-xs font-medium px-2.5 py-1 bg-slate-900 text-slate-400 rounded-md border border-slate-800">
+                            {tag}
+                          </span>
+                        ))}
+                        {project.tags.length > 6 && (
+                          <span className="text-xs font-medium px-2.5 py-1 bg-slate-900 text-slate-500 rounded-md border border-slate-800">
+                            +{project.tags.length - 6}
+                          </span>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </motion.div>
