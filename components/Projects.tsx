@@ -36,8 +36,10 @@ const Projects: React.FC = () => {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
+                  whileHover={{ scale: 1.02, y: -5 }}
+                  transition={{ duration: 0.2 }}
                   onClick={() => setSelectedId(project.id)}
-                  className="group relative bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-primary-500/50 transition-all hover:shadow-xl hover:shadow-primary-500/10 cursor-pointer flex flex-col h-full"
+                  className="group relative bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-primary-400 transition-all duration-300 hover:shadow-[0_0_30px_-5px_rgba(14,165,233,0.3)] cursor-pointer flex flex-col h-full"
                 >
                   <div className="flex items-start justify-between mb-4">
                     <div className="p-3 bg-slate-900 rounded-xl text-primary-400 border border-slate-700 group-hover:scale-110 transition-transform duration-300">
