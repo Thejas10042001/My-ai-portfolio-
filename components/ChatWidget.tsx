@@ -9,7 +9,7 @@ const ChatWidget: React.FC = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       role: 'model',
-      text: "Hello! 👋 I'm Thejas's AI assistant. I can answer questions about his **projects**, **technical skills**, and **experience** in AI & Cybersecurity. Try asking about *Infinite Wik* or his work with *Computer Vision*!",
+      text: "Hi! I'm Thejas's AI assistant. Ask me anything about his projects, skills, or experience!",
       timestamp: new Date()
     }
   ]);
