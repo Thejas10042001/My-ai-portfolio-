@@ -1,8 +1,9 @@
-import { Project, Skill, Education } from './types';
+import { Project, Skill, Education, Certificate } from './types';
 import { 
   Brain, 
   TrendingUp, 
   ShieldCheck, 
+  Shield,
   Leaf, 
   CloudRain, 
   Vote, 
@@ -15,7 +16,44 @@ import {
   Video,
   GraduationCap,
   Image,
-  Globe
+  Globe,
+  Award,
+  Box,
+  PenTool,
+  Car,
+  Map,
+  Lightbulb,
+  Settings,
+  Bot,
+  FileSpreadsheet,
+  Zap,
+  Activity,
+  Maximize,
+  Cloud,
+  Lock,
+  Database,
+  Wifi,
+  Monitor,
+  Mic,
+  FolderOpen,
+  Network,
+  Terminal,
+  Layers,
+  Layout,
+  MousePointer2,
+  Palette,
+  CheckCircle,
+  Lightbulb as Idea,
+  BarChart,
+  FileCode,
+  Search,
+  Cpu,
+  BarChart3,
+  Link,
+  Table,
+  Eye,
+  FileSearch,
+  Key
 } from 'lucide-react';
 
 export const RESUME_DATA = {
@@ -29,7 +67,7 @@ export const RESUME_DATA = {
     linkedin: "https://www.linkedin.com/in/thejas-sreenivasu-2677ba1b8", 
     instagram: "https://www.instagram.com/_vinay_so_sreenivas_/",
     x: "https://x.com/_so_sreenivasu_",
-    avatarUrl: "https://www.bing.com/images/search?view=detailV2&ccid=fSz%2fu%2frZ&id=E5F3DC502922E9B07A8AEE7C47307894A08D05CF&thid=OIP.fSz_u_rZ6u4559ALYO_p3AHaJQ&mediaurl=https%3a%2f%2flookaside.instagram.com%2fseo%2fgoogle_widget%2fcrawler%2f%3fmedia_id%3d3529285837613033141&exph=1800&expw=1440&q=thejas+sreenivasu&FORM=IRPRST&ck=0DBE38134CED9DEE54FB7C39E177EAB6&selectedIndex=0&itb=0"
+    avatarUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
   }
 };
 
@@ -48,38 +86,744 @@ export const EDUCATION: Education[] = [
 ];
 
 export const SKILLS: Skill[] = [
-  // Programming
+  // Language
   { name: "Python", category: "Language", level: 90 },
   { name: "JavaScript (ES6+)", category: "Language", level: 85 },
   { name: "Java", category: "Language", level: 80 },
   { name: "PHP", category: "Language", level: 75 },
   { name: "C / C++", category: "Language", level: 75 },
-  
-  // Web Development
+  // Web
   { name: "Full Stack (Java, MERN)", category: "Web", level: 85 },
   { name: "React / Tailwind CSS", category: "Web", level: 85 },
   { name: "Node.js / Express.js", category: "Web", level: 80 },
   { name: "HTML5 / CSS3 / Bootstrap", category: "Web", level: 90 },
   { name: "Cloud Computing", category: "Web", level: 75 },
-  
   // AI/ML
   { name: "Data Analytics", category: "AI/ML", level: 80 },
   { name: "TensorFlow.js / Scikit-learn", category: "AI/ML", level: 75 },
   { name: "XGBoost", category: "AI/ML", level: 70 },
   { name: "OpenAI / Gemini APIs", category: "AI/ML", level: 85 },
-  
   // Database
   { name: "MongoDB", category: "Database", level: 80 },
   { name: "SQL / RDBMS", category: "Database", level: 80 },
   { name: "Firebase", category: "Database", level: 75 },
-  
-  // Mobile & Tools
+  // Mobile
   { name: "React Native", category: "Mobile", level: 70 },
   { name: "Android Studio", category: "Mobile", level: 65 },
+  // Tool
   { name: "GitHub / Netlify / Render", category: "Tool", level: 80 },
   { name: "IoT (ESP8266)", category: "Tool", level: 75 },
   { name: "Data Security", category: "Tool", level: 75 },
   { name: "API Integration", category: "Tool", level: 85 },
+];
+
+export const CERTIFICATES: Certificate[] = [
+  // --- GREAT LEARNING ---
+  {
+    id: "gl-python-ml",
+    title: "Python for Machine Learning",
+    issuer: "Great Learning",
+    issuerLogo: "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg?p=facebook",
+    description: "Comprehensive training in Python programming specifically for building and deploying robust machine learning models using Scikit-Learn.",
+    date: "April 2021",
+    link: "https://drive.google.com/file/d/16Npj01z2kQNkbXjClfSsR44rfFgzELvX/view?usp=sharing",
+    icon: FileCode,
+    category: "Machine Learning"
+  },
+  {
+    id: "gl-pyspark",
+    title: "Spark: PySpark",
+    issuer: "Great Learning",
+    issuerLogo: "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg?p=facebook",
+    description: "Big data processing with Apache Spark using the Python API, focusing on RDDs, DataFrames, and scalable data engineering pipelines.",
+    date: "April 2021",
+    link: "https://drive.google.com/file/d/1ZVW_SSSkzRk2pfHqaRUjgTOieqFmp-kE/view?usp=sharing",
+    icon: Database,
+    category: "Big Data"
+  },
+  {
+    id: "gl-supervised-ml",
+    title: "Supervised ML with Tree-based Models",
+    issuer: "Great Learning",
+    issuerLogo: "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg?p=facebook",
+    description: "Advanced study of ensemble learning techniques, including Decision Trees, Random Forests, and Gradient Boosting algorithms.",
+    date: "April 2021",
+    link: "https://drive.google.com/file/d/11yqirJ2cDZLktbyebzsuNHfOGf-CP8P7/view?usp=sharing",
+    icon: Brain,
+    category: "AI/ML"
+  },
+  {
+    id: "gl-cloud-adv",
+    title: "Cloud Foundations Advance",
+    issuer: "Great Learning",
+    issuerLogo: "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg?p=facebook",
+    description: "Expert exploration of cloud computing architectures, virtualization technologies, and advanced distributed system deployment.",
+    date: "Nov 2020",
+    link: "https://drive.google.com/file/d/14nCwTxYLbR_2gbzJtIweCjmdxMaE3Aax/view?usp=sharing",
+    icon: Cloud,
+    category: "Cloud"
+  },
+  {
+    id: "gl-power-bi",
+    title: "Data Visualization using Power BI",
+    issuer: "Great Learning",
+    issuerLogo: "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg?p=facebook",
+    description: "Mastering Power BI for creating dynamic dashboards, data transformations, and deriving actionable business intelligence.",
+    date: "Nov 2020",
+    link: "https://drive.google.com/file/d/1R1rMqihVI7HjYjWoD6acpi5k3zrGQCpo/view?usp=sharing",
+    icon: BarChart,
+    category: "Data Viz"
+  },
+  {
+    id: "gl-deep-learning",
+    title: "Introduction to Deep Learning",
+    issuer: "Great Learning",
+    issuerLogo: "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg?p=facebook",
+    description: "Foundational training in artificial neural networks, backpropagation mechanics, and introductory deep architecture concepts.",
+    date: "Nov 2020",
+    link: "https://drive.google.com/file/d/1c1Dz0AR-sdv8Cu43_G4jOKQOyUYzfIxp/view?usp=sharing",
+    icon: Cpu,
+    category: "Deep Learning"
+  },
+  {
+    id: "gl-blockchain",
+    title: "Blockchain Basics",
+    issuer: "Great Learning",
+    issuerLogo: "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg?p=facebook",
+    description: "Understanding decentralized ledgers, cryptography, smart contracts, and the architectural foundations of Web3 technology.",
+    date: "Nov 2020",
+    link: "https://drive.google.com/file/d/1rJZJjwMir4uKw7eyg-PmdmzHxHy445J6/view?usp=sharing",
+    icon: Link,
+    category: "Web3"
+  },
+  {
+    id: "gl-ds-c",
+    title: "Data Structures in C",
+    issuer: "Great Learning",
+    issuerLogo: "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg?p=facebook",
+    description: "Technical implementation of core data structures like Linked Lists, Stacks, Queues, and Trees using the C programming language.",
+    date: "Nov 2020",
+    link: "https://drive.google.com/file/d/14k6Oo5KLACNKzIIpGsgHYP7C1ddX9hWn/view?usp=sharing",
+    icon: Table,
+    category: "Computer Science"
+  },
+  {
+    id: "gl-aws-beg",
+    title: "AWS for Beginners",
+    issuer: "Great Learning",
+    issuerLogo: "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg?p=facebook",
+    description: "Foundational overview of Amazon Web Services, covering EC2 compute, S3 storage, and basic IAM security configurations.",
+    date: "Nov 2020",
+    link: "https://drive.google.com/file/d/1d-bLVbHDwWnKWMqBDaHs0x9cr1luaSG5/view?usp=sharing",
+    icon: Cloud,
+    category: "Cloud"
+  },
+  {
+    id: "gl-android",
+    title: "Android Application Development",
+    issuer: "Great Learning",
+    issuerLogo: "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg?p=facebook",
+    description: "Hands-on native mobile development using Android Studio, focusing on UI layouts, activities, and application lifecycle management.",
+    date: "Nov 2020",
+    link: "https://drive.google.com/file/d/1cuy2DTKmvulzHaz3WR8uygNXTcCfzeJe/view?usp=sharing",
+    icon: Smartphone,
+    category: "Mobile"
+  },
+  {
+    id: "gl-cv-ess",
+    title: "Computer Vision Essentials",
+    issuer: "Great Learning",
+    issuerLogo: "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg?p=facebook",
+    description: "Implementing core computer vision algorithms for image processing, edge detection, and basic feature extraction.",
+    date: "April 2021",
+    link: "https://drive.google.com/file/d/1q5I8IjafvAbBxrxfmFmsVo9h8k4CD2Dq/view?usp=sharing",
+    icon: Eye,
+    category: "Computer Vision"
+  },
+  {
+    id: "gl-hacking",
+    title: "Introduction to Ethical Hacking",
+    issuer: "Great Learning",
+    issuerLogo: "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg?p=facebook",
+    description: "Fundamentals of cybersecurity, covering penetration testing methodology, threat modeling, and defensive system hardening.",
+    date: "April 2021",
+    link: "https://drive.google.com/file/d/1k38rV-rnfgHTDTMke_-80NMdAehKfARA/view?usp=sharing",
+    icon: Key,
+    category: "Cybersecurity"
+  },
+  {
+    id: "gl-ds-found",
+    title: "Data Science Foundations",
+    issuer: "Great Learning",
+    issuerLogo: "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg?p=facebook",
+    description: "A comprehensive lifecycle overview of data science, ranging from statistical analysis to predictive insights and storytelling.",
+    date: "April 2021",
+    link: "https://drive.google.com/file/d/17p3hyn0wTdZSzKTSLo_ru1FBdLn3YQ92/view?usp=sharing",
+    icon: FileSearch,
+    category: "Data Science"
+  },
+
+  // --- GOOGLE ---
+  {
+    id: "google-foundations-data",
+    title: "Foundations: Data, Data, Everywhere",
+    issuer: "Google",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    description: "Introductory module of the Google Data Analytics Professional Certificate, establishing fundamental concepts in data-driven decision making.",
+    date: "Jan 16, 2023",
+    link: "https://drive.google.com/file/d/11n7_ccbbxMi2V-t3ongjf65kfnl4CvPe/view?usp=sharing",
+    icon: Database,
+    category: "Data Analytics"
+  },
+  {
+    id: "google-data-analytics",
+    title: "Google Data Analytics Professional Certificate",
+    issuer: "Google",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    description: "In-depth specialization covering the complete data analysis lifecycle, including cleaning, analysis, and visualization using R and SQL.",
+    date: "Jan 17, 2023",
+    link: "https://drive.google.com/file/d/1OPw0nWhxz_e5qWFXlK-Xfcki5G_XDA4i/view?usp=sharing",
+    icon: BarChart,
+    category: "Professional Certificate"
+  },
+  {
+    id: "google-python-crash",
+    title: "Crash Course on Python",
+    issuer: "Google",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    description: "Hands-on Python programming focusing on script automation, basic syntax, and data structures to solve complex computational problems.",
+    date: "Aug 14, 2022",
+    link: "https://drive.google.com/file/d/1QSpAN264Q8nTDVAzXvCjPqyP8gaSA1K7/view?usp=sharing",
+    icon: FileCode,
+    category: "Programming"
+  },
+  {
+    id: "google-prepare-data",
+    title: "Prepare Data for Exploration",
+    issuer: "Google",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    description: "Mastering techniques to ensure data integrity, organizing data for analysis, and performing foundational exploration in spreadsheet software.",
+    date: "Jan 17, 2022",
+    link: "https://drive.google.com/file/d/17EOmnvpPzn_JuXZuVQn3gcqlipS2e7oX/view?usp=sharing",
+    icon: Search,
+    category: "Data Preparation"
+  },
+  {
+    id: "google-dev-theme",
+    title: "Badge: Theme and Animation",
+    issuer: "Google",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    description: "Earned for mastering UI styling, custom themes, and motion design principles within Android application development.",
+    date: "Sep 2, 2022",
+    link: "https://g.dev/thejassreenivasu",
+    icon: Palette,
+    category: "Android UI"
+  },
+  {
+    id: "google-dev-ui-state",
+    title: "Badge: Interacting with UI and State",
+    issuer: "Google",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    description: "Recognized for proficiency in managing application state and creating responsive, interactive user interfaces for mobile devices.",
+    date: "Sep 2, 2022",
+    link: "https://g.dev/thejassreenivasu",
+    icon: MousePointer2,
+    category: "Android Dev"
+  },
+  {
+    id: "google-dev-25-codelabs",
+    title: "Completed 25 Codelabs Milestone",
+    issuer: "Google",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    description: "Awarded for completing 25 distinct Google Developer codelabs, demonstrating broad technical curiosity and hands-on implementation.",
+    date: "Aug 31, 2022",
+    link: "https://g.dev/thejassreenivasu",
+    icon: CheckCircle,
+    category: "Developer Milestone"
+  },
+  {
+    id: "google-dev-kotlin-intro",
+    title: "Badge: Introduction to Programming in Kotlin",
+    issuer: "Google",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    description: "Verified foundational skills in Kotlin, the modern preferred language for high-performance Android application development.",
+    date: "Aug 31, 2022",
+    link: "https://g.dev/thejassreenivasu",
+    icon: Code,
+    category: "Kotlin"
+  },
+  {
+    id: "google-dev-kotlin-fundamentals",
+    title: "Badge: Kotlin Fundamentals",
+    issuer: "Google",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    description: "Advanced competency in Kotlin's core principles, including object-oriented programming and functional syntax elements.",
+    date: "Aug 31, 2022",
+    link: "https://g.dev/thejassreenivasu",
+    icon: Terminal,
+    category: "Kotlin"
+  },
+  {
+    id: "google-dev-add-button",
+    title: "Badge: Add a Button to an App",
+    issuer: "Google",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    description: "Practical achievement in implementing event-driven UI components and basic interactive logic in Android Studio.",
+    date: "Aug 31, 2022",
+    link: "https://g.dev/thejassreenivasu",
+    icon: MousePointer2,
+    category: "Android Basics"
+  },
+  {
+    id: "google-dev-android-studio",
+    title: "Badge: Set up Android Studio",
+    issuer: "Google",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    description: "Demonstrated ability to configure the Android development environment and deploy initial test applications to emulators and devices.",
+    date: "Aug 31, 2022",
+    link: "https://g.dev/thejassreenivasu",
+    icon: Settings,
+    category: "Environment"
+  },
+  {
+    id: "google-dev-basic-layout",
+    title: "Badge: Build a Basic Layout",
+    issuer: "Google",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png",
+    description: "Recognized for successfully building structural layouts using ConstraintLayout and other Jetpack Compose/XML components.",
+    date: "Aug 31, 2022",
+    link: "https://g.dev/thejassreenivasu",
+    icon: Layout,
+    category: "UI Design"
+  },
+
+  // --- AUTODESK ---
+  {
+    id: "autodesk-design-thinking",
+    title: "Principles of Design Thinking",
+    issuer: "Autodesk",
+    issuerLogo: "https://thumbs.dreamstime.com/b/autodesk-logo-editorial-illustrative-white-background-icon-vector-logos-icons-set-social-media-flat-banner-vectors-svg-eps-jpg-210442293.jpg",
+    description: "A specialized course focused on user-centric problem solving, empathy mapping, and creative iteration to develop innovative solutions.",
+    date: "12/21/2020",
+    link: "https://drive.google.com/file/d/1PySvIRofdaa4pvJYJKJo6obi-vSmd6Vr/view?usp=sharing",
+    icon: Lightbulb,
+    category: "Design Thinking"
+  },
+  {
+    id: "autodesk-3d-modeling",
+    title: "Introduction to 3D Modeling for Manufacturing",
+    issuer: "Autodesk",
+    issuerLogo: "https://thumbs.dreamstime.com/b/autodesk-logo-editorial-illustrative-white-background-icon-vector-logos-icons-set-social-media-flat-banner-vectors-svg-eps-jpg-210442293.jpg",
+    description: "Mastered the core concepts of parametric 3D design and digital prototyping specifically tailored for modern manufacturing workflows.",
+    date: "12/21/2020",
+    link: "https://drive.google.com/file/d/1wm-YEg7J6QD95ed_mTErlLixI1M18jOP/view?usp=sharing",
+    icon: Box,
+    category: "Engineering"
+  },
+  {
+    id: "autodesk-cad-cam",
+    title: "Integrated CAD/CAM/CNC: Create a CO2 Car",
+    issuer: "Autodesk",
+    issuerLogo: "https://thumbs.dreamstime.com/b/autodesk-logo-editorial-illustrative-white-background-icon-vector-logos-icons-set-social-media-flat-banner-vectors-svg-eps-jpg-210442293.jpg",
+    description: "Learned end-to-end engineering from conceptual CAD design to CAM toolpath generation and CNC production of a high-speed CO2 vehicle.",
+    date: "12/21/2020",
+    link: "https://drive.google.com/file/d/1eNk5AReAlKRR-gTvuDuYezVpLd4D-JcU/view?usp=sharing",
+    icon: Car,
+    category: "Engineering"
+  },
+  {
+    id: "autodesk-autocad-prep",
+    title: "Autodesk Certified Professional Prep: AutoCAD",
+    issuer: "Autodesk",
+    issuerLogo: "https://thumbs.dreamstime.com/b/autodesk-logo-editorial-illustrative-white-background-icon-vector-logos-icons-set-social-media-flat-banner-vectors-svg-eps-jpg-210442293.jpg",
+    description: "Advanced training in precision drafting and design using AutoCAD, covering professional workflows for architectural and drafting standards.",
+    date: "12/21/2020",
+    link: "https://drive.google.com/file/d/1srfq5rqzhbFjUxN_E6_Nhq57QpdASkIm/view?usp=sharing",
+    icon: PenTool,
+    category: "Drafting"
+  },
+  {
+    id: "autodesk-bim",
+    title: "BIM: Highway and Transportation Infrastructure",
+    issuer: "Autodesk",
+    issuerLogo: "https://thumbs.dreamstime.com/b/autodesk-logo-editorial-illustrative-white-background-icon-vector-logos-icons-set-social-media-flat-banner-vectors-svg-eps-jpg-210442293.jpg",
+    description: "Comprehensive study of Building Information Modeling (BIM) principles applied to roads, highways, and transport network infrastructure.",
+    date: "12/21/2020",
+    link: "https://drive.google.com/file/d/16SrwMW10G9iIQrgWmRf4Ts2CtzRrOGG-/view?usp=sharing",
+    icon: Map,
+    category: "Infrastructure"
+  },
+
+  // --- AUTOMATION ANYWHERE ---
+  {
+    id: "aa-rpa-getting-started",
+    title: "Getting Started with Robotic Process Automation (RPA)",
+    issuer: "Automation Anywhere",
+    issuerLogo: "https://cdn.freelogovectors.net/wp-content/uploads/2020/06/automation-anywhere-logo.png",
+    description: "Foundational course on RPA concepts, exploring how software bots can emulate human actions to automate repetitive business tasks.",
+    date: "12/30/2020",
+    link: "https://drive.google.com/file/d/17jc37ZdfeFKYw6deXm1gI_BrUfluOWZW/view?usp=sharing",
+    icon: Zap,
+    category: "RPA"
+  },
+  {
+    id: "aa-hello-a2019",
+    title: "Hello A2019 Bot: Getting Started with Building Bots",
+    issuer: "Automation Anywhere",
+    issuerLogo: "https://cdn.freelogovectors.net/wp-content/uploads/2020/06/automation-anywhere-logo.png",
+    description: "Hands-on bot development using the cloud-native Automation 360 platform, mastering initial steps of digital automation.",
+    date: "12/30/2020",
+    link: "https://drive.google.com/file/d/17jc37ZdfeFKYw6deXm1gI_BrUfluOWZW/view?usp=sharing",
+    icon: Bot,
+    category: "Bot Dev"
+  },
+  {
+    id: "aa-rpa-vs-traditional",
+    title: "RPA is Simple yet Powerful vs Traditional Automation",
+    issuer: "Automation Anywhere",
+    issuerLogo: "https://cdn.freelogovectors.net/wp-content/uploads/2020/06/automation-anywhere-logo.png",
+    description: "Strategic analysis comparing low-code RPA benefits against traditional coding for speed and efficiency.",
+    date: "12/30/2020",
+    link: "https://drive.google.com/file/d/1csCnbBgWs1jGX7jjQWR5yRq2CH1zljIW/view?usp=sharing",
+    icon: Brain,
+    category: "Strategy"
+  },
+  {
+    id: "aa-excel-advanced",
+    title: "Automating Tasks Using Automation 360 Excel Advanced",
+    issuer: "Automation Anywhere",
+    issuerLogo: "https://cdn.freelogovectors.net/wp-content/uploads/2020/06/automation-anywhere-logo.png",
+    description: "Mastering complex Excel manipulation and data processing within automated workflows.",
+    date: "07/30/2021",
+    link: "https://drive.google.com/file/d/14PFK14mCCwDe66iWocytCo5k4YTDY6ig/view?usp=sharing",
+    icon: FileSpreadsheet,
+    category: "Data Automation"
+  },
+  {
+    id: "aa-universal-recorder",
+    title: "Automating Tasks Using Automation 360 Universal Recorder",
+    issuer: "Automation Anywhere",
+    issuerLogo: "https://cdn.freelogovectors.net/wp-content/uploads/2020/06/automation-anywhere-logo.png",
+    description: "Precision capture of user interactions across diverse applications using the Universal Recorder tool.",
+    date: "07/30/2021",
+    link: "https://drive.google.com/file/d/14PFK14mCCwDe66iWocytCo5k4YTDY6ig/view?usp=sharing",
+    icon: Activity,
+    category: "Bot Interaction"
+  },
+  {
+    id: "aa-scalable-bots",
+    title: "Building Scalable Bots Using Automation 360",
+    issuer: "Automation Anywhere",
+    issuerLogo: "https://cdn.freelogovectors.net/wp-content/uploads/2020/06/automation-anywhere-logo.png",
+    description: "Engineering principles for bots that perform consistently across enterprise-scale environments.",
+    date: "07/30/2021",
+    link: "https://drive.google.com/file/d/1OjduOAqfCp0dBiDk8suYzXzZg-sD69BT/view?usp=sharing",
+    icon: Maximize,
+    category: "Architecture"
+  },
+  {
+    id: "aa-resilient-bots",
+    title: "Building Resilient Bots Using Automation 360",
+    issuer: "Automation Anywhere",
+    issuerLogo: "https://cdn.freelogovectors.net/wp-content/uploads/2020/06/automation-anywhere-logo.png",
+    description: "Implementing self-healing logic and advanced error handling to maintain high bot uptime.",
+    date: "07/30/2021",
+    link: "https://drive.google.com/file/d/1ymvoD-AgcB6I_lUVPedW6vn7psmUbATL/view?usp=sharing",
+    icon: ShieldCheck,
+    category: "Resilience"
+  },
+
+  // --- AWS ---
+  {
+    id: "aws-practitioner",
+    title: "AWS Cloud Practitioner Essentials",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Comprehensive introduction to AWS cloud concepts, security, core services, and foundational architecture.",
+    date: "12 Feb 2021",
+    link: "https://drive.google.com/file/d/17rEdB_avc3pryldcG5SKvhzyENvAh6R3/view?usp=sharing",
+    icon: Cloud,
+    category: "Cloud Essentials"
+  },
+  {
+    id: "aws-kinesis-msk",
+    title: "AWS PartnerCast: Amazon Kinesis & MSK",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Technical update on real-time data streaming capabilities using Kinesis and Managed Streaming for Kafka (MSK).",
+    date: "19 April 2021",
+    link: "https://drive.google.com/file/d/1MFY9CaruLKKX_bzVc30SRMwxt_C3u_uW/view?usp=sharing",
+    icon: Activity,
+    category: "Streaming Data"
+  },
+  {
+    id: "aws-streaming-ai",
+    title: "Streaming Video with AI Services",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Implementing automated captions, subtitles, and audio tracks for video streams using AWS AI tools like Transcribe and Translate.",
+    date: "14 June 2021",
+    link: "https://drive.google.com/file/d/1e3Mzu0iXp87jzcWr2SgNynrQYFfgpRHL/view?usp=sharing",
+    icon: Video,
+    category: "AI & Media"
+  },
+  {
+    id: "aws-security-2nd-ed",
+    title: "AWS Security Fundamentals (2nd Ed)",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Deep dive into securing cloud workloads, covering identity management, data protection, and network security foundations.",
+    date: "14 June 2021",
+    link: "https://drive.google.com/file/d/1eHWWLre-mt_PiQV2Kq8yOjxRKyYmOu-5/view?usp=sharing",
+    icon: Lock,
+    category: "Cloud Security"
+  },
+  {
+    id: "aws-ml-security",
+    title: "AWS Machine Learning Security",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Specialized training in securing ML pipelines, protecting models, and ensuring data privacy within the AWS ecosystem.",
+    date: "14 June 2021",
+    link: "https://drive.google.com/file/d/1eMUpvWJa7-fbf6Ks4BTD6ayzMPb1rjTD/view?usp=sharing",
+    icon: Brain,
+    category: "AI Security"
+  },
+  {
+    id: "aws-serverless-biz",
+    title: "APN Navigate: Serverless - Business",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Strategic perspectives on leveraging serverless architectures to drive business agility and cost optimization.",
+    date: "20 April 2021",
+    link: "https://drive.google.com/file/d/18yt3kY45XVZdmFy6a02jwJtERehwnznL/view?usp=sharing",
+    icon: Zap,
+    category: "Serverless"
+  },
+  {
+    id: "aws-iot-citizen",
+    title: "IoT First Class Cloud Citizen",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Integrating physical hardware with AWS cloud for robust data collection, device management, and real-time processing.",
+    date: "20 April 2021",
+    link: "https://drive.google.com/file/d/1HmyJUjvSXSf53loMrrDbGFNn4i9snq4h/view?usp=sharing",
+    icon: Wifi,
+    category: "IoT"
+  },
+  {
+    id: "aws-athena-lake-glue",
+    title: "AWS PartnerCast: Athena, Lake Formation & Glue",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Technical training on building modern serverless data lakes and ETL pipelines for high-scale analytics.",
+    date: "19 April 2021",
+    link: "https://drive.google.com/file/d/1pGk9X4VsGS2yFN9z_0m3XeElGxT06zHU/view?usp=sharing",
+    icon: Database,
+    category: "Big Data"
+  },
+  {
+    id: "aws-ec2-intro",
+    title: "Introduction to Amazon EC2",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Foundational knowledge of Elastic Compute Cloud for provisioning, managing, and scaling virtual servers.",
+    date: "12 Feb 2021",
+    link: "https://drive.google.com/file/d/1rS95dwqvmFUkYNDDORLofEJY3wyeM4CR/view?usp=sharing",
+    icon: Monitor,
+    category: "Compute"
+  },
+  {
+    id: "aws-academy-foundations",
+    title: "AWS Academy Graduate - Cloud Foundations",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Comprehensive academic program covering cloud computing concepts, core services, and architectural best practices.",
+    date: "05/27/2022",
+    link: "https://drive.google.com/file/d/11BDeslrsDTComK8sdLzjvS5uVySw3NVk/view?usp=sharing",
+    icon: GraduationCap,
+    category: "Education"
+  },
+  {
+    id: "aws-vpc-vpn-support",
+    title: "AWS Effective Support Case: VPC/VPN",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Mastering diagnostic workflows for hybrid cloud networking connectivity through partner-led support.",
+    date: "17 April 2021",
+    link: "https://drive.google.com/file/d/1I9kyy7xZnDADZL2l3I59HwFVbbNH2ZBC/view?usp=sharing",
+    icon: Network,
+    category: "Networking"
+  },
+  {
+    id: "aws-serverless-dotnet",
+    title: "Serverless .NET Applications on AWS",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Building enterprise-grade applications with .NET Core using AWS Lambda for serverless backends.",
+    date: "17 April 2021",
+    link: "https://drive.google.com/file/d/1IQVZGJNbeVeW0CXMZdXpDlI6lAI7CCpq/view?usp=sharing",
+    icon: Code,
+    category: "Development"
+  },
+  {
+    id: "aws-cloudwatch-agent",
+    title: "Amazon CloudWatch Agent Optimization",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Deploying and fine-tuning monitoring agents for advanced observability and system logging across EC2 fleets.",
+    date: "17 April 2021",
+    link: "https://drive.google.com/file/d/1IRVq3v6KbUJKKTOIydCFvLhqLY-mooHV/view?usp=sharing",
+    icon: Activity,
+    category: "Monitoring"
+  },
+  {
+    id: "aws-cloud-101",
+    title: "AWS Educate: Cloud Computing 101",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Academic exploration of the fundamental technologies and business value of the modern cloud computing era.",
+    date: "17 April 2021",
+    link: "https://drive.google.com/file/d/1IxOTVmPV9vhHCaacyBFFjG7vL4MYWJCs/view?usp=sharing",
+    icon: Cloud,
+    category: "Foundations"
+  },
+  {
+    id: "aws-alexa-readiness",
+    title: "Exam Readiness: Alexa Skill Builder",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "Preparation for building complex voice interactions, Interaction Models, and conversational AI for voice-first devices.",
+    date: "15 Feb 2021",
+    link: "https://drive.google.com/file/d/1eDCjKRelHfKT4d5Cka-DfwyPDoiJbRqV/view?usp=sharing",
+    icon: Mic,
+    category: "Voice AI"
+  },
+  {
+    id: "aws-folder-more",
+    title: "Additional AWS Technical Certifications",
+    issuer: "AWS",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    description: "A comprehensive repository of further specialized training modules and partner-level AWS technical certifications.",
+    date: "2021-2022",
+    link: "https://drive.google.com/drive/folders/1euxEhFtQoTVenALU35-B2SKWZkiGNs4L?usp=drive_link",
+    icon: FolderOpen,
+    category: "Advanced Cloud"
+  },
+
+  // --- CISCO ---
+  {
+    id: "cisco-cyber-ict",
+    title: "Cybersecurity Essentials (ICT Academy)",
+    issuer: "CISCO",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1024px-Cisco_logo_blue_2016.svg.png",
+    description: "Mastering foundational security principles, threat landscape analysis, and implementation of robust network defense strategies.",
+    date: "14 Oct 2021",
+    link: "https://drive.google.com/file/d/1MvHVPdedp8UvxM_5fesiJ6E0d3X6-s0R/view?usp=sharing",
+    icon: ShieldCheck,
+    category: "Security"
+  },
+  {
+    id: "cisco-cyber-netacad",
+    title: "Cybersecurity Essentials (Networking Academy)",
+    issuer: "CISCO",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1024px-Cisco_logo_blue_2016.svg.png",
+    description: "Advanced training in securing confidential data, identifying vulnerabilities, and protecting enterprise-level digital assets.",
+    date: "27 Jul 2021",
+    link: "https://drive.google.com/file/d/1MvHVPdedp8UvxM_5fesiJ6E0d3X6-s0R/view?usp=sharing",
+    icon: Lock,
+    category: "Security"
+  },
+  {
+    id: "cisco-linux-unhatched",
+    title: "Partner: NDG Linux Unhatched",
+    issuer: "CISCO",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1024px-Cisco_logo_blue_2016.svg.png",
+    description: "Hands-on proficiency in the Linux command line and foundational system administration for backend and server environments.",
+    date: "19 Dec 2020",
+    link: "https://drive.google.com/file/d/1MvHVPdedp8UvxM_5fesiJ6E0d3X6-s0R/view?usp=sharing",
+    icon: Terminal,
+    category: "OS Foundations"
+  },
+  {
+    id: "cisco-cyber-global",
+    title: "Cybersecurity Essentials (Global Academy)",
+    issuer: "CISCO",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1024px-Cisco_logo_blue_2016.svg.png",
+    description: "Strategic study of procedural controls, technical safeguards, and incident response protocols in a modern security environment.",
+    date: "19 Dec 2020",
+    link: "https://drive.google.com/file/d/1MvHVPdedp8UvxM_5fesiJ6E0d3X6-s0R/view?usp=sharing",
+    icon: Shield,
+    category: "Security"
+  },
+  {
+    id: "cisco-packet-tracer",
+    title: "Introduction to Packet Tracer",
+    issuer: "CISCO",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1024px-Cisco_logo_blue_2016.svg.png",
+    description: "Learning network simulation and configuration to build, troubleshoot, and visualize complex virtual network topologies.",
+    date: "19 Dec 2020",
+    link: "https://drive.google.com/file/d/1MvHVPdedp8UvxM_5fesiJ6E0d3X6-s0R/view?usp=sharing",
+    icon: Layers,
+    category: "Networking"
+  },
+  {
+    id: "cisco-entrepreneurship",
+    title: "Entrepreneurship",
+    issuer: "CISCO",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1024px-Cisco_logo_blue_2016.svg.png",
+    description: "Merging technical innovation with business strategy, focusing on the steps to launch and manage a successful tech-driven venture.",
+    date: "19 Dec 2020",
+    link: "https://drive.google.com/file/d/1MvHVPdedp8UvxM_5fesiJ6E0d3X6-s0R/view?usp=sharing",
+    icon: Idea,
+    category: "Business"
+  },
+  {
+    id: "cisco-intro-cyber-ict",
+    title: "Introduction to Cybersecurity",
+    issuer: "CISCO",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1024px-Cisco_logo_blue_2016.svg.png",
+    description: "Foundational course establishing core security awareness, covering malware, social engineering, and basic protection techniques.",
+    date: "18 Dec 2020",
+    link: "https://drive.google.com/file/d/1MvHVPdedp8UvxM_5fesiJ6E0d3X6-s0R/view?usp=sharing",
+    icon: Brain,
+    category: "Security"
+  },
+  {
+    id: "cisco-net-essentials",
+    title: "Networking Essentials",
+    issuer: "CISCO",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1024px-Cisco_logo_blue_2016.svg.png",
+    description: "Deep dive into network protocols, hardware, IP addressing, and the foundational architecture of the modern internet.",
+    date: "27 Jul 2021",
+    link: "https://drive.google.com/file/d/1MvHVPdedp8UvxM_5fesiJ6E0d3X6-s0R/view?usp=sharing",
+    icon: Network,
+    category: "Networking"
+  },
+  {
+    id: "cisco-intro-cyber-netacad",
+    title: "Introduction to Cybersecurity (NetAcad)",
+    issuer: "CISCO",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1024px-Cisco_logo_blue_2016.svg.png",
+    description: "Professional certification from the Cisco Networking Academy focusing on the vital importance of security for businesses.",
+    date: "27 Jul 2021",
+    link: "https://drive.google.com/file/d/1MvHVPdedp8UvxM_5fesiJ6E0d3X6-s0R/view?usp=sharing",
+    icon: ShieldCheck,
+    category: "Security"
+  },
+
+  // --- UC SAN DIEGO & HSE ---
+  {
+    id: "ucsd-hse-data-structures",
+    title: "Data Structures",
+    issuer: "UC San Diego & HSE",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/UCSD_Seal.svg/1024px-UCSD_Seal.svg.png",
+    description: "Advanced academic course on data structure implementation, algorithmic complexity, and efficient data handling.",
+    date: "2021",
+    link: "https://drive.google.com/file/d/1cnNFHvcyknwiWLdP5wG8E0v6iHHo_fcU/view?usp=sharing",
+    icon: Database,
+    category: "Algorithms"
+  }
 ];
 
 export const PROJECTS: Project[] = [
@@ -90,13 +834,8 @@ export const PROJECTS: Project[] = [
     tags: ["Web", "API Integration", "React", "Infinite Scroll"],
     icon: Globe,
     githubUrl: "https://github.com/Thejas10042001/Infinite-Wik",
-    longDescription: "Addressed the fragmentation of online knowledge discovery by building a unified platform that eliminates pagination friction. Infinite Wik fetches data from Wikipedia APIs dynamically, allowing users to scroll endlessly through related topics. This seamless interface significantly increases user engagement and encourages deeper exploration of complex subjects without interruption.",
-    features: [
-      "Seamless infinite scrolling for uninterrupted reading",
-      "Dynamic data fetching from Wikipedia APIs",
-      "Fully responsive design optimized for all devices",
-      "Instant search functionality with debouncing"
-    ]
+    longDescription: "Addressed the fragmentation of online knowledge discovery by building a unified platform that eliminates pagination friction. Infinite Wik fetches data from Wikipedia APIs dynamically, allowing users to scroll endlessly through related topics.",
+    features: ["Seamless infinite scrolling", "Wikipedia API integration", "Responsive UI", "Instant search"]
   },
   {
     id: "video-analysis",
@@ -105,13 +844,8 @@ export const PROJECTS: Project[] = [
     tags: ["Computer Vision", "AI", "Python", "Video"],
     icon: Video,
     githubUrl: "https://github.com/Thejas10042001/Video-Analysis-",
-    longDescription: "Solved the challenge of manual video review in surveillance and content monitoring by creating an automated analysis system. Using advanced computer vision techniques, this tool detects objects, tracks motion, and identifies events in real-time, drastically reducing the time and human effort required to process large volumes of video footage.",
-    features: [
-      "Real-time video processing using OpenCV",
-      "YOLO-based object detection and classification",
-      "Advanced motion tracking algorithms",
-      "Automated event reporting and logging"
-    ]
+    longDescription: "Solved the challenge of manual video review in surveillance by creating an automated analysis system using advanced computer vision techniques.",
+    features: ["Real-time processing", "YOLO Object detection", "Motion tracking", "Event logging"]
   },
   {
     id: "video-learning",
@@ -120,88 +854,58 @@ export const PROJECTS: Project[] = [
     tags: ["AI", "Education", "Video Processing"],
     icon: Video,
     githubUrl: "https://github.com/Thejas10042001/Video-to-Learning-App",
-    longDescription: "Tackled the issue of passive learning from video lectures by developing an AI-driven tool that converts video content into active study aids. The application automatically transcribes audio, extracts key concepts, and generates summaries and quizzes, empowering students to retain information more effectively and review material efficiently.",
-    features: [
-      "Automated transcription of video lectures",
-      "AI-driven extraction of key concepts and summaries",
-      "Generation of structured study notes",
-      "Interactive quiz generation for self-assessment"
-    ]
+    longDescription: "Tackled the issue of passive learning from video lectures by developing an AI-driven tool that converts video content into active study aids.",
+    features: ["Lecture transcription", "AI concept extraction", "Note generation", "Quiz creation"]
   },
   {
     id: "human-safety",
     title: "Human Safety Precautions",
-    description: "An AI-based system designed to monitor and enforce safety protocols by detecting safety gear violations and potential hazards in real-time using computer vision.",
+    description: "An AI-based system designed to monitor and enforce safety protocols by detecting safety gear violations.",
     tags: ["AI", "Computer Vision", "Safety", "Python"],
     icon: ShieldCheck,
     githubUrl: "https://github.com/Thejas10042001/Human-Safety-Precautions-",
-    longDescription: "Addressed critical workplace safety concerns by deploying a computer vision system that monitors environments 24/7. The system instantly detects if workers are missing Personal Protective Equipment (PPE) like helmets or vests and identifies hazardous zones, providing immediate alerts to prevent accidents before they occur.",
-    features: [
-      "Real-time detection of PPE violations (helmets, vests)",
-      "Instant alerts for hazardous zone entry",
-      "Automated logging of safety incidents",
-      "High-accuracy computer vision model deployment"
-    ]
+    longDescription: "Addressed critical workplace safety concerns by deploying a computer vision system that monitors environments 24/7 for PPE violations.",
+    features: ["PPE detection (helmets, vests)", "Hazardous zone alerts", "Incident logging", "High-accuracy CV models"]
   },
   {
     id: "cnn-visualization",
     title: "CNN Visualization",
-    description: "A deep learning visualization tool that illustrates the internal layers and feature maps of Convolutional Neural Networks.",
+    description: "A deep learning visualization tool that illustrates the internal layers and feature maps of CNNs.",
     tags: ["Deep Learning", "CNN", "Visualization", "Python"],
     icon: Brain,
     githubUrl: "https://github.com/Thejas10042001/CNN-VISUALTION",
-    longDescription: "Demystified the 'black box' nature of Deep Learning models for students and researchers. This tool visually renders the activation maps and filters of Convolutional Neural Networks layer by layer, helping users intuitively understand how the model extracts features from images, making complex AI concepts accessible and transparent.",
-    features: [
-      "Visualizes internal CNN layers in real-time",
-      "Extracts and displays feature activation maps",
-      "Interactive exploration of model architecture",
-      "Educational tool for understanding Deep Learning"
-    ]
+    longDescription: "Demystified the 'black box' nature of Deep Learning models by visually rendering activation maps and filters of CNNs layer by layer.",
+    features: ["Real-time layer visualization", "Feature map extraction", "Interactive exploration", "Educational tool"]
   },
   {
     id: "image-to-code",
     title: "Image to Code",
-    description: "An innovative tool that converts images into executable code, bridging the gap between design and implementation using AI.",
+    description: "An innovative tool that converts images into executable code, bridging the gap between design and implementation.",
     tags: ["AI", "Computer Vision", "Code Generation"],
     icon: Image,
     githubUrl: "https://github.com/Thejas10042001/Image-to-code",
-    longDescription: "Streamlined the frontend development workflow by automating the conversion of UI mockups into code. By leveraging generative AI models to analyze design images, this tool produces clean, ready-to-use HTML/CSS or React code, significantly reducing the repetitive manual effort required during the design-to-development handoff.",
-    features: [
-      "Converts UI images to clean HTML/CSS code",
-      "Leverages Generative AI for layout analysis",
-      "Downloadable source code for immediate use",
-      "Syntax highlighting for generated code preview"
-    ]
+    longDescription: "Streamlined the frontend development workflow by automating the conversion of UI mockups into clean HTML/CSS/React code.",
+    features: ["UI to Code conversion", "GenAI layout analysis", "Downloadable source", "Syntax highlighting"]
   },
   {
     id: "neurolens-guardian",
     title: "NeuroLens Meeting Guardian",
-    description: "An advanced AI monitoring and security system for virtual meetings, ensuring a safe and compliant collaboration environment.",
+    description: "Advanced AI monitoring and security system for virtual meetings, ensuring a safe collaboration environment.",
     tags: ["AI", "Security", "Monitoring"],
     icon: ShieldCheck,
     githubUrl: "https://github.com/Thejas10042001/NeuroLens-Meeting-Guardian",
-    longDescription: "Addressed security vulnerabilities in remote collaboration by creating a real-time meeting guardian. This system uses AI to authenticate participants, detect unauthorized access, and monitor compliance with organizational policies during virtual meetings, ensuring sensitive discussions remain secure in a distributed work environment.",
-    features: [
-      "Biometric participant authentication",
-      "Real-time detection of unauthorized persons",
-      "Automated compliance monitoring",
-      "Secure session management dashboard"
-    ]
+    longDescription: "Addressed security vulnerabilities in remote collaboration by creating a real-time meeting guardian using AI authentication.",
+    features: ["Biometric authentication", "Unauthorized access detection", "Policy monitoring", "Security dashboard"]
   },
   {
     id: "mca-project",
     title: "MCA Academic Project",
-    description: "A major academic project demonstrating advanced proficiency in software engineering and application development within the MCA curriculum.",
+    description: "A major academic project demonstrating advanced proficiency in software engineering and application development.",
     tags: ["MCA", "Academic", "Full Stack"],
     icon: GraduationCap,
     githubUrl: "https://github.com/Thejas10042001/MCA-PROEJCT",
-    longDescription: "A comprehensive capstone project that synthesizes the full spectrum of MCA curriculum knowledge. It involves the end-to-end development of a complex software solution, demonstrating mastery in system architecture, database design, full-stack implementation, and rigorous testing methodologies to solve a significant real-world problem.",
-    features: [
-      "Implemented robust full-stack architecture",
-      "Scalable database design and optimization",
-      "Advanced authentication and role-based security",
-      "Comprehensive system documentation"
-    ]
+    longDescription: "A comprehensive capstone project synthesizing knowledge in architecture, databases, and full-stack implementation.",
+    features: ["Full-stack architecture", "Scalable DB design", "Role-based security", "Full documentation"]
   },
   {
     id: "update-meeting",
@@ -210,100 +914,65 @@ export const PROJECTS: Project[] = [
     tags: ["Scheduling", "Management", "Web"],
     icon: CalendarClock,
     githubUrl: "https://github.com/Thejas10042001/UPDATE-MEETING",
-    longDescription: "Solved the inefficiency of manual scheduling and fragmented team communication. This application centralizes meeting management, allowing teams to seamlessly schedule updates, share agendas, and track follow-ups. By integrating calendar features and automated notifications, it reduces administrative overhead and ensures teams stay aligned.",
-    features: [
-      "Seamless integration with Google Calendar",
-      "Automated scheduling based on availability",
-      "Centralized agenda management system",
-      "Automated email notifications and reminders"
-    ]
+    longDescription: "Solved the inefficiency of fragmented team communication by centralizing meeting scheduling and agenda management.",
+    features: ["Calendar integration", "Availability scheduling", "Agenda tracking", "Email reminders"]
   },
   {
     id: "neuro-lens",
     title: "Neuro Lens Meeting",
-    description: "AI-powered meeting analysis and insights platform designed to enhance virtual collaboration through real-time processing.",
+    description: "AI-powered meeting analysis platform designed to enhance virtual collaboration through real-time processing.",
     tags: ["AI", "Meeting", "Analytics"],
     icon: Video,
     githubUrl: "https://github.com/Thejas10042001/Neuro-lens-meeting",
-    longDescription: "Improved virtual meeting productivity by providing actionable insights into participant engagement. This platform analyzes audio and visual cues to gauge sentiment and attention levels, helping organizers understand meeting dynamics and making remote collaboration more effective and engaging for all participants.",
-    features: [
-      "Real-time sentiment analysis of participants",
-      "Tracking of engagement and attention levels",
-      "Automated topic modeling and summarization",
-      "Detailed post-meeting analytics reports"
-    ]
+    longDescription: "Improved virtual meeting productivity by providing actionable insights into participant engagement using sentiment analysis.",
+    features: ["Sentiment analysis", "Engagement tracking", "Topic modeling", "Post-meeting analytics"]
   },
   {
     id: "movie-analytics",
     title: "Movie Analytics Dashboard",
-    description: "Interactive data analytics dashboard for visualizing movie trends, box office collections, and genre popularity using advanced data visualization techniques.",
+    description: "Interactive dashboard for visualizing movie trends, box office collections, and genre popularity.",
     tags: ["Data Analytics", "Visualization", "Dashboard"],
     icon: Film,
     githubUrl: "https://github.com/Thejas10042001/Movie-Analytics-Dashboard",
-    longDescription: "Empowered data-driven decision making in the entertainment domain by consolidating vast movie datasets into an interactive dashboard. Users can identify emerging trends, correlate budget with box office success, and analyze genre popularity over time, turning raw data into visual narratives that reveal the mechanics of the film industry.",
-    features: [
-      "Interactive visualization of box office trends",
-      "Advanced filtering by genre, year, and budget",
-      "Correlation analysis of budget vs. revenue",
-      "Responsive dashboard for data exploration"
-    ]
+    longDescription: "Empowered data-driven decision making in entertainment by consolidating vast datasets into an interactive visual narrative.",
+    features: ["Trend visualization", "Genre/Budget filtering", "Correlation analysis", "Interactive UI"]
   },
   {
     id: "job-market",
     title: "Job Market Analyzers",
-    description: "A comprehensive data analysis tool designed to scrape and analyze job market trends, identifying key skill demands and salary distributions using Python.",
+    description: "A comprehensive data analysis tool designed to scrape and analyze job market trends and skill demands.",
     tags: ["Data Analytics", "Python", "Visualization", "Scraping"],
     icon: Briefcase,
     githubUrl: "https://github.com/Thejas10042001/JOB-MARKET-ANALYZERS-",
-    longDescription: "Addressed the information gap for job seekers by automating the analysis of current market demands. By scraping and processing job postings, this tool highlights trending skills, salary ranges, and role requirements, enabling candidates to align their learning paths with industry needs and make informed career decisions.",
-    features: [
-      "Automated scraping of major job portals",
-      "NLP-based extraction of key skills",
-      "Visual analysis of salary distributions",
-      "Identification of high-demand technologies"
-    ]
+    longDescription: "Addressed the information gap for job seekers by automating market demand analysis through web scraping and NLP.",
+    features: ["Automated web scraping", "NLP skill extraction", "Salary analysis", "Tech demand tracking"]
   },
   {
     id: "ai-portfolio",
     title: "AI Portfolio Website",
-    description: "A dynamic, animated personal portfolio website featuring an interactive AI chatbot powered by Google Gemini (Google AI Studio) that answers questions about my resume and experience.",
+    description: "Dynamic portfolio featuring an interactive Gemini-powered AI chatbot that answers resume questions.",
     tags: ["Google AI Studio", "Gemini API", "React", "Framer Motion"],
     icon: Sparkles,
-    longDescription: "Reimagined the traditional static resume by creating an interactive, AI-driven experience. This portfolio integrates the Gemini API to allow recruiters and visitors to 'chat' with my professional profile. It solves the problem of static information delivery by providing instant, context-aware answers about my skills and experience in a modern, engaging format.",
-    features: [
-      "Integrated Gemini API for AI chat capabilities",
-      "Smooth Framer Motion animations and transitions",
-      "Fully responsive and modern Tailwind CSS design",
-      "Context-aware answers based on resume data"
-    ]
+    longDescription: "Reimagined the traditional static resume by creating an interactive, AI-driven experience integrating the Gemini API.",
+    features: ["Gemini AI Chat", "Smooth animations", "Responsive design", "Context-aware profile bot"]
   },
   {
     id: "mood2food",
     title: "Mood2Food",
-    description: "AI-powered mood sensing & food recommendation web/app with emotion detection, recipe API integration, restaurant finder, and dummy food ordering system.",
+    description: "AI-powered mood sensing & food recommendation app with emotion detection and recipe integration.",
     tags: ["AI", "React", "Emotion Detection", "Food API"],
     icon: Brain,
-    longDescription: "Connected emotional well-being with nutrition by developing an app that recommends food based on user mood. Using AI for emotion detection, it provides personalized comfort food recipes or restaurant suggestions, solving the 'what to eat' dilemma while catering to the user's emotional state for a holistic lifestyle experience.",
-    features: [
-      "AI-based detection of user emotions",
-      "Integration with external Recipe APIs",
-      "Location-based restaurant finder",
-      "Simulated food ordering system flow"
-    ]
+    longDescription: "Connected emotional well-being with nutrition by developing an app that recommends food based on AI emotion detection.",
+    features: ["Emotion detection AI", "Recipe API integration", "Restaurant finder", "Order simulation"]
   },
   {
     id: "stockgenius",
     title: "StockGenius AI",
-    description: "Real-time Indian stock market analytics platform with 17+ AI-driven modules for trading strategies, predictions, and portfolio insights.",
+    description: "Real-time Indian stock market analytics platform with 17+ AI-driven modules for trading strategies.",
     tags: ["FinTech", "AI/ML", "Analytics", "Real-time"],
     icon: TrendingUp,
-    longDescription: "Democratized access to sophisticated financial analysis for retail investors. This platform integrates over 17 AI models to process real-time market data, predicting trends and offering actionable trading strategies. It empowers users to make data-backed investment decisions in the volatile Indian stock market, reducing reliance on intuition.",
-    features: [
-      "17+ specialized AI modules for market analysis",
-      "Real-time streaming of stock market data",
-      "Comprehensive portfolio management tools",
-      "Predictive modeling for price trends"
-    ]
+    longDescription: "Democratized access to sophisticated financial analysis for retail investors using 17 distinct AI prediction models.",
+    features: ["17 AI modules", "Real-time market data", "Portfolio management", "Predictive modeling"]
   },
   {
     id: "phishguard",
@@ -311,13 +980,8 @@ export const PROJECTS: Project[] = [
     description: "AI-based phishing website & email detector for real-time cybersecurity protection.",
     tags: ["Cybersecurity", "AI", "Web Safety"],
     icon: ShieldCheck,
-    longDescription: "Combated the rising threat of digital fraud with an AI-powered detection system. PhishGuard analyzes URL patterns and email content in real-time to identify malicious phishing attempts that traditional filters might miss. It acts as a proactive shield, protecting users from identity theft and securing sensitive personal data during browsing.",
-    features: [
-      "Real-time scanning of malicious URLs",
-      "NLP analysis of email content for phishing",
-      "Automated threat reporting system",
-      "Browser extension for proactive protection"
-    ]
+    longDescription: "Combated digital fraud with an AI system that analyzes URL patterns and email content in real-time.",
+    features: ["URL scanning", "NLP phishing detection", "Threat reporting", "Browser extension"]
   },
   {
     id: "ecotrack",
@@ -325,27 +989,17 @@ export const PROJECTS: Project[] = [
     description: "Carbon footprint tracker with AI-powered lifestyle recommendations.",
     tags: ["Sustainability", "AI", "Tracker"],
     icon: Leaf,
-    longDescription: "Tackled the challenge of individual climate action by making carbon footprint tracking personal and actionable. EcoTrack calculates emissions from daily activities and uses AI to suggest tailored lifestyle changes. It motivates users to adopt sustainable habits by visualizing the direct impact of their choices on the environment.",
-    features: [
-      "Accurate carbon footprint calculation algorithms",
-      "AI-driven personalized sustainability tips",
-      "Visual tracking of emission reduction progress",
-      "Gamified sustainability goals and badges"
-    ]
+    longDescription: "Tackled individual climate action by making carbon footprint tracking personal and actionable using AI lifestyle tips.",
+    features: ["Carbon calculation", "AI sustainability tips", "Progress tracking", "Gamified goals"]
   },
   {
     id: "iot-weather",
     title: "IoT Weather Monitor",
-    description: "ESP8266-based IoT solution for real-time climate data collection.",
+    description: "ESP8266-based IoT solution for real-time local climate data collection.",
     tags: ["IoT", "Hardware", "Real-time Data"],
     icon: CloudRain,
-    longDescription: "Solved the need for hyper-local weather data by building a cost-effective IoT monitoring station. Using ESP8266 microcontrollers, this system collects precise temperature and humidity readings and broadcasts them to a web dashboard, proving the viability of scalable, low-cost hardware for environmental monitoring networks.",
-    features: [
-      "Real-time data collection from ESP8266 sensors",
-      "Live web dashboard for climate monitoring",
-      "Logging of historical weather patterns",
-      "Automated alerts for extreme conditions"
-    ]
+    longDescription: "Built a cost-effective IoT monitoring station using microcontrollers to broadcast hyper-local weather data to a web dashboard.",
+    features: ["ESP8266 sensing", "Live dashboard", "Pattern logging", "Threshold alerts"]
   },
   {
     id: "voting-system",
@@ -353,13 +1007,8 @@ export const PROJECTS: Project[] = [
     description: "Aadhar OTP simulation with secure login and voting mechanism.",
     tags: ["Security", "Web", "Simulation"],
     icon: Vote,
-    longDescription: "Addressed the integrity and accessibility issues of traditional voting methods. This prototype simulates a secure, remote voting process using Aadhar-based OTP authentication. It demonstrates how digital identity verification can ensure one-person-one-vote security while making the democratic process accessible from anywhere.",
-    features: [
-      "Simulation of secure Aadhar-based OTP login",
-      "Tamper-proof vote recording mechanism",
-      "Comprehensive admin panel for election management",
-      "Robust voter identity verification flow"
-    ]
+    longDescription: "Addressed integrity and accessibility issues of traditional voting using Aadhar-based digital identity verification.",
+    features: ["Aadhar OTP simulation", "Tamper-proof recording", "Admin election panel", "Identity verification"]
   },
   {
     id: "timetable",
@@ -367,153 +1016,22 @@ export const PROJECTS: Project[] = [
     description: "Automated scheduling system with breaks and subject allocations.",
     tags: ["Automation", "Algorithms", "Productivity"],
     icon: CalendarClock,
-    longDescription: "Eliminated the complex manual labor of academic scheduling. This algorithmic tool generates conflict-free timetables for schools and colleges, accounting for teacher availability, room constraints, and subject requirements. It optimizes resource allocation and saves countless hours of administrative planning time.",
-    features: [
-      "Algorithmic detection of scheduling conflicts",
-      "Automated generation of class timetables",
-      "Optimized allocation of teachers and rooms",
-      "Export capabilities for generated schedules"
-    ]
+    longDescription: "Eliminated complex manual scheduling labor using algorithms that account for teacher availability and room constraints.",
+    features: ["Conflict detection", "Automated scheduling", "Resource optimization", "Schedule export"]
   }
 ];
 
 export const SYSTEM_PROMPT = `
-You are the AI Portfolio Assistant for Thejas Sreenivasu. Your role is to represent Thejas professionally, answering questions about his skills, projects, education, and experience with enthusiasm and accuracy.
+You are the AI Portfolio Assistant for Thejas Sreenivasu. Your role is to represent Thejas professionally, answering questions about his 20+ projects, education, and 75+ professional certifications.
 
-Here is Thejas's complete profile:
+He has major credentials from:
+1. Great Learning (Global leader in professional learning, specialized in AI and Data Science)
+2. Google (Data Analytics & Android Development)
+3. Autodesk (Design & Engineering)
+4. Automation Anywhere (RPA & Bot Development)
+5. AWS (Cloud Architecture & Security)
+6. CISCO (Networking & Cybersecurity)
+7. UC San Diego & HSE (Data Structures)
 
---- PERSONAL DETAILS ---
-Name: Thejas Sreenivasu
-Role: Innovative MCA Student | AI & Full-Stack Developer
-Summary: Innovative MCA student with expertise in AI, full-stack web development, and cybersecurity solutions. Skilled in designing and implementing real-world projects that integrate machine learning, IoT, cloud computing, and data security.
-Contact Email: thejasssreenivasu@gmail.com
-WhatsApp/Phone: +91 9179533131
-LinkedIn: https://www.linkedin.com/in/thejas-sreenivasu-2677ba1b8
-GitHub: https://github.com/Thejas10042001
-Instagram: https://www.instagram.com/_vinay_so_sreenivas_/
-X (Twitter): https://x.com/_so_sreenivasu_
-
---- EDUCATION ---
-1. Master of Computer Applications (MCA) - Ongoing
-   - Institution: RVIT, JP Nagar (VTU)
-2. Bachelor of Computer Applications (BCA) - Completed
-   - Institution: KLE Society Degree College, Nagarabhavi, Bangalore (Bangalore University)
-   - Key Projects during BCA: IoT-based Weather Monitoring System, Cloud Computing Secure File Handling
-
---- TECHNICAL SKILLS ---
-Languages: Python, JavaScript (ES6+), Java, PHP, C, C++
-Web Development: Full Stack (Java, MERN), React, Tailwind CSS, Node.js, Express.js, HTML5, CSS3, Bootstrap, Cloud Computing
-AI/ML: OpenAI / Gemini APIs, Data Analytics, TensorFlow.js, Scikit-learn, XGBoost
-Database: MongoDB, SQL / RDBMS, Firebase
-Mobile: React Native, Android Studio
-Tools & Others: GitHub, Netlify, Render, Data Security, API Integration, IoT (ESP8266), Spoonacular API, OpenStreetMap
-
---- PROJECT PORTFOLIO (Detailed) ---
-
-1. Infinite Wik (https://github.com/Thejas10042001/Infinite-Wik)
-   - Description: An infinite scrolling knowledge explorer that eliminates pagination friction.
-   - Features: Seamless infinite scrolling, dynamic Wikipedia API fetching, responsive design, instant search.
-   - Tags: Web, API Integration, React.
-
-2. Video Analysis (https://github.com/Thejas10042001/Video-Analysis-)
-   - Description: Automated video review system using computer vision.
-   - Features: Real-time processing with OpenCV, YOLO object detection, motion tracking, event logging.
-   - Tags: Computer Vision, AI, Python.
-
-3. Video to Learning App (https://github.com/Thejas10042001/Video-to-Learning-App)
-   - Description: Transforms educational videos into structured notes and summaries.
-   - Features: Automated transcription, key concept extraction, summary generation, interactive quizzes.
-   - Tags: AI, Education, Video Processing.
-
-4. Human Safety Precautions (https://github.com/Thejas10042001/Human-Safety-Precautions-)
-   - Description: AI system detecting safety gear violations (PPE) and hazardous zones.
-   - Features: Real-time PPE detection (helmets/vests), hazard alerts, incident logging.
-   - Tags: AI, Computer Vision, Safety.
-
-5. CNN Visualization (https://github.com/Thejas10042001/CNN-VISUALTION)
-   - Description: Educational tool visualizing internal CNN layers and feature maps.
-   - Features: Real-time layer visualization, activation map display, model architecture exploration.
-   - Tags: Deep Learning, CNN, Python.
-
-6. Image to Code (https://github.com/Thejas10042001/Image-to-code)
-   - Description: Converts UI images/mockups into executable HTML/CSS code using AI.
-   - Features: Generative AI layout analysis, clean code generation, syntax highlighting.
-   - Tags: AI, Computer Vision, Code Generation.
-
-7. NeuroLens Meeting Guardian (https://github.com/Thejas10042001/NeuroLens-Meeting-Guardian)
-   - Description: AI security system for virtual meetings.
-   - Features: Biometric authentication, unauthorized person detection, compliance monitoring.
-   - Tags: AI, Security, Monitoring.
-
-8. MCA Academic Project (https://github.com/Thejas10042001/MCA-PROEJCT)
-   - Description: A comprehensive full-stack capstone project demonstrating system architecture mastery.
-   - Features: Robust architecture, scalable database, role-based security.
-   - Tags: MCA, Academic, Full Stack.
-
-9. Update Meeting (https://github.com/Thejas10042001/UPDATE-MEETING)
-   - Description: Meeting management and scheduling application.
-   - Features: Google Calendar integration, automated scheduling, agenda management.
-   - Tags: Scheduling, Management, Web.
-
-10. Neuro Lens Meeting (https://github.com/Thejas10042001/Neuro-lens-meeting)
-    - Description: AI platform analyzing meeting sentiment and engagement.
-    - Features: Real-time sentiment analysis, engagement tracking, topic summarization.
-    - Tags: AI, Analytics.
-
-11. Movie Analytics Dashboard (https://github.com/Thejas10042001/Movie-Analytics-Dashboard)
-    - Description: Data analytics dashboard for movie trends and box office collections.
-    - Features: Interactive visualization, filtering by genre/budget, revenue correlation analysis.
-    - Tags: Data Analytics, Visualization.
-
-12. Job Market Analyzers (https://github.com/Thejas10042001/JOB-MARKET-ANALYZERS-)
-    - Description: Scrapes and analyzes job market trends and salary distributions.
-    - Features: Automated scraping, NLP skill extraction, salary visualization.
-    - Tags: Data Analytics, Python.
-
-13. AI Portfolio Website
-    - Description: This very website! A dynamic portfolio with a Gemini-powered chatbot.
-    - Features: Integrated Gemini API, Framer Motion animations, Responsive design.
-    - Tags: Google AI Studio, React.
-
-14. Mood2Food
-    - Description: AI app recommending food based on user emotions.
-    - Features: Emotion detection, recipe API integration, restaurant finder.
-    - Tags: AI, React.
-
-15. StockGenius AI
-    - Description: Real-time stock market analytics with 17+ AI modules.
-    - Features: Real-time streaming, predictive modeling, portfolio management.
-    - Tags: FinTech, AI/ML.
-
-16. PhishGuard AI
-    - Description: Real-time phishing website and email detector.
-    - Features: Malicious URL scanning, NLP email analysis, browser extension.
-    - Tags: Cybersecurity, AI.
-
-17. EcoTrack
-    - Description: Carbon footprint tracker with lifestyle recommendations.
-    - Features: Emission calculation, sustainability tips, gamified goals.
-    - Tags: Sustainability, AI.
-
-18. IoT Weather Monitor
-    - Description: ESP8266-based real-time climate monitoring.
-    - Features: Sensor data collection, web dashboard, alerts.
-    - Tags: IoT, Hardware.
-
-19. Online Voting System
-    - Description: Secure voting simulation with Aadhar OTP.
-    - Features: OTP login simulation, tamper-proof recording, admin panel.
-    - Tags: Security, Web.
-
-20. Timetable Generator
-    - Description: Automated academic scheduling algorithm.
-    - Features: Conflict detection, automated generation, resource optimization.
-    - Tags: Automation, Algorithms.
-
---- GUIDELINES ---
-1. Always be polite, professional, and enthusiastic about Thejas's work.
-2. If asked about contact info, provide the specific links or numbers listed above.
-3. If asked about a specific project, use the detailed descriptions and features provided to give a comprehensive answer.
-4. Emphasize his versatility in bridging AI, Web Development, and Cybersecurity.
-5. If asked about something not in this profile, politely state you don't have that information but suggest contacting him directly via WhatsApp or Email.
+He is an MCA student at RVIT specializing in AI and Full-Stack development.
 `;

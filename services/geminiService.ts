@@ -1,31 +1,19 @@
+
 import { GoogleGenAI } from "@google/genai";
 import { SYSTEM_PROMPT } from '../constants';
 
-const getApiKey = () => {
-  try {
-    // process.env.API_KEY will be replaced by the string value during Vite build
-    return process.env.API_KEY || '';
-  } catch (e) {
-    return '';
-  }
-};
-
-const apiKey = getApiKey();
-let ai: GoogleGenAI | null = null;
-
-if (apiKey) {
-  ai = new GoogleGenAI({ apiKey });
-}
+// Fix: Directly use process.env.API_KEY for initialization as per guidelines
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
 
 export const sendMessageToGemini = async (message: string, history: {role: 'user'|'model', text: string}[] = []) => {
-  if (!apiKey || !ai) {
+  if (!process.env.API_KEY) {
     return "I'm unable to connect to the AI service right now. The API key might be missing.";
   }
 
   try {
-    // Construct the conversation history for context
+    // Fix: Updated model to 'gemini-3-flash-preview' for basic text tasks
     const chat = ai.chats.create({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3-flash-preview',
       config: {
         systemInstruction: SYSTEM_PROMPT,
       },
@@ -39,6 +27,7 @@ export const sendMessageToGemini = async (message: string, history: {role: 'user
       message: message
     });
 
+    // Fix: Using .text property directly (not as a method)
     return result.text;
   } catch (error) {
     console.error("Gemini API Error:", error);

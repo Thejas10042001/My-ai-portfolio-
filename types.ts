@@ -24,6 +24,18 @@ export interface Education {
   details?: string[];
 }
 
+export interface Certificate {
+  id: string;
+  title: string;
+  issuer: string;
+  issuerLogo?: string;
+  description: string;
+  date: string;
+  link: string;
+  icon?: LucideIcon;
+  category: string;
+}
+
 export interface ChatMessage {
   role: 'user' | 'model';
   text: string;
