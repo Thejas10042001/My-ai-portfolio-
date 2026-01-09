@@ -1,3 +1,4 @@
+
 import { Project, Skill, Education, Certificate } from './types';
 import { 
   Brain, 
@@ -53,7 +54,15 @@ import {
   Table,
   Eye,
   FileSearch,
-  Key
+  Key,
+  Flame,
+  Binary,
+  Globe as WebIcon,
+  Server,
+  Layers as SoftwareIcon,
+  // Fix: Added missing Braces and Atom icons
+  Braces,
+  Atom
 } from 'lucide-react';
 
 export const RESUME_DATA = {
@@ -118,6 +127,162 @@ export const SKILLS: Skill[] = [
 ];
 
 export const CERTIFICATES: Certificate[] = [
+  // --- HACKERRANK ---
+  {
+    id: "hr-software-engineer",
+    title: "Software Engineer",
+    issuer: "HackerRank",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Verified role certification demonstrating comprehensive skills in data structures, algorithms, and software engineering principles.",
+    date: "2023",
+    link: "https://www.hackerrank.com/certificates/iframe/2e927e4c8ff5",
+    icon: SoftwareIcon,
+    category: "Verified Role"
+  },
+  {
+    id: "hr-frontend-react",
+    title: "Frontend Developer (React)",
+    issuer: "HackerRank",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Professional certification validating expertise in building scalable frontend applications using the React framework.",
+    date: "2023",
+    link: "https://www.hackerrank.com/certificates/iframe/f46057afcd1e",
+    icon: Layout,
+    category: "Web Development"
+  },
+  {
+    id: "hr-sql-adv",
+    title: "SQL (Advanced)",
+    issuer: "HackerRank",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Advanced competency in SQL, including complex queries, database optimization, and data manipulation at scale.",
+    date: "2023",
+    link: "https://www.hackerrank.com/certificates/iframe/20d3727ce0c4",
+    icon: Database,
+    category: "Data"
+  },
+  {
+    id: "hr-prob-solve-int",
+    title: "Problem Solving (Intermediate)",
+    issuer: "HackerRank",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Verified skills in intermediate algorithms and data structures through competitive coding challenges.",
+    date: "2023",
+    link: "https://www.hackerrank.com/certificates/iframe/e0fb4c1dd189",
+    icon: Brain,
+    category: "Algorithms"
+  },
+  {
+    id: "hr-go-int",
+    title: "Go (Intermediate)",
+    issuer: "HackerRank",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Validated intermediate-level proficiency in Go (Golang), focusing on concurrency patterns and backend performance.",
+    date: "2023",
+    link: "https://www.hackerrank.com/certificates/iframe/20c86aa76467",
+    icon: Code,
+    category: "Programming"
+  },
+  {
+    id: "hr-angular-int",
+    title: "Angular (Intermediate)",
+    issuer: "HackerRank",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Mastery of intermediate Angular concepts including services, dependency injection, and complex component architecture.",
+    date: "2023",
+    link: "https://www.hackerrank.com/certificates/iframe/bc2fe0155e6f",
+    icon: WebIcon,
+    category: "Frontend"
+  },
+  {
+    id: "hr-js-int",
+    title: "JavaScript (Intermediate)",
+    issuer: "HackerRank",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Intermediate JavaScript certification covering closures, prototypes, and asynchronous programming patterns.",
+    date: "2023",
+    link: "https://www.hackerrank.com/certificates/iframe/be103206333b",
+    icon: Braces,
+    category: "Language"
+  },
+  {
+    id: "hr-rest-api-int",
+    title: "Rest API (Intermediate)",
+    issuer: "HackerRank",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Verified skill in designing and consuming RESTful services with advanced request handling and data processing.",
+    date: "2023",
+    link: "https://www.hackerrank.com/profile/thejasssreenivasu",
+    icon: Server,
+    category: "API Design"
+  },
+  {
+    id: "hr-python-basic",
+    title: "Python (Basic)",
+    issuer: "HackerRank",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Foundational Python certification validating core syntax and basic algorithmic logic.",
+    date: "2022",
+    link: "https://www.hackerrank.com/certificates/iframe/f6f231422928",
+    icon: FileCode,
+    category: "Language"
+  },
+  {
+    id: "hr-react-basic",
+    title: "React (Basic)",
+    issuer: "HackerRank",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Core React concepts including state management, props, and fundamental component lifecycles.",
+    date: "2022",
+    link: "https://www.hackerrank.com/certificates/iframe/435c8a92bb0d",
+    icon: Atom,
+    category: "Frontend"
+  },
+  {
+    id: "hr-angular-basic",
+    title: "Angular (Basic)",
+    issuer: "HackerRank",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Foundational Angular skills including templates, data binding, and basic routing.",
+    date: "2022",
+    link: "https://www.hackerrank.com/certificates/iframe/10a0471bf290",
+    icon: WebIcon,
+    category: "Frontend"
+  },
+  {
+    id: "hr-gold-badge",
+    title: "Problem Solving Badge: GOLD",
+    issuer: "HackerRank",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Earned Gold status in Problem Solving through consistent competitive programming, amassing 2221 points.",
+    date: "Active",
+    link: "https://www.hackerrank.com/profile/thejasssreenivasu",
+    icon: Award,
+    category: "Badge"
+  },
+  {
+    id: "hr-silver-python",
+    title: "Python Badge: SILVER",
+    issuer: "HackerRank",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Silver level badge in Python, demonstrating advanced language proficiency with 115 points earned.",
+    date: "Active",
+    link: "https://www.hackerrank.com/profile/thejasssreenivasu",
+    icon: Flame,
+    category: "Badge"
+  },
+  {
+    id: "hr-silver-ruby",
+    title: "Ruby Badge: SILVER",
+    issuer: "HackerRank",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Silver level badge in Ruby development, amassing 250 points through various coding challenges.",
+    date: "Active",
+    link: "https://www.hackerrank.com/profile/thejasssreenivasu",
+    icon: Binary,
+    category: "Badge"
+  },
+
   // --- GREAT LEARNING ---
   {
     id: "gl-python-ml",
@@ -1022,16 +1187,17 @@ export const PROJECTS: Project[] = [
 ];
 
 export const SYSTEM_PROMPT = `
-You are the AI Portfolio Assistant for Thejas Sreenivasu. Your role is to represent Thejas professionally, answering questions about his 20+ projects, education, and 75+ professional certifications.
+You are the AI Portfolio Assistant for Thejas Sreenivasu. Your role is to represent Thejas professionally, answering questions about his 20+ projects, education, and 85+ professional certifications.
 
 He has major credentials from:
-1. Great Learning (Global leader in professional learning, specialized in AI and Data Science)
-2. Google (Data Analytics & Android Development)
-3. Autodesk (Design & Engineering)
-4. Automation Anywhere (RPA & Bot Development)
-5. AWS (Cloud Architecture & Security)
-6. CISCO (Networking & Cybersecurity)
-7. UC San Diego & HSE (Data Structures)
+1. HackerRank (Premier technical assessment platform for verified skills and competitive programming)
+2. Great Learning (Global leader in professional learning, specialized in AI and Data Science)
+3. Google (Data Analytics & Android Development)
+4. Autodesk (Design & Engineering)
+5. Automation Anywhere (RPA & Bot Development)
+6. AWS (Cloud Architecture & Security)
+7. CISCO (Networking & Cybersecurity)
+8. UC San Diego & HSE (Data Structures)
 
 He is an MCA student at RVIT specializing in AI and Full-Stack development.
 `;

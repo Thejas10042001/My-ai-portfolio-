@@ -30,7 +30,9 @@ const Certificates: React.FC = () => {
     });
     return Object.entries(groups).map(([name, certs]) => {
       let description = `Technical credentials authorized by ${name}.`;
-      if (name === 'Great Learning') {
+      if (name === 'HackerRank') {
+        description = "A leading technology platform that specializes in assessing developers' coding skills through standardized tests, competitive programming, and verified technical skills across diverse domains.";
+      } else if (name === 'Great Learning') {
         description = "A global leader in professional learning, empowering professionals with cutting-edge expertise in Data Science, Machine Learning, and Big Data technologies.";
       } else if (name === 'Google') {
         description = "Global innovator in tech and cloud. Mastery in Data Analytics, Python scripting, and Android ecosystem development.";
