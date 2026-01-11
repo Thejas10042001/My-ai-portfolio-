@@ -5,6 +5,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Certificates from './components/Certificates';
+import Experience from './components/Experience';
 import Contact from './components/Contact';
 import ChatWidget from './components/ChatWidget';
 import { Menu, X } from 'lucide-react';
@@ -22,7 +23,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'projects', 'certificates', 'contact'];
+      const sections = ['home', 'about', 'skills', 'projects', 'certificates', 'experience', 'contact'];
       const scrollPosition = window.scrollY + 300;
 
       for (const section of sections) {
@@ -47,6 +48,7 @@ const App: React.FC = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
     { name: 'Certificates', href: '#certificates' },
+    { name: 'Experience', href: '#experience' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -143,6 +145,7 @@ const App: React.FC = () => {
         <Skills />
         <Projects />
         <Certificates />
+        <Experience />
         <Contact />
       </main>
 

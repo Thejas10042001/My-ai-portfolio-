@@ -19,9 +19,22 @@ export interface Skill {
 
 export interface Education {
   degree: string;
-  institution: string; // Implied or Generic if not in resume
+  institution: string;
   status: string;
   details?: string[];
+}
+
+export interface Experience {
+  id: string;
+  company: string;
+  role: string;
+  period: string;
+  location: string;
+  type: string;
+  description: string;
+  logo: string;
+  points?: string[];
+  stats?: { label: string; value: string | number }[];
 }
 
 export interface Certificate {

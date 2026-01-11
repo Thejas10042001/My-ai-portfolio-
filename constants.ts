@@ -1,5 +1,4 @@
-
-import { Project, Skill, Education, Certificate } from './types';
+import { Project, Skill, Education, Certificate, Experience } from './types';
 import { 
   Brain, 
   TrendingUp, 
@@ -87,6 +86,156 @@ export const RESUME_DATA = {
     avatarUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
   }
 };
+
+export const EXPERIENCE: Experience[] = [
+  {
+    id: "exp-google",
+    company: "Google for Developers",
+    role: "Community Member & Trainee",
+    period: "Aug 2021 - Present",
+    location: "Remote",
+    type: "Community/Trainee",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Google_Developers_logo.png",
+    description: "Contributing to the global Google Developer ecosystem with a focus on web performance and modern AI integration.",
+    points: [
+      "Actively contributed to the development of accessible UI components using Material Design 3 guidelines.",
+      "Participated in 25+ Codelabs focused on Jetpack Compose, Kotlin Multiplatform, and Firebase implementation.",
+      "Optimized frontend performance for experimental web projects, achieving 90+ Lighthouse scores.",
+      "Collaborated with developers globally to debug and enhance open-source documentation for Google Cloud APIs."
+    ],
+    stats: [
+      { label: "CODELABS", value: 25 },
+      { label: "BADGES", value: 12 },
+      { label: "REP", value: "GOLD" }
+    ]
+  },
+  {
+    id: "exp-msft",
+    company: "Microsoft AI Skills",
+    role: "Student Trainee in Microsoft Azure",
+    period: "Aug 2021 - Present",
+    location: "Remote",
+    type: "Trainee",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Deep-dive into Azure Cloud architecture, focus on enterprise-grade security (MS-500) and conversational AI.",
+    points: [
+      "Mastered the configuration of Azure Active Directory (AD) for secure identity and access management (IAM).",
+      "Built and deployed conversational bots using Azure AI Bot Service and Language Understanding (LUIS).",
+      "Implemented threat protection strategies using Microsoft Defender for Cloud and sentinel SIEM/SOAR.",
+      "Completed 17 distinct learning paths covering Data Fundamentals, NLP, and Cloud Security Governance."
+    ],
+    stats: [
+      { label: "MODS", value: 73 },
+      { label: "PATHS", value: 17 },
+      { label: "HOURS", value: "52h" }
+    ]
+  },
+  {
+    id: "exp-salesforce",
+    company: "Trailhead by Salesforce",
+    role: "Trailblazer Community Member",
+    period: "Jan 2021 - Present",
+    location: "Remote",
+    type: "Trainee",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg",
+    description: "Advanced CRM automation and cloud platform learning, specializing in low-code solutions and data analytics.",
+    points: [
+      "Engineered automated workflows using Salesforce Flow and Process Builder to streamline business processes.",
+      "Developed custom reports and dashboards to visualize complex sales and service data for decision making.",
+      "Mastered Apex basics for custom logic implementation and SOQL for efficient database querying.",
+      "Earned 30+ badges on Trailhead, demonstrating proficiency in Sales Cloud and Security Specialist superbadges."
+    ],
+    stats: [
+      { label: "BADGES", value: 34 },
+      { label: "POINTS", value: "15k+" },
+      { label: "RANK", value: "ADVENTURER" }
+    ]
+  },
+  {
+    id: "exp-codec",
+    company: "Codec Technologies India",
+    role: "MERN Stack Developer Intern",
+    period: "Jan 2026 - Present",
+    location: "Mumbai (Remote)",
+    type: "Internship",
+    logo: "https://codec.co.in/wp-content/uploads/2021/04/codec-logo-1.png",
+    description: "Building production-grade web applications using the MERN stack with a focus on scalability and clean architecture.",
+    points: [
+      "Architected responsive frontends using React.js and Tailwind CSS, improving user engagement by 25%.",
+      "Developed secure RESTful APIs with Node.js and Express, implementing JWT for stateless authentication.",
+      "Designed and optimized MongoDB schemas with Mongoose, ensuring data integrity for multi-tenant applications.",
+      "Integrated real-time features using Socket.io and state management with Redux Toolkit."
+    ],
+    stats: [
+      { label: "APIs", value: 12 },
+      { label: "COMMITS", value: "150+" },
+      { label: "SPEED", value: "98ms" }
+    ]
+  },
+  {
+    id: "exp-codtech",
+    company: "CODTECH IT SOLUTION",
+    role: "Software Development Lead / React Dev",
+    period: "Jan 2026 - Present",
+    location: "Hyderabad (Remote)",
+    type: "Internship",
+    logo: "https://codtech.in/static/media/logo.20d91295.png",
+    description: "Dual-role internship leading software workflows and building complex UI systems for industrial clients.",
+    points: [
+      "Leading a team of 4 interns to deliver full-cycle software projects within strict sprint deadlines.",
+      "Implemented advanced React patterns (HOCs, Custom Hooks) to reduce code redundancy by 30%.",
+      "Integrated third-party services including Stripe for payments and AWS S3 for cloud storage.",
+      "Ensured high code quality through rigorous peer code reviews and unit testing using Jest and RTL."
+    ],
+    stats: [
+      { label: "TEAM", value: 4 },
+      { label: "SPRINTS", value: 8 },
+      { label: "RATING", value: "5.0" }
+    ]
+  },
+  {
+    id: "exp-cognifyz",
+    company: "Cognifyz Technologies",
+    role: "Data Science & Engineering Intern",
+    period: "Nov 2025 - Dec 2025",
+    location: "Pune (Remote)",
+    type: "Internship",
+    logo: "https://cognifyz.com/wp-content/uploads/2023/11/cognifyz-1.png",
+    description: "Focusing on the data lifecycle, from building engineering pipelines to training predictive ML models.",
+    points: [
+      "Designed ETL pipelines using Python to clean and transform datasets of over 100k+ records.",
+      "Developed predictive models using XGBoost and Scikit-learn with an accuracy improvement of 15% over baseline.",
+      "Built interactive data visualizations with Power BI and Matplotlib to communicate insights to stakeholders.",
+      "Automated daily data reporting tasks using Python scripts, saving the team 5 hours of manual work weekly."
+    ],
+    stats: [
+      { label: "MODELS", value: 5 },
+      { label: "ACCURACY", value: "92%" },
+      { label: "ETL", value: "3.5GB" }
+    ]
+  },
+  {
+    id: "exp-hackerrank",
+    company: "HackerRank",
+    role: "Software Engineer Intern",
+    period: "Sep 2023 - Dec 2023",
+    location: "Remote",
+    type: "Internship/Part-time",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+    description: "Engineered technical solutions and verified technical mastery through rigorous problem-solving challenges.",
+    points: [
+      "Solved 200+ complex algorithmic challenges in Python, Java, and C++, earning a Gold Badge in Problem Solving.",
+      "Engineered high-performance REST APIs for internal testing modules, handling concurrent request handling.",
+      "Optimized SQL database queries for reporting, reducing execution time by 40% using advanced indexing.",
+      "Verified technical skills through industry-standard certifications in React, SQL, and JavaScript."
+    ],
+    stats: [
+      { label: "SOLVED", value: 200 },
+      { label: "SQL", value: "ADV" },
+      { label: "RANK", value: "GOLD" }
+    ]
+  }
+];
 
 export const EDUCATION: Education[] = [
   {

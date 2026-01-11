@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PROJECTS, RESUME_DATA } from '../constants';
@@ -57,7 +58,6 @@ const Projects: React.FC = () => {
             {PROJECTS.map((project) => {
               const Icon = project.icon || Code;
               
-              // Generate unique icons based on tags
               const uniqueIcons = project.tags.reduce((acc, tag) => {
                 const TechIcon = getTechIcon(tag);
                 if (TechIcon && !acc.some(i => i.Icon === TechIcon)) {
@@ -132,7 +132,6 @@ const Projects: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* Project Details Modal */}
       <AnimatePresence>
         {selectedId && selectedProject && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
@@ -156,16 +155,13 @@ const Projects: React.FC = () => {
               </button>
 
               <div className="overflow-y-auto p-8 sm:p-10 custom-scrollbar">
-                {/* Modal Header */}
                 <div className="border-b border-slate-800 pb-8 mb-8">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="p-4 bg-primary-500/10 rounded-2xl text-primary-400 border border-primary-500/20">
                       {selectedProject.icon ? <selectedProject.icon size={32} /> : <Code size={32} />}
                     </div>
                     <div>
-                      <motion.h2 
-                        className="text-3xl sm:text-4xl font-display font-bold text-white mb-2"
-                      >
+                      <motion.h2 className="text-3xl sm:text-4xl font-display font-bold text-white mb-2">
                         {selectedProject.title}
                       </motion.h2>
                       <div className="flex flex-wrap gap-2">
