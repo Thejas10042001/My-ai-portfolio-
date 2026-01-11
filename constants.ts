@@ -1,3 +1,4 @@
+
 import { Project, Skill, Education, Certificate, Experience } from './types';
 import { 
   Brain, 
@@ -95,16 +96,16 @@ export const EXPERIENCE: Experience[] = [
     period: "Aug 2021 - Present",
     location: "Remote",
     type: "Community/Trainee",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Google_Developers_logo.png",
-    description: "Contributing to the global Google Developer ecosystem with a focus on web performance and modern AI integration.",
+    logo: "https://tse1.mm.bing.net/th/id/OIP.5NuQrltQ_zB2xv2wPzNBQwHaDO?rs=1&pid=ImgDetMain&o=7&rm=3",
+    description: "Thejas Sreenivasu is a Google Developer Community member and a technology professional with experience in frontend development and an emerging focus on AI engineering and software development. His involvement indicates a commitment to continuous learning and growth within the developer ecosystem.",
     points: [
-      "Actively contributed to the development of accessible UI components using Material Design 3 guidelines.",
-      "Participated in 25+ Codelabs focused on Jetpack Compose, Kotlin Multiplatform, and Firebase implementation.",
-      "Optimized frontend performance for experimental web projects, achieving 90+ Lighthouse scores.",
-      "Collaborated with developers globally to debug and enhance open-source documentation for Google Cloud APIs."
+      "Engagement with tools and initiatives supported by Google, such as web development frameworks and emerging technologies.",
+      "Sharing insights or contributions that bridge practical development work with broader ecosystem participation.",
+      "Developing visually engaging, user-friendly web interfaces and applying modern development practices.",
+      "Commitment to technology innovation, problem-solving, and applying engineering fundamentals to digital products."
     ],
     stats: [
-      { label: "CODELABS", value: 25 },
+      { label: "DURATION", value: "4y 6m" },
       { label: "BADGES", value: 12 },
       { label: "REP", value: "GOLD" }
     ]
@@ -117,12 +118,12 @@ export const EXPERIENCE: Experience[] = [
     location: "Remote",
     type: "Trainee",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
-    description: "Deep-dive into Azure Cloud architecture, focus on enterprise-grade security (MS-500) and conversational AI.",
+    description: "Intensive training program focused on Microsoft Azure Cloud and AI integration. Username: 11263963.",
     points: [
-      "Mastered the configuration of Azure Active Directory (AD) for secure identity and access management (IAM).",
-      "Built and deployed conversational bots using Azure AI Bot Service and Language Understanding (LUIS).",
-      "Implemented threat protection strategies using Microsoft Defender for Cloud and sentinel SIEM/SOAR.",
-      "Completed 17 distinct learning paths covering Data Fundamentals, NLP, and Cloud Security Governance."
+      "Successfully completed 73 distinct learning modules covering Azure core services.",
+      "Mastered 17 comprehensive learning paths in Cloud Architecture and AI integration.",
+      "Logged 51 hours and 53 minutes of verified technical training time.",
+      "Focus on implementing scalable cloud solutions and modern identity management."
     ],
     stats: [
       { label: "MODS", value: 73 },
@@ -138,12 +139,12 @@ export const EXPERIENCE: Experience[] = [
     location: "Remote",
     type: "Trainee",
     logo: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg",
-    description: "Advanced CRM automation and cloud platform learning, specializing in low-code solutions and data analytics.",
+    description: "Member of the Salesforce Trailblazer Community, demonstrating dedication to continuous skill development on the Trailhead platform. tsreenivasu represents professionals leveraging Salesforce to solve business challenges.",
     points: [
-      "Engineered automated workflows using Salesforce Flow and Process Builder to streamline business processes.",
-      "Developed custom reports and dashboards to visualize complex sales and service data for decision making.",
-      "Mastered Apex basics for custom logic implementation and SOQL for efficient database querying.",
-      "Earned 30+ badges on Trailhead, demonstrating proficiency in Sales Cloud and Security Specialist superbadges."
+      "Expertise in Sales Cloud, Service Cloud, Automation, and Reports & Dashboards.",
+      "Building a connected profile reflecting learning achievements and real-world project experience.",
+      "Active participation in the community, helping peers and engaging in user groups.",
+      "Earned recognized credentials within the Salesforce ecosystem including AI Associate basics."
     ],
     stats: [
       { label: "BADGES", value: 34 },
@@ -158,13 +159,13 @@ export const EXPERIENCE: Experience[] = [
     period: "Jan 2026 - Present",
     location: "Mumbai (Remote)",
     type: "Internship",
-    logo: "https://codec.co.in/wp-content/uploads/2021/04/codec-logo-1.png",
-    description: "Building production-grade web applications using the MERN stack with a focus on scalability and clean architecture.",
+    logo: "https://codectechnologies.in/wp-content/uploads/2024/06/xcropped-cropped-2-1-e1717874388246-1.png.pagespeed.ic.NlTK_qfJVU.png",
+    description: "Immersive program providing industry-level knowledge and practical MERN stack skills. Reporting to Assigned Project Head(s).",
     points: [
-      "Architected responsive frontends using React.js and Tailwind CSS, improving user engagement by 25%.",
-      "Developed secure RESTful APIs with Node.js and Express, implementing JWT for stateless authentication.",
-      "Designed and optimized MongoDB schemas with Mongoose, ensuring data integrity for multi-tenant applications.",
-      "Integrated real-time features using Socket.io and state management with Redux Toolkit."
+      "Architected responsive frontends using React.js and Tailwind CSS.",
+      "Developing secure RESTful APIs with Node.js and Express.",
+      "Designed and optimized MongoDB schemas with Mongoose.",
+      "Integrated real-time features and state management with Redux Toolkit."
     ],
     stats: [
       { label: "APIs", value: 12 },
@@ -179,13 +180,13 @@ export const EXPERIENCE: Experience[] = [
     period: "Jan 2026 - Present",
     location: "Hyderabad (Remote)",
     type: "Internship",
-    logo: "https://codtech.in/static/media/logo.20d91295.png",
-    description: "Dual-role internship leading software workflows and building complex UI systems for industrial clients.",
+    logo: "https://img1.wsimg.com/isteam/ip/5d0888b8-f3bc-4e47-91c6-5e2d2262f57b/C__3_-removebg-preview.png/:/rs=h:91,cg:true,m/qt=q:90",
+    description: "Dual-role internship (IDs: CTIS2225, CTIS2222) designed as an educational experience focusing on learning, skill development, and gaining practical knowledge.",
     points: [
-      "Leading a team of 4 interns to deliver full-cycle software projects within strict sprint deadlines.",
-      "Implemented advanced React patterns (HOCs, Custom Hooks) to reduce code redundancy by 30%.",
-      "Integrated third-party services including Stripe for payments and AWS S3 for cloud storage.",
-      "Ensured high code quality through rigorous peer code reviews and unit testing using Jest and RTL."
+      "Leading technical workflows for React.js web development projects.",
+      "Implemented advanced React patterns to reduce code redundancy by 30%.",
+      "Focused on high-performance UI systems for industrial clients.",
+      "Ensured high code quality through rigorous peer code reviews."
     ],
     stats: [
       { label: "TEAM", value: 4 },
@@ -201,12 +202,12 @@ export const EXPERIENCE: Experience[] = [
     location: "Pune (Remote)",
     type: "Internship",
     logo: "https://cognifyz.com/wp-content/uploads/2023/11/cognifyz-1.png",
-    description: "Focusing on the data lifecycle, from building engineering pipelines to training predictive ML models.",
+    description: "Applied analytical techniques to extract insights from data and build analytics-ready pipelines.",
     points: [
-      "Designed ETL pipelines using Python to clean and transform datasets of over 100k+ records.",
-      "Developed predictive models using XGBoost and Scikit-learn with an accuracy improvement of 15% over baseline.",
-      "Built interactive data visualizations with Power BI and Matplotlib to communicate insights to stakeholders.",
-      "Automated daily data reporting tasks using Python scripts, saving the team 5 hours of manual work weekly."
+      "Performed data collection, cleaning, and preprocessing on structured datasets.",
+      "Conducted exploratory data analysis (EDA) to identify patterns, trends, and anomalies.",
+      "Assisted in building and evaluating predictive models with basic statistical methods.",
+      "Supported development of ETL processes and best practices in data engineering."
     ],
     stats: [
       { label: "MODELS", value: 5 },
@@ -222,12 +223,12 @@ export const EXPERIENCE: Experience[] = [
     location: "Remote",
     type: "Internship/Part-time",
     logo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
-    description: "Engineered technical solutions and verified technical mastery through rigorous problem-solving challenges.",
+    description: "Engineered technical solutions and verified technical mastery through Problem solving, SQL, and REST API challenges.",
     points: [
-      "Solved 200+ complex algorithmic challenges in Python, Java, and C++, earning a Gold Badge in Problem Solving.",
-      "Engineered high-performance REST APIs for internal testing modules, handling concurrent request handling.",
-      "Optimized SQL database queries for reporting, reducing execution time by 40% using advanced indexing.",
-      "Verified technical skills through industry-standard certifications in React, SQL, and JavaScript."
+      "Solved algorithmic challenges in multiple languages with Gold Badge status.",
+      "Engineered high-performance REST APIs for internal testing modules.",
+      "Optimized SQL database queries for reporting systems.",
+      "Verified technical skills through industry-standard certification paths."
     ],
     stats: [
       { label: "SOLVED", value: 200 },
@@ -242,6 +243,12 @@ export const EDUCATION: Education[] = [
     degree: "Master of Computer Applications (MCA)",
     institution: "RVIT, JP Nagar (VTU)",
     status: "Ongoing",
+  },
+  {
+    degree: "Online Elective Course: CSE Artificial Intelligence in Affective Computing",
+    institution: "Indian Institute of Technology (IIT), Delhi and Ropar",
+    status: "Completed",
+    details: ["Specialized training in Artificial Intelligence applications for Affective Computing and human-computer interaction."]
   },
   {
     degree: "Bachelor of Computer Applications (BCA)",
@@ -512,7 +519,7 @@ export const CERTIFICATES: Certificate[] = [
     id: "celonis-process-automation",
     title: "Process Automation Bootcamp",
     issuer: "Celonis",
-    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/d/df/Celonis_Logo.png",
+    issuerLogo: "https://th.bing.com/th/id/OIP.qyfT_QH956dpc4GUMs8j_QHaD3?w=200&h=200&c=10&o=6&dpr=1.3&pid=genserp&rm=2",
     description: "Intensive training on process mining and automation strategies to optimize business execution and identify operational inefficiencies.",
     date: "31-08-2022",
     link: "https://drive.google.com/file/d/1RcOOGxNWsVkWpWpKIa7IGSRIwRl1IP3I/view?usp=sharing",
@@ -525,7 +532,7 @@ export const CERTIFICATES: Certificate[] = [
     id: "uipath-ai-center",
     title: "Diploma of Completion: UiPath AI Center Overview",
     issuer: "UiPath",
-    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    issuerLogo: "https://i.vimeocdn.com/video/852472635-6505642a4d0b4bb2846ec1310734042a8666004fc8ae3300d2d375adeed54b20-d?f=webp",
     description: "Mastered the integration of machine learning models into RPA workflows using the UiPath AI Center platform.",
     date: "10/05/2021",
     link: "https://drive.google.com/file/d/1IlGaY1qpWKGeQSB7X7yR6eOm295_HCyX/view?usp=sharing",
@@ -536,7 +543,7 @@ export const CERTIFICATES: Certificate[] = [
     id: "uipath-intro-rpa",
     title: "Diploma of Completion: Introduction to RPA and Automation",
     issuer: "UiPath",
-    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    issuerLogo: "https://i.vimeocdn.com/video/852472635-6505642a4d0b4bb2846ec1310734042a8666004fc8ae3300d2d375adeed54b20-d?f=webp",
     description: "Foundational knowledge of Enterprise Automation and the methodology of Robotic Process Automation.",
     date: "10/06/2021",
     link: "https://drive.google.com/file/d/1q8AXkpzhDevivIbZdSeC6Y_PWv3xSOBh/view?usp=sharing",
@@ -547,7 +554,7 @@ export const CERTIFICATES: Certificate[] = [
     id: "uipath-variables-studio",
     title: "Diploma of Completion: Variables, Arguments and Control Flow in Studio",
     issuer: "UiPath",
-    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    issuerLogo: "https://i.vimeocdn.com/video/852472635-6505642a4d0b4bb2846ec1310734042a8666004fc8ae3300d2d375adeed54b20-d?f=webp",
     description: "Technical training on managing data flow, complex logic, and variable handling in UiPath Studio (v2019.4).",
     date: "10/09/2021",
     link: "https://drive.google.com/file/d/1EGqoWmZbbtL81u2msSjMVlLc-igyWe2U/view?usp=sharing",
@@ -558,7 +565,7 @@ export const CERTIFICATES: Certificate[] = [
     id: "uipath-studiox-start",
     title: "Diploma of Completion: Get Started With StudioX",
     issuer: "UiPath",
-    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    issuerLogo: "https://i.vimeocdn.com/video/852472635-6505642a4d0b4bb2846ec1310734042a8666004fc8ae3300d2d375adeed54b20-d?f=webp",
     description: "Proficiency in rapid automation development using StudioX, focusing on user-centric business task automation.",
     date: "12/18/2021",
     link: "https://drive.google.com/file/d/1SPjcEEIFUzUF4f-CS8xVe9kEK7wi8Icz/view?usp=sharing",
@@ -569,7 +576,7 @@ export const CERTIFICATES: Certificate[] = [
     id: "uipath-step-into-rpa",
     title: "Diploma of Completion: Step into RPA",
     issuer: "UiPath",
-    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    issuerLogo: "https://i.vimeocdn.com/video/852472635-6505642a4d0b4bb2846ec1310734042a8666004fc8ae3300d2d375adeed54b20-d?f=webp",
     description: "Explored advanced RPA applications and hands-on laboratory exercises for complex enterprise scenarios.",
     date: "12/14/2021",
     link: "https://drive.google.com/file/d/1LRecOWgKEuvZebhQdC1oOlJf5zAtd0qW/view?usp=sharing",
@@ -580,7 +587,7 @@ export const CERTIFICATES: Certificate[] = [
     id: "uipath-assistant",
     title: "Diploma of Completion: UiPath Assistant",
     issuer: "UiPath",
-    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    issuerLogo: "https://i.vimeocdn.com/video/852472635-6505642a4d0b4bb2846ec1310734042a8666004fc8ae3300d2d375adeed54b20-d?f=webp",
     description: "Learned to manage and execute attended automations through the desktop-based UiPath Assistant interface.",
     date: "06/14/2021",
     link: "https://drive.google.com/file/d/1ee2Ws5qgrRKFL4Q7hnxt64JptOtiYGu7/view?usp=sharing",
@@ -591,7 +598,7 @@ export const CERTIFICATES: Certificate[] = [
     id: "uipath-task-capture",
     title: "Diploma of Completion: UiPath Task Capture",
     issuer: "UiPath",
-    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    issuerLogo: "https://i.vimeocdn.com/video/852472635-6505642a4d0b4bb2846ec1310734042a8666004fc8ae3300d2d375adeed54b20-d?f=webp",
     description: "Mastering the tool for documentating business processes automatically and generating Process Definition Documents (PDD).",
     date: "06/14/2021",
     link: "https://drive.google.com/file/d/1e_Zj4z4eCsyGk5zWZhS60A55ttTwNCXy/view?usp=sharing",
@@ -602,7 +609,7 @@ export const CERTIFICATES: Certificate[] = [
     id: "uipath-finance-accounting",
     title: "Diploma of Completion: RPA in Finance and Accounting",
     issuer: "UiPath",
-    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    issuerLogo: "https://i.vimeocdn.com/video/852472635-6505642a4d0b4bb2846ec1310734042a8666004fc8ae3300d2d375adeed54b20-d?f=webp",
     description: "Specialized training on applying robotic automation to financial reporting, accounts payable, and auditing processes.",
     date: "06/07/2021",
     link: "https://drive.google.com/file/d/1_9jUtDggxiW2MEK-6bOBAjlsphbnltlD/view?usp=sharing",
@@ -613,7 +620,7 @@ export const CERTIFICATES: Certificate[] = [
     id: "uipath-starter",
     title: "Diploma of Completion: RPA Starter",
     issuer: "UiPath",
-    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    issuerLogo: "https://i.vimeocdn.com/video/852472635-6505642a4d0b4bb2846ec1310734042a8666004fc8ae3300d2d375adeed54b20-d?f=webp",
     description: "Comprehensive introduction to the UiPath platform ecosystem and basic automation design principles.",
     date: "06/07/2021",
     link: "https://drive.google.com/file/d/1_CRjnJ4UMqRxKzJY1GbClJDaPh4FV2sv/view?usp=sharing",
@@ -1476,7 +1483,7 @@ export const CERTIFICATES: Certificate[] = [
     id: "ucsd-hse-data-structures",
     title: "Data Structures",
     issuer: "UC San Diego & HSE",
-    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/UCSD_Seal.svg/1024px-UCSD_Seal.svg.png",
+    issuerLogo: "https://blink.ucsd.edu/technology/_images/health-gray.jpg",
     description: "Advanced academic course on data structure implementation, algorithmic complexity, and efficient data handling.",
     date: "2021",
     link: "https://drive.google.com/file/d/1cnNFHvcyknwiWLdP5wG8E0v6iHHo_fcU/view?usp=sharing",
@@ -1653,7 +1660,7 @@ export const PROJECTS: Project[] = [
     tags: ["Data Analytics", "Visualization", "Dashboard"],
     icon: Film,
     githubUrl: "https://github.com/Thejas10042001/Movie-Analytics-Dashboard",
-    longDescription: "Using a dataset of over 50,000 movies, this dashboard provides a high-level view of the film industry's evolution. I focused on data storytelling, using interactive charts to show correlations between budget, genre, and critical reception. The technical stack involves D3.js for custom visualizations and Python for data cleaning. It allows users to drill down from global trends to specific studios or actors.",
+    longDescription: "Using a dataset of over 50,000 movies, this dashboard provides a high-level view of the film industry's evolution. I focused on data storytelling, using interactive charts to show correlations between budget, genre, and critical reception. The technical stack involves D3.js for custom visualizations and Python for data cleaning. It allows users to drill down from global trends to filter by studios or actors.",
     features: [
       "Interactive multi-dimensional data filtering", 
       "Budget vs. Revenue correlation heat-maps", 
@@ -1817,4 +1824,5 @@ He has major credentials from:
 11. UC San Diego & HSE (Data Structures.)
 
 He is an MCA student at RVIT specializing in AI and Full-Stack development.
+He also completed an Online Elective course in Computer Science and Engineering: Artificial Intelligence in Affective Computing from IIT Delhi and Ropar.
 `;
