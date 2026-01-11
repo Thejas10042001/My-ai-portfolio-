@@ -14,7 +14,8 @@ import {
   Settings,
   Cpu,
   Loader2,
-  Search
+  Search,
+  Trophy
 } from 'lucide-react';
 
 const Certificates: React.FC = () => {
@@ -30,7 +31,13 @@ const Certificates: React.FC = () => {
     });
     return Object.entries(groups).map(([name, certs]) => {
       let description = `Technical credentials authorized by ${name}.`;
-      if (name === 'HackerRank') {
+      if (name === 'Microsoft Learn') {
+        description = "Comprehensive mastery of Microsoft ecosystem including Azure Cloud infrastructure, advanced Cybersecurity (MS-500), Power Platform automation, and cutting-edge AI services.";
+      } else if (name === 'Celonis') {
+        description = "A global leader in Process Mining and Execution Management, providing cutting-edge data science solutions to visualize, optimize, and automate business processes across entire enterprises.";
+      } else if (name === 'UiPath') {
+        description = "A global leader in enterprise Robotic Process Automation (RPA), providing a comprehensive platform for end-to-end automation, AI center integration, and complex workflow management.";
+      } else if (name === 'HackerRank') {
         description = "A leading technology platform that specializes in assessing developers' coding skills through standardized tests, competitive programming, and verified technical skills across diverse domains.";
       } else if (name === 'Great Learning') {
         description = "A global leader in professional learning, empowering professionals with cutting-edge expertise in Data Science, Machine Learning, and Big Data technologies.";

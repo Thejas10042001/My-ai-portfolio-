@@ -1,4 +1,3 @@
-
 import { Project, Skill, Education, Certificate } from './types';
 import { 
   Brain, 
@@ -60,9 +59,17 @@ import {
   Globe as WebIcon,
   Server,
   Layers as SoftwareIcon,
-  // Fix: Added missing Braces and Atom icons
   Braces,
-  Atom
+  Atom,
+  MousePointer,
+  Variable,
+  Workflow,
+  ClipboardCheck,
+  Trophy,
+  ShieldAlert,
+  Fingerprint,
+  HardDrive,
+  Activity as AnalyticsIcon
 } from 'lucide-react';
 
 export const RESUME_DATA = {
@@ -127,6 +134,343 @@ export const SKILLS: Skill[] = [
 ];
 
 export const CERTIFICATES: Certificate[] = [
+  // --- MICROSOFT LEARN ---
+  {
+    id: "ms-insider-risk",
+    title: "Trophy: Manage insider risk in Microsoft 365",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Advanced competency in identifying, investigating, and remediating malicious and inadvertent activities within an organization using Microsoft 365 risk management tools.",
+    date: "14/10/2022",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: Trophy,
+    category: "Security"
+  },
+  {
+    id: "ms-500-p4",
+    title: "Trophy: MS-500 part 4: Manage Governance and Compliance",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Mastery of governance and compliance features, focusing on sensitive data types, retention policies, and eDiscovery workflows in M365.",
+    date: "14/10/2022",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: ShieldCheck,
+    category: "Security"
+  },
+  {
+    id: "ms-sc-400",
+    title: "Trophy: SC-400: Implement Data Lifecycle and Records Management",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Specialized training in information protection, data loss prevention, and managing the lifecycle of organizational data.",
+    date: "14/10/2022",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: Database,
+    category: "Data Compliance"
+  },
+  {
+    id: "ms-500-p3",
+    title: "Trophy: MS-500 part 3 - Implement and manage information protection",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Implementing and managing encryption, sensitivity labels, and secure information types to protect critical digital assets.",
+    date: "14/10/2022",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: Lock,
+    category: "Security"
+  },
+  {
+    id: "ms-500-p2",
+    title: "Trophy: MS-500 part 2 - Implement and manage threat protection",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Advanced threat defense implementation, including Microsoft Defender for Office 365, Cloud Apps, and Endpoint security architectures.",
+    date: "14/10/2022",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: ShieldAlert,
+    category: "Security"
+  },
+  {
+    id: "ms-500-p1",
+    title: "Trophy: MS-500 part 1 - Implement and manage identity and access",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Strategic implementation of Azure AD, conditional access policies, and identity protection mechanisms for enterprise-level security.",
+    date: "14/10/2022",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: Fingerprint,
+    category: "Identity"
+  },
+  {
+    id: "ms-pl-900",
+    title: "Trophy: PL-900: Microsoft Power Platform Fundamentals",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Core knowledge of the Power Platform ecosystem, including Power Apps, Power Automate, Power BI, and Power Virtual Agents.",
+    date: "31/8/2022",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: Zap,
+    category: "Power Platform"
+  },
+  {
+    id: "ms-azure-data-analytics",
+    title: "Trophy: Azure Data Fundamentals: Data Analytics",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Understanding analytical workloads, data visualization principles, and modern data warehouse solutions in the Azure cloud.",
+    date: "31/8/2022",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: BarChart,
+    category: "Data"
+  },
+  {
+    id: "ms-azure-non-relational",
+    title: "Trophy: Azure Data Fundamentals: Non-relational data",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Expertise in managing NoSQL workloads, Azure Cosmos DB, and blob storage for unstructured and semi-structured data.",
+    date: "31/8/2022",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: HardDrive,
+    category: "Cloud Data"
+  },
+  {
+    id: "ms-azure-relational",
+    title: "Trophy: Azure Data Fundamentals: Relational data",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Deep dive into Azure SQL services, database management, and relational data modeling in a cloud environment.",
+    date: "31/8/2022",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: Database,
+    category: "Cloud Data"
+  },
+  {
+    id: "ms-azure-core-data",
+    title: "Trophy: Azure Data Fundamentals: Core data concepts",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Foundational training on data roles, processing methods, and core database architectures in Microsoft Azure.",
+    date: "31/8/2022",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: AnalyticsIcon,
+    category: "Data"
+  },
+  {
+    id: "ms-azure-fundamentals",
+    title: "Trophy: Microsoft Azure Fundamentals: Core Concepts",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Mastery of core cloud services, architectural components, and Azure governance models.",
+    date: "28/8/2021",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: Cloud,
+    category: "Azure"
+  },
+  {
+    id: "ms-azure-ai-conv",
+    title: "Trophy: Azure AI Fundamentals: Conversational AI",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Implementing intelligent bots and Q&A services using Azure AI Bot Service and Language understanding.",
+    date: "28/8/2021",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: Mic,
+    category: "AI"
+  },
+  {
+    id: "ms-azure-ai-nlp",
+    title: "Trophy: Azure AI Fundamentals: NLP",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Mastering Natural Language Processing (NLP) solutions including sentiment analysis, key phrase extraction, and entity recognition.",
+    date: "28/8/2021",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: Sparkles,
+    category: "AI"
+  },
+  {
+    id: "ms-azure-ai-cv",
+    title: "Trophy: Azure AI Fundamentals: Computer Vision",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Implementing image analysis, object detection, and face recognition capabilities using Azure AI Vision services.",
+    date: "28/8/2021",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: Eye,
+    category: "AI"
+  },
+  {
+    id: "ms-azure-ai-visual",
+    title: "Trophy: Azure AI Fundamentals: Visual tools for ML",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Building machine learning models without coding using Azure Machine Learning designer and Automated ML.",
+    date: "28/8/2021",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: PenTool,
+    category: "Machine Learning"
+  },
+  {
+    id: "ms-azure-ai-start",
+    title: "Trophy: Azure AI Fundamentals: Get started with AI",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Comprehensive introduction to AI concepts, ethical considerations, and fundamental services in the Azure ecosystem.",
+    date: "28/8/2021",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-trophies",
+    icon: Brain,
+    category: "AI"
+  },
+  // --- Selected MS Modules ---
+  {
+    id: "ms-dot-net-intro",
+    title: "Badge: Introduction to .NET",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Foundation in .NET ecosystem, including CLI tools, platform capabilities, and application types.",
+    date: "18/12/2022",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-badges",
+    icon: Code,
+    category: "Development"
+  },
+  {
+    id: "ms-defender-endpoint",
+    title: "Badge: Protect against threats with Microsoft Defender for Endpoint",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Managing enterprise endpoint security and response using advanced threat detection and remediation.",
+    date: "14/10/2022",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-badges",
+    icon: ShieldCheck,
+    category: "Cybersecurity"
+  },
+  {
+    id: "ms-power-automate-intro",
+    title: "Badge: Describe building automation with Microsoft Power Automate",
+    issuer: "Microsoft Learn",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+    description: "Proficiency in creating business workflows and process automations without complex code.",
+    date: "31/8/2022",
+    link: "https://learn.microsoft.com/en-in/users/11263963/?tab=tab-badges",
+    icon: Bot,
+    category: "Automation"
+  },
+
+  // --- CELONIS ---
+  {
+    id: "celonis-process-automation",
+    title: "Process Automation Bootcamp",
+    issuer: "Celonis",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/d/df/Celonis_Logo.png",
+    description: "Intensive training on process mining and automation strategies to optimize business execution and identify operational inefficiencies.",
+    date: "31-08-2022",
+    link: "https://drive.google.com/file/d/1RcOOGxNWsVkWpWpKIa7IGSRIwRl1IP3I/view?usp=sharing",
+    icon: ClipboardCheck,
+    category: "Process Mining"
+  },
+
+  // --- UI PATH ---
+  {
+    id: "uipath-ai-center",
+    title: "Diploma of Completion: UiPath AI Center Overview",
+    issuer: "UiPath",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    description: "Mastered the integration of machine learning models into RPA workflows using the UiPath AI Center platform.",
+    date: "10/05/2021",
+    link: "https://drive.google.com/file/d/1IlGaY1qpWKGeQSB7X7yR6eOm295_HCyX/view?usp=sharing",
+    icon: Brain,
+    category: "AI/Automation"
+  },
+  {
+    id: "uipath-intro-rpa",
+    title: "Diploma of Completion: Introduction to RPA and Automation",
+    issuer: "UiPath",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    description: "Foundational knowledge of Enterprise Automation and the methodology of Robotic Process Automation.",
+    date: "10/06/2021",
+    link: "https://drive.google.com/file/d/1q8AXkpzhDevivIbZdSeC6Y_PWv3xSOBh/view?usp=sharing",
+    icon: Zap,
+    category: "RPA Foundations"
+  },
+  {
+    id: "uipath-variables-studio",
+    title: "Diploma of Completion: Variables, Arguments and Control Flow in Studio",
+    issuer: "UiPath",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    description: "Technical training on managing data flow, complex logic, and variable handling in UiPath Studio (v2019.4).",
+    date: "10/09/2021",
+    link: "https://drive.google.com/file/d/1EGqoWmZbbtL81u2msSjMVlLc-igyWe2U/view?usp=sharing",
+    icon: Workflow,
+    category: "Technical Automation"
+  },
+  {
+    id: "uipath-studiox-start",
+    title: "Diploma of Completion: Get Started With StudioX",
+    issuer: "UiPath",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    description: "Proficiency in rapid automation development using StudioX, focusing on user-centric business task automation.",
+    date: "12/18/2021",
+    link: "https://drive.google.com/file/d/1SPjcEEIFUzUF4f-CS8xVe9kEK7wi8Icz/view?usp=sharing",
+    icon: Bot,
+    category: "No-Code RPA"
+  },
+  {
+    id: "uipath-step-into-rpa",
+    title: "Diploma of Completion: Step into RPA",
+    issuer: "UiPath",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    description: "Explored advanced RPA applications and hands-on laboratory exercises for complex enterprise scenarios.",
+    date: "12/14/2021",
+    link: "https://drive.google.com/file/d/1LRecOWgKEuvZebhQdC1oOlJf5zAtd0qW/view?usp=sharing",
+    icon: Settings,
+    category: "RPA Mastery"
+  },
+  {
+    id: "uipath-assistant",
+    title: "Diploma of Completion: UiPath Assistant",
+    issuer: "UiPath",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    description: "Learned to manage and execute attended automations through the desktop-based UiPath Assistant interface.",
+    date: "06/14/2021",
+    link: "https://drive.google.com/file/d/1ee2Ws5qgrRKFL4Q7hnxt64JptOtiYGu7/view?usp=sharing",
+    icon: MousePointer,
+    category: "Desktop Automation"
+  },
+  {
+    id: "uipath-task-capture",
+    title: "Diploma of Completion: UiPath Task Capture",
+    issuer: "UiPath",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    description: "Mastering the tool for documentating business processes automatically and generating Process Definition Documents (PDD).",
+    date: "06/14/2021",
+    link: "https://drive.google.com/file/d/1e_Zj4z4eCsyGk5zWZhS60A55ttTwNCXy/view?usp=sharing",
+    icon: Activity,
+    category: "Process Discovery"
+  },
+  {
+    id: "uipath-finance-accounting",
+    title: "Diploma of Completion: RPA in Finance and Accounting",
+    issuer: "UiPath",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    description: "Specialized training on applying robotic automation to financial reporting, accounts payable, and auditing processes.",
+    date: "06/07/2021",
+    link: "https://drive.google.com/file/d/1_9jUtDggxiW2MEK-6bOBAjlsphbnltlD/view?usp=sharing",
+    icon: BarChart3,
+    category: "FinTech Automation"
+  },
+  {
+    id: "uipath-starter",
+    title: "Diploma of Completion: RPA Starter",
+    issuer: "UiPath",
+    issuerLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/UiPath_Logo.svg/1024px-UiPath_Logo.svg.png",
+    description: "Comprehensive introduction to the UiPath platform ecosystem and basic automation design principles.",
+    date: "06/07/2021",
+    link: "https://drive.google.com/file/d/1_CRjnJ4UMqRxKzJY1GbClJDaPh4FV2sv/view?usp=sharing",
+    icon: Sparkles,
+    category: "Entry Level"
+  },
+
   // --- HACKERRANK ---
   {
     id: "hr-software-engineer",
@@ -1187,17 +1531,20 @@ export const PROJECTS: Project[] = [
 ];
 
 export const SYSTEM_PROMPT = `
-You are the AI Portfolio Assistant for Thejas Sreenivasu. Your role is to represent Thejas professionally, answering questions about his 20+ projects, education, and 85+ professional certifications.
+You are the AI Portfolio Assistant for Thejas Sreenivasu. Your role is to represent Thejas professionally, answering questions about his 20+ projects, education, and 150+ professional certifications.
 
 He has major credentials from:
-1. HackerRank (Premier technical assessment platform for verified skills and competitive programming)
-2. Great Learning (Global leader in professional learning, specialized in AI and Data Science)
-3. Google (Data Analytics & Android Development)
-4. Autodesk (Design & Engineering)
-5. Automation Anywhere (RPA & Bot Development)
-6. AWS (Cloud Architecture & Security)
-7. CISCO (Networking & Cybersecurity)
-8. UC San Diego & HSE (Data Structures)
+1. Microsoft Learn (Deep expertise in Azure Cloud, Enterprise Security MS-500, Power Platform, and Conversational AI.)
+2. Celonis (A global leader in Process Mining and Execution Management.)
+3. UiPath (Leading enterprise Robotic Process Automation platform specializing in AI-driven automation.)
+4. HackerRank (Premier technical assessment platform for verified skills and competitive programming.)
+5. Great Learning (Global leader in professional learning, specialized in AI and Data Science.)
+6. Google (Data Analytics & Android Development.)
+7. Autodesk (Design & Engineering.)
+8. Automation Anywhere (RPA & Bot Development.)
+9. AWS (Cloud Architecture & Security.)
+10. CISCO (Networking & Cybersecurity.)
+11. UC San Diego & HSE (Data Structures.)
 
 He is an MCA student at RVIT specializing in AI and Full-Stack development.
 `;
