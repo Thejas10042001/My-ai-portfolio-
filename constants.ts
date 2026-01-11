@@ -260,34 +260,57 @@ export const EDUCATION: Education[] = [
 
 export const SKILLS: Skill[] = [
   // Language
-  { name: "Python", category: "Language", level: 90 },
-  { name: "JavaScript (ES6+)", category: "Language", level: 85 },
-  { name: "Java", category: "Language", level: 80 },
+  { name: "Python (ML/Analytics)", category: "Language", level: 95 },
+  { name: "JavaScript (React/Node)", category: "Language", level: 90 },
+  { name: "Java (Full Stack/Spring)", category: "Language", level: 85 },
+  { name: "Kotlin (Android Studio)", category: "Language", level: 80 },
   { name: "PHP", category: "Language", level: 75 },
-  { name: "C / C++", category: "Language", level: 75 },
-  // Web
-  { name: "Full Stack (Java, MERN)", category: "Web", level: 85 },
-  { name: "React / Tailwind CSS", category: "Web", level: 85 },
-  { name: "Node.js / Express.js", category: "Web", level: 80 },
-  { name: "HTML5 / CSS3 / Bootstrap", category: "Web", level: 90 },
-  { name: "Cloud Computing", category: "Web", level: 75 },
-  // AI/ML
-  { name: "Data Analytics", category: "AI/ML", level: 80 },
-  { name: "TensorFlow.js / Scikit-learn", category: "AI/ML", level: 75 },
-  { name: "XGBoost", category: "AI/ML", level: 70 },
-  { name: "OpenAI / Gemini APIs", category: "AI/ML", level: 85 },
-  // Database
-  { name: "MongoDB", category: "Database", level: 80 },
-  { name: "SQL / RDBMS", category: "Database", level: 80 },
-  { name: "Firebase", category: "Database", level: 75 },
-  // Mobile
-  { name: "React Native", category: "Mobile", level: 70 },
-  { name: "Android Studio", category: "Mobile", level: 65 },
-  // Tool
-  { name: "GitHub / Netlify / Render", category: "Tool", level: 80 },
-  { name: "IoT (ESP8266)", category: "Tool", level: 75 },
-  { name: "Data Security", category: "Tool", level: 75 },
-  { name: "API Integration", category: "Tool", level: 85 },
+  { name: "C / C++ (Data Structures)", category: "Language", level: 80 },
+  { name: "Go (Golang)", category: "Language", level: 70 },
+  { name: "Ruby", category: "Language", level: 65 },
+
+  // Web / Frameworks
+  { name: "React.js / Next.js", category: "Web", level: 90 },
+  { name: "Node.js / Express.js", category: "Web", level: 85 },
+  { name: "MERN Stack", category: "Web", level: 90 },
+  { name: "Tailwind CSS / Bootstrap", category: "Web", level: 95 },
+  { name: "Redux / State Management", category: "Web", level: 85 },
+  { name: "REST API Design", category: "Web", level: 90 },
+  { name: "Angular", category: "Web", level: 75 },
+
+  // AI / ML / Data
+  { name: "Generative AI (Gemini/OpenAI)", category: "AI/ML", level: 95 },
+  { name: "Computer Vision (OpenCV/YOLO)", category: "AI/ML", level: 85 },
+  { name: "Deep Learning (CNN/RNN)", category: "AI/ML", level: 80 },
+  { name: "TensorFlow.js / Scikit-Learn", category: "AI/ML", level: 80 },
+  { name: "Process Mining (Celonis)", category: "AI/ML", level: 90 },
+  { name: "Affective Computing (AI)", category: "AI/ML", level: 85 },
+  { name: "Predictive Analytics", category: "AI/ML", level: 85 },
+  { name: "Natural Language Processing", category: "AI/ML", level: 80 },
+
+  // Database / Cloud
+  { name: "MongoDB (NoSQL)", category: "Database", level: 85 },
+  { name: "SQL / Oracle / MySQL", category: "Database", level: 90 },
+  { name: "Microsoft Azure (AI/Core)", category: "Database", level: 85 },
+  { name: "AWS (EC2/S3/Kinesis)", category: "Database", level: 80 },
+  { name: "Firebase", category: "Database", level: 80 },
+  { name: "Data Warehouse (Athena/Lake)", category: "Database", level: 75 },
+
+  // Mobile / IoT
+  { name: "React Native", category: "Mobile", level: 75 },
+  { name: "Native Android (Kotlin/Jetpack)", category: "Mobile", level: 80 },
+  { name: "IoT (ESP8266/MQTT/Sensors)", category: "Mobile", level: 85 },
+  { name: "Hardware Integration", category: "Mobile", level: 80 },
+
+  // Automation / Security / Tools
+  { name: "RPA (UiPath / Automation 360)", category: "Tool", level: 95 },
+  { name: "Cybersecurity (CISCO/Defender)", category: "Tool", level: 85 },
+  { name: "Phishing/Threat Detection", category: "Tool", level: 90 },
+  { name: "Identity & Access Management", category: "Tool", level: 80 },
+  { name: "GitHub / CI/CD / Netlify", category: "Tool", level: 90 },
+  { name: "Power Platform (Power BI/Apps)", category: "Tool", level: 85 },
+  { name: "AutoCAD / BIM / Autodesk", category: "Tool", level: 80 },
+  { name: "Linux Administration", category: "Tool", level: 75 },
 ];
 
 export const CERTIFICATES: Certificate[] = [
