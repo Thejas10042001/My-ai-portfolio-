@@ -90,6 +90,27 @@ export const RESUME_DATA = {
 
 export const EXPERIENCE: Experience[] = [
   {
+    id: "exp-spikedai",
+    company: "SpikedAI",
+    role: "AI Product Development Intern",
+    period: "Jan 2026 - Present",
+    location: "Palo Alto, CA (Remote)",
+    type: "Internship",
+    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQE1IzPr1MdTig/company-logo_100_100/company-logo_100_100/0/1695728614622?e=1769644800&v=beta&t=CfQiWITuXuCoLmGNu6e9p2GbqI3a1bD_LXPbsW5eMBA",
+    description: "Contributing to the commercial readiness of Spiked.ai, a real-time AI-driven revenue intelligence and sales enablement platform integrated with enterprise CRM systems.",
+    points: [
+      "Supported development of AI-driven product features focused on real-time sales intelligence and buyer intent detection.",
+      "Contributed to AI-assisted workflows and system intelligence enhancements for commercial release.",
+      "Assisted in validating AI-driven use cases through rigorous experimentation and feature-level testing.",
+      "Collaborated with leadership to align technical development with evolving business and go-to-market requirements."
+    ],
+    stats: [
+      { label: "CRM INT", value: "FULL" },
+      { label: "AI FLOW", value: 14 },
+      { label: "STATUS", value: "LIVE" }
+    ]
+  },
+  {
     id: "exp-google",
     company: "Google for Developers",
     role: "Community Member & Trainee",
@@ -97,15 +118,15 @@ export const EXPERIENCE: Experience[] = [
     location: "Remote",
     type: "Community/Trainee",
     logo: "https://tse1.mm.bing.net/th/id/OIP.5NuQrltQ_zB2xv2wPzNBQwHaDO?rs=1&pid=ImgDetMain&o=7&rm=3",
-    description: "Thejas Sreenivasu is a Google Developer Community member and a technology professional with experience in frontend development and an emerging focus on AI engineering and software development. His involvement indicates a commitment to continuous learning and growth within the developer ecosystem.",
+    description: "Engagement with Google-supported developer ecosystems, focusing on frontend development and emerging AI engineering fundamentals.",
     points: [
-      "Engagement with tools and initiatives supported by Google, such as web development frameworks and emerging technologies.",
-      "Sharing insights or contributions that bridge practical development work with broader ecosystem participation.",
-      "Developing visually engaging, user-friendly web interfaces and applying modern development practices.",
-      "Commitment to technology innovation, problem-solving, and applying engineering fundamentals to digital products."
+      "Active involvement with web development frameworks and emerging Google cloud technologies.",
+      "Sharing insights that bridge practical development with broader developer ecosystem participation.",
+      "Developing visually engaging, user-friendly web interfaces using modern standards.",
+      "Applying engineering fundamentals to high-performance digital products."
     ],
     stats: [
-      { label: "DURATION", value: "4y 6m" },
+      { label: "DURATION", value: "4y+" },
       { label: "BADGES", value: 12 },
       { label: "REP", value: "GOLD" }
     ]
@@ -120,10 +141,10 @@ export const EXPERIENCE: Experience[] = [
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
     description: "Intensive training program focused on Microsoft Azure Cloud and AI integration. Username: 11263963.",
     points: [
-      "Successfully completed 73 distinct learning modules covering Azure core services.",
+      "Completed 73 learning modules covering Azure core services and infrastructure.",
       "Mastered 17 comprehensive learning paths in Cloud Architecture and AI integration.",
       "Logged 51 hours and 53 minutes of verified technical training time.",
-      "Focus on implementing scalable cloud solutions and modern identity management."
+      "Focused on scalable cloud solutions and modern identity management systems."
     ],
     stats: [
       { label: "MODS", value: 73 },
@@ -139,17 +160,17 @@ export const EXPERIENCE: Experience[] = [
     location: "Remote",
     type: "Trainee",
     logo: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg",
-    description: "Member of the Salesforce Trailblazer Community, demonstrating dedication to continuous skill development on the Trailhead platform. tsreenivasu represents professionals leveraging Salesforce to solve business challenges.",
+    description: "Salesforce Trailblazer leveraging the platform to solve complex business automation challenges with AI-driven insights.",
     points: [
-      "Expertise in Sales Cloud, Service Cloud, Automation, and Reports & Dashboards.",
-      "Building a connected profile reflecting learning achievements and real-world project experience.",
-      "Active participation in the community, helping peers and engaging in user groups.",
-      "Earned recognized credentials within the Salesforce ecosystem including AI Associate basics."
+      "Expertise in Sales Cloud, Service Cloud, and complex Reports & Dashboards.",
+      "Building a connected profile reflecting real-world project automation experience.",
+      "Active participation in user groups and community peer-mentoring.",
+      "Earned credentials including AI Associate fundamentals and process automation."
     ],
     stats: [
       { label: "BADGES", value: 34 },
       { label: "POINTS", value: "15k+" },
-      { label: "RANK", value: "ADVENTURER" }
+      { label: "RANK", value: "EXP" }
     ]
   },
   {
@@ -160,12 +181,12 @@ export const EXPERIENCE: Experience[] = [
     location: "Mumbai (Remote)",
     type: "Internship",
     logo: "https://codectechnologies.in/wp-content/uploads/2024/06/xcropped-cropped-2-1-e1717874388246-1.png.pagespeed.ic.NlTK_qfJVU.png",
-    description: "Immersive program providing industry-level knowledge and practical MERN stack skills. Reporting to Assigned Project Head(s).",
+    description: "Industrial-grade MERN stack development reporting directly to Project Heads for enterprise-scale web applications.",
     points: [
-      "Architected responsive frontends using React.js and Tailwind CSS.",
-      "Developing secure RESTful APIs with Node.js and Express.",
-      "Designed and optimized MongoDB schemas with Mongoose.",
-      "Integrated real-time features and state management with Redux Toolkit."
+      "Architected responsive frontends using React.js and Tailwind CSS frameworks.",
+      "Developing secure RESTful APIs with Node.js and Express backend services.",
+      "Designed and optimized MongoDB schemas for high-concurrency data handling.",
+      "Integrated real-time state management using Redux Toolkit patterns."
     ],
     stats: [
       { label: "APIs", value: 12 },
@@ -181,12 +202,12 @@ export const EXPERIENCE: Experience[] = [
     location: "Hyderabad (Remote)",
     type: "Internship",
     logo: "https://img1.wsimg.com/isteam/ip/5d0888b8-f3bc-4e47-91c6-5e2d2262f57b/C__3_-removebg-preview.png/:/rs=h:91,cg:true,m/qt=q:90",
-    description: "Dual-role internship (IDs: CTIS2225, CTIS2222) designed as an educational experience focusing on learning, skill development, and gaining practical knowledge.",
+    description: "Dual-role internship focusing on practical knowledge and high-performance React UI architectures.",
     points: [
-      "Leading technical workflows for React.js web development projects.",
+      "Leading technical workflows for React.js web development initiatives.",
       "Implemented advanced React patterns to reduce code redundancy by 30%.",
-      "Focused on high-performance UI systems for industrial clients.",
-      "Ensured high code quality through rigorous peer code reviews."
+      "Focused on high-performance UI systems for industrial client solutions.",
+      "Ensured code quality through rigorous peer reviews and documentation."
     ],
     stats: [
       { label: "TEAM", value: 4 },
@@ -202,12 +223,12 @@ export const EXPERIENCE: Experience[] = [
     location: "Pune (Remote)",
     type: "Internship",
     logo: "https://cognifyz.com/wp-content/uploads/2023/11/cognifyz-1.png",
-    description: "Applied analytical techniques to extract insights from data and build analytics-ready pipelines.",
+    description: "Applied analytical techniques to build analytics-ready pipelines and predictive data models.",
     points: [
-      "Performed data collection, cleaning, and preprocessing on structured datasets.",
-      "Conducted exploratory data analysis (EDA) to identify patterns, trends, and anomalies.",
-      "Assisted in building and evaluating predictive models with basic statistical methods.",
-      "Supported development of ETL processes and best practices in data engineering."
+      "Performed data collection and preprocessing on complex structured datasets.",
+      "Conducted exploratory data analysis (EDA) to identify emerging trends.",
+      "Assisted in building predictive models with verified statistical accuracy.",
+      "Supported development of ETL processes for large-scale data engineering."
     ],
     stats: [
       { label: "MODELS", value: 5 },
@@ -223,12 +244,12 @@ export const EXPERIENCE: Experience[] = [
     location: "Remote",
     type: "Internship/Part-time",
     logo: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
-    description: "Engineered technical solutions and verified technical mastery through Problem solving, SQL, and REST API challenges.",
+    description: "Verified technical mastery through advanced SQL and REST API architecture challenges.",
     points: [
-      "Solved algorithmic challenges in multiple languages with Gold Badge status.",
-      "Engineered high-performance REST APIs for internal testing modules.",
-      "Optimized SQL database queries for reporting systems.",
-      "Verified technical skills through industry-standard certification paths."
+      "Solved high-level algorithmic challenges maintaining Gold Badge status.",
+      "Engineered high-performance REST APIs for internal testing environments.",
+      "Optimized SQL database queries for reporting and analytics systems.",
+      "Verified skills through industry-standard certification paths."
     ],
     stats: [
       { label: "SOLVED", value: 200 },
@@ -1143,7 +1164,7 @@ export const CERTIFICATES: Certificate[] = [
     category: "Infrastructure"
   },
 
-  // --- AUTOMATION ANYWHERE ---
+  // --- AA ---
   {
     id: "aa-rpa-getting-started",
     title: "Getting Started with Robotic Process Automation (RPA)",
@@ -1587,7 +1608,7 @@ export const PROJECTS: Project[] = [
     tags: ["Deep Learning", "CNN", "Visualization", "Python"],
     icon: Brain,
     githubUrl: "https://github.com/Thejas10042001/CNN-VISUALTION",
-    longDescription: "One of the biggest hurdles in AI adoption is the 'black box' problem. This project visualizes what a Convolutional Neural Network 'sees' at each layer. By extracting and rendering feature maps and filter weights, I created an educational tool that helps researchers understand model behavior. This project uses PyTorch and Matplotlib to provide an interactive look into the mathematical layers of deep learning models.",
+    longDescription: "One of the biggest hurdles in AI adoption is the 'black box' problem. This project visualizes what a Convolutional Network 'sees' at each layer. By extracting and rendering feature maps and filter weights, I created an educational tool that helps researchers understand model behavior. This project uses PyTorch and Matplotlib to provide an interactive look into the mathematical layers of deep learning models.",
     features: [
       "Layer-by-layer activation map visualization", 
       "Filter weight rendering and kernel analysis", 
@@ -1847,5 +1868,6 @@ He has major credentials from:
 11. UC San Diego & HSE (Data Structures.)
 
 He is an MCA student at RVIT specializing in AI and Full-Stack development.
+He is currently an AI Product Development Intern at SpikedAI (Palo Alto, CA).
 He also completed an Online Elective course in Computer Science and Engineering: Artificial Intelligence in Affective Computing from IIT Delhi and Ropar.
 `;
