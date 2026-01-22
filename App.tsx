@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring, AnimatePresence } from 'framer-motion';
 import Hero from './components/Hero';
@@ -9,7 +8,6 @@ import Certificates from './components/Certificates';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import ChatWidget from './components/ChatWidget';
-import ResumeModal from './components/ResumeModal';
 import { Menu, X } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -22,7 +20,6 @@ const App: React.FC = () => {
 
   const [activeSection, setActiveSection] = useState('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -71,6 +68,7 @@ const App: React.FC = () => {
               TS<span className="text-primary-500">.</span>
             </a>
             
+            {/* Profile Image - Top Left next to Logo */}
             <img 
               src="https://tse1.mm.bing.net/th/id/OIP.fSz_u_rZ6u4559ALYO_p3AHaJQ?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" 
               alt="Thejas Sreenivasu"
@@ -142,21 +140,16 @@ const App: React.FC = () => {
       </nav>
 
       <main>
-        <Hero openResume={() => setIsResumeModalOpen(true)} />
+        <Hero />
         <About />
         <Skills />
         <Projects />
         <Certificates />
         <Experience />
-        <Contact openResume={() => setIsResumeModalOpen(true)} />
+        <Contact />
       </main>
 
       <ChatWidget />
-      
-      <ResumeModal 
-        isOpen={isResumeModalOpen} 
-        onClose={() => setIsResumeModalOpen(false)} 
-      />
     </div>
   );
 };
