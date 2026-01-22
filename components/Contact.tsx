@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
   Mail, Github, Linkedin, MapPin, MessageCircle, 
-  Instagram, Twitter, Download, Eye, Activity, 
+  Instagram, Twitter, FileText, Eye, Activity, 
   Globe, Heart, Zap
 } from 'lucide-react';
 import { RESUME_DATA } from '../constants';
@@ -89,7 +89,11 @@ const EngagementHub: React.FC = () => {
   );
 };
 
-const Contact: React.FC = () => {
+interface ContactProps {
+  openResume?: () => void;
+}
+
+const Contact: React.FC<ContactProps> = ({ openResume }) => {
   const socialLinks = [
     { icon: MessageCircle, href: `https://wa.me/${RESUME_DATA.contact.phone}`, show: true },
     { icon: Mail, href: `mailto:${RESUME_DATA.contact.email}`, show: true },
@@ -134,20 +138,18 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 flex flex-col items-center justify-center text-center">
-              <h3 className="text-xl font-bold text-white mb-4 italic">Thejas Sreenivasu</h3>
-              <p className="text-slate-400 text-sm mb-6">Innovative MCA Student | AI & Full-Stack Developer</p>
+              <h3 className="text-xl font-bold text-white mb-4 italic">{RESUME_DATA.name}</h3>
+              <p className="text-slate-400 text-sm mb-6">{RESUME_DATA.role}</p>
               
-              <motion.a 
-                href="https://drive.google.com/file/d/1F1Rw-MUSSky1zAOf1Cxdm8X5lDttd6A_/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
+              <motion.button 
+                onClick={openResume}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-500 text-white rounded-full font-medium transition-all shadow-lg"
               >
-                <Download size={18} />
-                Download Resume
-              </motion.a>
+                <FileText size={18} />
+                Generate Resume PDF
+              </motion.button>
               
               <div className="mt-8 w-full border-t border-slate-700 pt-6">
                 <EngagementHub />

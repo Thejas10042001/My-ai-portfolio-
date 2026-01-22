@@ -1,8 +1,13 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, Download, Sparkles } from 'lucide-react';
+import { ChevronDown, Download, Sparkles, FileText } from 'lucide-react';
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  openResume?: () => void;
+}
+
+const Hero: React.FC<HeroProps> = ({ openResume }) => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 bg-slate-900">
       
@@ -13,17 +18,13 @@ const Hero: React.FC = () => {
           alt="Hero Background" 
           className="w-full h-full object-cover object-center opacity-50 brightness-110" 
         />
-        {/* Gradient Overlay to blend with the dark theme and ensure text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/60 to-slate-900" />
       </div>
 
-      {/* Dynamic Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        {/* Main gradients */}
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-primary-600/20 rounded-full blur-[120px] animate-pulse" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-purple-600/20 rounded-full blur-[120px] animate-pulse delay-1000" />
         
-        {/* Floating particles */}
         {[...Array(5)].map((_, i) => (
           <motion.div
             key={i}
@@ -84,17 +85,15 @@ const Hero: React.FC = () => {
             >
               Explore Projects
             </motion.a>
-            <motion.a 
-              href="https://drive.google.com/file/d/1F1Rw-MUSSky1zAOf1Cxdm8X5lDttd6A_/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
+            <motion.button 
+              onClick={openResume}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-3 bg-slate-800/80 hover:bg-slate-700 text-white border border-slate-700 hover:border-slate-600 rounded-full font-medium transition-all flex items-center gap-2 backdrop-blur-sm group cursor-pointer"
             >
-              <Download size={18} className="group-hover:translate-y-1 transition-transform" />
-              Download Resume
-            </motion.a>
+              <FileText size={18} className="group-hover:translate-y-0.5 transition-transform" />
+              Build/Download Resume
+            </motion.button>
           </div>
         </motion.div>
       </div>
