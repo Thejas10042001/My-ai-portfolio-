@@ -90,10 +90,31 @@ export const RESUME_DATA = {
 
 export const EXPERIENCE: Experience[] = [
   {
-    id: "exp-spikedai",
+    id: "exp-spikedai-developer",
+    company: "SpikedAI",
+    role: "AI Product Developer",
+    period: "Mar 2026 - Present",
+    location: "Palo Alto, CA (Remote)",
+    type: "Full-time",
+    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQE1IzPr1MdTig/company-logo_100_100/company-logo_100_100/0/1695728614622?e=1769644800&v=beta&t=CfQiWITuXuCoLmGNu6e9p2GbqI3a1bD_LXPbsW5eMBA",
+    description: "Successfully promoted to a full-time role as AI Product Developer in March 2026. Working in the Virtual Meeting Simulator team to drive high-performance intelligence designs and build resilient product-level architectures.",
+    points: [
+      "Working on Virtual Simulation Project.",
+      "Building AI product features and workflows.",
+      "Contributing to deployment, testing, and production readiness.",
+      "Collaborating across product and engineering teams."
+    ],
+    stats: [
+      { label: "DURATION", value: "4 mos" },
+      { label: "PROJECTS", value: "VIRT_SIM" },
+      { label: "STATUS", value: "ACTIVE" }
+    ]
+  },
+  {
+    id: "exp-spikedai-intern",
     company: "SpikedAI",
     role: "AI Product Development Intern",
-    period: "Jan 2026 - Present",
+    period: "Jan 2026 - Mar 2026",
     location: "Palo Alto, CA (Remote)",
     type: "Internship",
     logo: "https://media.licdn.com/dms/image/v2/D4E0BAQE1IzPr1MdTig/company-logo_100_100/company-logo_100_100/0/1695728614622?e=1769644800&v=beta&t=CfQiWITuXuCoLmGNu6e9p2GbqI3a1bD_LXPbsW5eMBA",
@@ -107,7 +128,7 @@ export const EXPERIENCE: Experience[] = [
     stats: [
       { label: "CRM INT", value: "FULL" },
       { label: "AI FLOW", value: 14 },
-      { label: "STATUS", value: "LIVE" }
+      { label: "STATUS", value: "PROMOTED" }
     ]
   },
   {
@@ -177,7 +198,7 @@ export const EXPERIENCE: Experience[] = [
     id: "exp-codec",
     company: "Codec Technologies India",
     role: "MERN Stack Developer Intern",
-    period: "Jan 2026 - Present",
+    period: "Jan 2026 - Mar 2026",
     location: "Mumbai (Remote)",
     type: "Internship",
     logo: "https://codectechnologies.in/wp-content/uploads/2024/06/xcropped-cropped-2-1-e1717874388246-1.png.pagespeed.ic.NlTK_qfJVU.png",
@@ -1868,6 +1889,6 @@ He has major credentials from:
 11. UC San Diego & HSE (Data Structures.)
 
 He is an MCA student at RVIT specializing in AI and Full-Stack development.
-He is currently an AI Product Development Intern at SpikedAI (Palo Alto, CA).
+He is currently a full-time AI Product Developer at SpikedAI, promoted from his previous role as an AI Product Development Intern in March 2026.
 He also completed an Online Elective course in Computer Science and Engineering: Artificial Intelligence in Affective Computing from IIT Delhi and Ropar.
 `;
