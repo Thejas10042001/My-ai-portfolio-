@@ -1559,6 +1559,70 @@ export const CERTIFICATES: Certificate[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: "spikedai-brain-kyc",
+    title: "SPIKEDAI — Cognitive Intelligence Brain KYC & Sales Research Engine",
+    description: "An advanced customer risk profiling and secure enterprise KYC platform driving intelligent, multi-agent sales and customer research workflows.",
+    tags: ["Cognitive Computing", "KYC", "Artificial Intelligence", "React", "Sales Intelligence"],
+    icon: ShieldCheck,
+    githubUrl: "https://github.com/Thejas10042001/method-2",
+    longDescription: "SPIKEDAI — Cognitive Intelligence Brain KYC & Sales Research Engine is a high-performance compliance auditing, customer identification (KYC), and deep sales background research platform. Harnessing fine-grained cognitive psychological modeling and multi-party discovery agents, the application automates target customer analysis, performs safe background checks, assesses prospective risk factors, and structures detailed intent reports to elevate business development strategy.",
+    features: [
+      "AI-driven automated KYC/KYB identity discovery and deep buyer verification loops",
+      "Cognitive customer intelligence mapping and psychological trait alignment",
+      "Agentic cross-channel background research parsing public-domain touchpoints",
+      "Real-time corporate risk scoring, fraud analysis, and automated audit trails",
+      "Intuitive objection guidelines tailored to specific client behavioral profiles"
+    ]
+  },
+  {
+    id: "spiked-ai-simulation-engine",
+    title: "SPIKED AI: Enterprise Cognitive Intelligence & Sales Simulation Engine",
+    description: "An advanced sales simulation and cognitive enterprise intelligence engine designed to automate real-time revenue intelligence, conversational modeling, and sales team workflows.",
+    tags: ["AI", "Sales Simulation", "Cognitive Intelligence", "Enterprise", "React"],
+    icon: Brain,
+    githubUrl: "https://github.com/Thejas10042001/video-one-",
+    longDescription: "SPIKED AI: Enterprise Cognitive Intelligence & Sales Simulation Engine is a cutting-edge sales training and simulation platform. It empowers sales professional squads with hyper-realistic AI customers that respond dynamically based on cognitive psychological frameworks. Leveraging high-frequency LLM analytics and behavioral analysis, the simulation critiques techniques, predicts deal-conversion feasibility, and designs tailored enablement workflows to accelerate revenue operations.",
+    features: [
+      "Interactive sales simulation engine with multi-agent cognitive persona orchestration",
+      "Real-time conversational sentiment mapping, performance scoring, and script compliance tracking",
+      "AI-driven automated revenue enablement playbooks and bespoke objections coach",
+      "Predictive conversion feasibility modeling based on behavioral engagement matrices",
+      "Enterprise CRM synchronization simulation with deep workflow automation logs"
+    ]
+  },
+  {
+    id: "aether-enterprise-hrms",
+    title: "Aether Enterprise HRMS: Next-Generation AI-Powered Human Resource Management System",
+    description: "An AI-driven human resource management system featuring predictive attrition analytics, smart resume parsing, automated shift planning, and specialized HR workflows.",
+    tags: ["React", "AI Integration", "Node.js", "HR Tech", "Enterprise"],
+    icon: Briefcase,
+    githubUrl: "https://github.com/Thejas10042001/FWC-",
+    longDescription: "Aether Enterprise HRMS is a next-generation human resource management platform designed for modern enterprise alignment. Combining clean database designs with intuitive conversational intelligence, it executes automated resume parsing, tracks predictive attrition modeling, automates complex shift allocations, and integrates an interactive policy compliance assistant to cultivate highly engaged workspace squads.",
+    features: [
+      "AI-powered automated applicant screening & high-volume resume parsing",
+      "Predictive talent attrition analysis and proactive retention suggestions",
+      "Intelligent scheduling engine with automated shift optimization and conflict resolution",
+      "Enterprise self-service portal for secure work tracking, payroll, and benefits management",
+      "Conversational HR assistant chatbot and on-demand employment policy checking"
+    ]
+  },
+  {
+    id: "mr-cloud-architect-pro-ai",
+    title: "Mr. Cloud Architect PRO-AI (Enterprise Multi-Cloud Discovery Engine)",
+    description: "An AI-powered multi-cloud discovery, automated mapping, compliance auditing, and cost optimization engine.",
+    tags: ["Cloud Computing", "AI", "Multi-Cloud", "DevOps", "Terraform"],
+    icon: Cloud,
+    githubUrl: "https://github.com/Thejas10042001/Mr.-Cloud-Architect-PRO-AI",
+    longDescription: "Mr. Cloud Architect PRO-AI is an enterprise-grade multi-cloud discovery and architectural orchestration platform. Built to support heterogeneous infrastructures across AWS, Azure, and Google Cloud, it automatically retrieves configurations to generate interactive real-time visual maps. It combines LLM-driven compliance analyzing (CIS, GDPR, HIPAA) with deep cost-optimization modeling to automatically construct production-ready Terraform/IaC templates, empowering engineers to provision resilient and compliant environments.",
+    features: [
+      "Automated infrastructure discovery & multi-cloud mapping for AWS, Azure, and GCP",
+      "AI-driven visual topology generation and cloud resource inventory analysis",
+      "Intelligent compliance auditing aligned with CIS Benchmarks, SOC2, and security policies",
+      "Generative AI optimization engine producing bespoke Terraform and IaC configurations",
+      "Advanced predictive billing and idle-resource detection with prescriptive rightsizing"
+    ]
+  },
+  {
     id: "infinite-wik",
     title: "Infinite Wik",
     description: "An infinite scrolling knowledge explorer that allows seamless navigation through wiki-style content.",
@@ -1873,7 +1937,7 @@ export const PROJECTS: Project[] = [
 ];
 
 export const SYSTEM_PROMPT = `
-You are the AI Portfolio Assistant for Thejas Sreenivasu. Your role is to represent Thejas professionally, answering questions about his 20+ projects, education, and 150+ professional certifications.
+You are the AI Portfolio Assistant for Thejas Sreenivasu. Your role is to represent Thejas professionally, answering questions about his 20+ projects (including key projects like SPIKEDAI — Cognitive Intelligence Brain KYC & Sales Research Engine, SPIKED AI: Enterprise Cognitive Intelligence & Sales Simulation Engine, Aether Enterprise HRMS, Mr. Cloud Architect PRO-AI, StockGenius AI, and more), education, and 150+ professional certifications.
 
 He has major credentials from:
 1. Microsoft Learn (Deep expertise in Azure Cloud, Enterprise Security MS-500, Power Platform, and Conversational AI.)
