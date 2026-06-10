@@ -1672,18 +1672,19 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "human-safety",
-    title: "Human Safety Precautions",
-    description: "An AI-based system designed to monitor and enforce safety protocols by detecting safety gear violations.",
-    tags: ["AI", "Computer Vision", "Safety", "Python"],
+    title: "Guardian Angel — Personal Safety Companion",
+    description: "An advanced, mobile-responsive AI personal security suite and real-time distress orchestration engine with automated trigger systems.",
+    tags: ["React", "TypeScript", "AI Integration", "Security"],
     icon: ShieldCheck,
     githubUrl: "https://github.com/Thejas10042001/Human-Safety-Precautions-",
-    longDescription: "Focused on industrial safety, this project utilizes Computer Vision to detect PPE (Personal Protective Equipment) in real-time. The system is trained to recognize helmets, vests, and goggles. I addressed the challenge of variable lighting and occlusion in industrial environments by using a custom-trained dataset. It acts as a 24/7 safety supervisor, significantly reducing the risk of workplace accidents.",
+    longDescription: "An enterprise-grade personal security application and state-machine-driven emergency responder. It orchestrates real-time safety nets through hardware volume-key gesture overrides, discreet/silent threat dispatcher pipelines, dynamic Interactive Call Emulations utilizing Web Speech Synthesis (TTS), live geographical coordinate tracing, and contextual AI safety advice powered by Gemini Search Grounding. Built to provide vulnerable groups with immediate, reliable, and automated self-defense mechanisms.",
     features: [
-      "Custom-trained CNN for PPE detection (Helmet, Vest, Goggles)", 
-      "Audio-visual alarm system for immediate violation alerts", 
-      "Admin dashboard with real-time safety compliance metrics", 
-      "Historical data logging for safety audits and reporting",
-      "Cloud-ready architecture for remote site monitoring"
+      "Loud Emergency SOS Engine with automated alert sirens and flashing high-contrast screen indicators", 
+      "Discreet/Stealth SOS Pipeline for silent background geolocation coordinates transmission", 
+      "Interactive hardware volume-key trigger overrides to initiate emergency sequence hands-free", 
+      "Realistic incoming voice call emulation with local Text-to-Speech (TTS) conversations to deter potential threats",
+      "Gemini Search Grounding integration delivering contextual AI guided safety advisories based on surroundings",
+      "Interactive geographical mapping layout featuring real-time location tracing and coordinate updates"
     ]
   },
   {
@@ -1933,11 +1934,43 @@ export const PROJECTS: Project[] = [
       "Export capabilities to PDF and calendar formats",
       "Automated conflict detection and manual override"
     ]
+  },
+  {
+    id: "concept-explorer",
+    title: "Concept-Explorer",
+    description: "An advanced, full-stack cognitive educational platform leveraging multi-modal AI to simplify complex technical concepts into intuitive text, visual schematics, and video animations.",
+    tags: ["React", "TypeScript", "AI Engines", "Full Stack"],
+    icon: Lightbulb,
+    githubUrl: "https://github.com/Thejas10042001/Concept-Explorer",
+    longDescription: "Concept-Explorer is an enterprise-grade academic accelerator and cognitive learning platform designed to dismantle high-friction technical concepts. Driven by a specialized triple-AI network consisting of the Simplification Engine (gemini-3.5-flash) for hierarchical cognitive text analogies, the Schematic Engine (gemini-2.5-flash-image) for structural layout diagrams, and the Video Engine (veo-3.1-lite-generate-preview) for rich automated video summaries, it transforms complex topics into approachable, multi-sensory learning pathways with synchronous and asynchronous streaming APIs.",
+    features: [
+      "The Simplification Engine (gemini-3.5-flash) transforming technical jargon into structured layered analogies",
+      "The Schematic Engine (gemini-2.5-flash-image) generating relationship graphs and structural system drawings",
+      "The Video Engine (veo-3.1-lite-generate-preview) synthesizing study animations asynchronously to reinforce retention",
+      "Resilient full-stack polling loops, download buffers, and CORS streams to handle video generation states",
+      "Full interactive developer manual detailing REST API contracts, health checks, and mock environments"
+    ]
+  },
+  {
+    id: "ai-study-helper",
+    title: "AI Study Helper",
+    description: "A multimodal dual-coding learning system transforming dense educational topics into metaphorical text, live vector schemas, and 2D kinesthetic storyboard plans.",
+    tags: ["React", "TypeScript", "Generative AI", "Cognitive Science"],
+    icon: GraduationCap,
+    githubUrl: "https://github.com/Thejas10042001/AI-Study-Helper-",
+    longDescription: "AI Study Helper is a custom cognitive scaffolding platform built upon corporate dual-coding teaching theories. Orchestrated via a parallel multi-threaded pipeline, it processes conceptual inputs instantly into hierarchical analogy frameworks, real-time interactive SVG graphic charts, and dynamic scene-by-scene 2D kinesthetic narrative animation storyboards, protecting credentials with absolute workspace isolates.",
+    features: [
+      "Dual-Path Conceptual Translation resolving high-friction technical concepts into relatable life experiences and analogies",
+      "Live educational diagram generation creating interactive vector schematic mapping on a dynamic canvas",
+      "Kinesthetic storyboard generator building customized stage directions for 2D educational animated sequences",
+      "Parallel orchestration pipelines rendering concurrent multi-modal content pathways safely",
+      "Secure key isolation and client-fail-safe error handling strategies"
+    ]
   }
 ];
 
 export const SYSTEM_PROMPT = `
-You are the AI Portfolio Assistant for Thejas Sreenivasu. Your role is to represent Thejas professionally, answering questions about his 20+ projects (including key projects like SPIKEDAI — Cognitive Intelligence Brain KYC & Sales Research Engine, SPIKED AI: Enterprise Cognitive Intelligence & Sales Simulation Engine, Aether Enterprise HRMS, Mr. Cloud Architect PRO-AI, StockGenius AI, and more), education, and 150+ professional certifications.
+You are the AI Portfolio Assistant for Thejas Sreenivasu. Your role is to represent Thejas professionally, answering questions about his 20+ projects (including key projects like SPIKEDAI — Cognitive Intelligence Brain KYC & Sales Research Engine, SPIKED AI: Enterprise Cognitive Intelligence & Sales Simulation Engine, Aether Enterprise HRMS, Mr. Cloud Architect PRO-AI, Guardian Angel — Personal Safety Companion, Concept-Explorer, AI Study Helper, StockGenius AI, and more), education, and 150+ professional certifications.
 
 He has major credentials from:
 1. Microsoft Learn (Deep expertise in Azure Cloud, Enterprise Security MS-500, Power Platform, and Conversational AI.)
